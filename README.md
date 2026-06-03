@@ -79,12 +79,14 @@ git push -u origin main
 4. Deploy automático em cada push. URL grátis tipo `seu-projeto.pages.dev`.
 
 **Alternativa simples (GitHub Pages):**
-- No repo do GitHub, vá em Settings → Pages → Source: Deploy from a branch → Branch: main → Save.
-- Site fica em `https://SEU_USUARIO.github.io/code-solutions-site/`
+- No seu repositório no GitHub, vá em **Settings → Pages**
+- Em "Build and deployment", Source: **Deploy from a branch**
+- Branch: **main**
+- Folder: **/ (root)**
+- Clique Save.
+- O site ficará disponível em `https://SEU_USUARIO.github.io/code-solutions-site/`
 
 **Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
-
-**Vantagens**: CDN global insano, bandwidth ilimitado, custom domain grátis, SSL automático, analytics grátis.
 
 Alternativa excelente: **Netlify** (ótimo para forms e previews).
 
