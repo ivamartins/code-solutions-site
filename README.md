@@ -79,7 +79,8 @@ git push -u origin main
 4. Deploy automático em cada push. URL grátis tipo `seu-projeto.pages.dev`.
 
 **Alternativa simples (GitHub Pages):**
-- No seu repositório no GitHub, vá em **Settings → Pages**
+- **Atenção:** A página que você está vendo agora (com "Verified domains" e "Add a domain") é a configuração de **domínios verificados da sua conta** (https://github.com/settings/pages). Isso não publica o site.
+- Vá para a página **do repositório específico**: https://github.com/ivamartins/code-solutions-site/settings/pages
 - Em "Build and deployment" (ou "Source"):
   - Se aparecer a opção "Deploy from a branch", use:
     - Source: **Deploy from a branch**
