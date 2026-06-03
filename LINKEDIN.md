@@ -35,8 +35,8 @@ Atuo como especialista em manutenção, evolução e modernização de sistemas 
 • Consultoria de arquitetura, APIs de alto volume e fábrica de software
 
 **Cases de destaque:**
-- Sicredi (2014–2021): Liderança na transformação arquitetural que virou padrão da plataforma digital (Scala + Apache Flink + Kafka)
 - Panvel (Grupo Dimed, 2012–2014): Reescrita completa do backend de e-commerce + mobile
+- Sicredi (2014–2021): Liderança na transformação arquitetural que virou padrão da plataforma digital (Scala + Apache Flink + Kafka)
 - Quartile (EUA, 2021–2026): Backends de alto volume com integração avançada de IA em produção (Azure Functions + Claude/ChatGPT)
 
 Site: https://ivamartins.github.io/code-solutions-site/
@@ -98,7 +98,7 @@ Acabei de colocar no ar o site da Code Solutions.
 
 https://ivamartins.github.io/code-solutions-site/
 
-Depois de 20+ anos modernizando sistemas legados em instituições como Sicredi e Panvel (Grupo Dimed), e mais recentemente construindo backends com IA em produção, decidi criar um espaço profissional para concentrar minha atuação via PJ.
+Depois de 20+ anos modernizando sistemas legados em instituições como Panvel (Grupo Dimed) e Sicredi, e mais recentemente construindo backends com IA em produção, decidi criar um espaço profissional para concentrar minha atuação via PJ.
 
 No site você encontra:
 - Cases reais de transformação arquitetural (ex: evento-driven que virou padrão em banco)
@@ -120,7 +120,7 @@ https://ivamartins.github.io/code-solutions-site/
 
 Especialista em manutenção e modernização de sistemas legados (Java, Play Framework, Elasticsearch, Scala + Akka) e criação de agentes de IA entregáveis.
 
-Cases incluem Sicredi, Panvel e projetos com IA em produção.
+Cases incluem Panvel, Sicredi e projetos com IA em produção.
 
 Atuo via PJ para todo o Brasil.
 
