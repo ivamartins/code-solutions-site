@@ -219,4 +219,29 @@ Qualquer dúvida ou ajuste (texto, layout, nova imagem, adicionar mais um case),
 
 Boa sorte nas propostas! O site está pronto para converter.
 
+## SEO (otimizações para buscas de manutenção em tecnologias)
+
+O site foi otimizado para aparecer quando empresas buscam **manutenção, suporte e modernização** de sistemas em:
+
+- Java / Spring Boot / Quarkus / Play Framework
+- Elasticsearch (busca, indexação, ELK)
+- Scala / Akka / Kafka / Flink (event-driven)
+- Migração e manutenção de legados enterprise
+
+**O que foi feito:**
+- Title, meta description, keywords, canonical, Open Graph e Twitter Cards ricos em palavras-chave
+- Structured data (JSON-LD Schema.org) para Person + ProfessionalService com `knowsAbout` e `serviceType` listando as tecnologias
+- Headings (H1/H2/H3) e textos reescritos com foco em "manutenção de sistemas legados", "consultoria Play Framework", etc.
+- Nova seção FAQ bilíngue com perguntas reais que as pessoas pesquisam (ex: "manutenção em sistemas legados Java e Play Framework")
+- Imagens com alt texts otimizados
+- `robots.txt` + `sitemap.xml` estáticos na raiz (servidos automaticamente pelo GitHub Pages)
+- Links internos para #faq
+
+**Dicas extras para ranquear:**
+- Publique o site também em LinkedIn e compartilhe cases
+- Considere um domínio próprio barato (.com.br) + apontamento para o Pages (melhora confiança)
+- Adicione mais conteúdo ao longo do tempo (novos cases, posts no LinkedIn linkando o site)
+
+O deploy do GitHub Pages inclui automaticamente robots.txt e sitemap.xml.
+
 — Grok (executado em modo de implementação após aprovação do plano)
