@@ -41,11 +41,17 @@ Dica de bilingual: o switcher simplesmente alterna `lang` no `<html>` e usa CSS 
 
 ## Imagens
 
-As imagens foram geradas com IA (xAI Imagine) para visual profissional e moderno.  
-Para regenerar:
+- `hero.jpg` e `agents-icon.jpg`: geradas com IA (xAI Imagine) para visual profissional e moderno.
+- `portrait.jpg`: **baseada na sua foto real do perfil do LinkedIn** (extraída da página renderizada de `Profile-2.pdf` em Downloads, editada com referência de imagem via ferramenta de edição para remover UI, limpar fundo, ajustar iluminação e crop profissional adequado para site de serviços). Preserva sua aparência real com polimento para uso corporativo.
 
-- Use a ferramenta `image_gen` do Grok com prompts semelhantes aos usados (hero wide 16:9, retrato 3:2, ícone agents 1:1).
-- Copie os arquivos resultantes para `assets/hero.jpg`, `assets/portrait.jpg`, `assets/agents-icon.jpg` (ou adicione mais).
+Para regenerar ou refazer o retrato a partir da foto do LinkedIn:
+- A referência completa da página está salva em `assets/linkedin-profile-page.png`.
+- Use a ferramenta `image_edit` passando essa PNG como imagem de referência + prompt para extrair/crop/limpar o headshot (ex: "extract the person's photo from the LinkedIn page render, clean professional headshot with soft background...").
+- Ou simplesmente substitua `portrait.jpg` por uma versão editada sua.
+
+Hero e ícone podem ser regenerados com `image_gen` usando prompts semelhantes (hero 16:9 abstrato tech+AI, ícone 1:1 para agentes).
+
+Copie os arquivos resultantes para a pasta `assets/`.
 
 ## Hospedagem — A forma MAIS BARATA e profissional (zero custo de hosting)
 
