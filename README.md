@@ -206,7 +206,7 @@ code-solutions-site/
 
 ## Próximos passos sugeridos após o site no ar
 
-- Veja o guia completo em `LINKEDIN.md` (texto pronto para Experience, About, post de lançamento e Company Page).
+- Veja o guia completo em `LINKEDIN.md` (texto pronto para Experience, About, post de lançamento + orientação para a página "Code Solutions" que já existe no LinkedIn).
 - Use as planilhas em `~/Downloads/` (`LISTA DE EMPRESAS SC2024.xlsx` etc.) para outreach dirigido.
 - Ofereça "piloto de agente" de 2–4 semanas como entrada de baixo risco.
 - Mais tarde podemos adicionar um PDF one-pager ou até um mini-site de cases mais profundos.
