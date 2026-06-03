@@ -14,6 +14,8 @@ A **melhor forma** de posicionar ele no LinkedIn é:
 
 ## 1. Experiência (Experience) - FAÇA ISSO PRIMEIRO
 
+**Nota importante:** Adicione isso **em adição** à sua experiência atual na Quartile (ou qualquer emprego principal). Muitos profissionais mantêm o job CLT/PJ principal + uma entrada separada para a atividade de consultoria/PJ via Code Solutions. Isso mostra claramente os serviços que você oferece de forma independente.
+
 **Empresa:** Code Solutions  
 **Cargo:** Engenheiro Backend Sênior | Especialista em Manutenção e Modernização de Sistemas Legados  
 **Localização:** Porto Alegre, Rio Grande do Sul, Brasil  
@@ -106,7 +108,7 @@ No site você encontra:
 Se sua empresa precisa de alguém com profundidade real em sistemas complexos + capacidade de entregar soluções modernas (incluindo agentes), vamos conversar.
 
 Site: https://ivamartins.github.io/code-solutions-site/
-LinkedIn: https://linkedin.com/in/ivã-martins-71760b89
+LinkedIn: https://www.linkedin.com/in/ivã-martins-71760b89/
 
 #Java #PlayFramework #Elasticsearch #Scala #ModernizacaoDeLegados #AgentesIA #Backend #PJ
 
