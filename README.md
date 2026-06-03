@@ -80,11 +80,14 @@ git push -u origin main
 
 **Alternativa simples (GitHub Pages):**
 - No seu repositório no GitHub, vá em **Settings → Pages**
-- Em "Build and deployment", Source: **Deploy from a branch**
-- Branch: **main**
-- Folder: **/ (root)**
-- Clique Save.
-- O site ficará disponível em `https://ivamartins.github.io/code-solutions-site/`
+- Em "Build and deployment" (ou "Source"):
+  - Source: **Deploy from a branch**
+  - Branch: **main**
+  - Folder: **/ (root)**
+- Clique **Save**.
+- A seção "Verified domains" é opcional (só aparece se você quiser usar domínio customizado). Pode ignorar por enquanto.
+- Aguarde 1-2 minutos. O site ficará disponível em `https://ivamartins.github.io/code-solutions-site/`
+- Se aparecer mensagem de erro ou "Your site is ready to be published", clique para habilitar.
 
 **Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
 
