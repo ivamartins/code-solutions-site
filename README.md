@@ -42,10 +42,10 @@ Dica de bilingual: o switcher simplesmente alterna `lang` no `<html>` e usa CSS 
 ## Imagens
 
 - `hero.jpg` e `agents-icon.jpg`: geradas com IA (xAI Imagine) para visual profissional e moderno.
-- `portrait.jpg`: **baseada na sua foto real** (arquivo `20260602_225119.jpg` em Downloads, editada com `image_edit` usando a foto como referência principal). Versão atual: cabelo natural e bem penteado, roupa casual (camisa de botões simples, sem terno), headshot profissional com fundo neutro moderno, iluminação de estúdio e crop adequado para site de serviços. Preserva sua aparência real. (Última edição: camisa de botões)
+- `portrait.jpg`: **baseada na sua foto real** (arquivo `20260602_230750.jpg` em Downloads, editada com `image_edit` usando a foto como referência principal; ombros um pouco mais largos, cabelo natural com topo cortado). Versão atual: cabelo natural e bem penteado, roupa casual (camiseta simples, sem terno), headshot profissional com fundo neutro moderno, iluminação de estúdio e crop adequado para site de serviços. Preserva sua aparência real. (Última edição: camiseta, ombros largos, cabelo topo cortado)
 
 Referências salvas em `assets/`:
-- `user-original-photo.jpg`: sua foto original completa (para referência futura).
+- `user-original-photo.jpg`: sua foto original completa (20260602_230750.jpg, para referência futura).
 - `linkedin-profile-page.png`: versão anterior do LinkedIn (ainda mantida como backup).
 
 Para regenerar ou refazer o retrato:
