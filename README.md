@@ -210,15 +210,15 @@ code-solutions-site/
 
 - Bio narrativa principal: texto biográfico fornecido (adaptado para o site)
 - Experiência detalhada, clientes, tecnologias e bullets de impacto: currículos fornecidos (com frases reais de conquistas)
-- Exemplo vivo de agentes: pasta completa `~/whatsapp-grok-bot/` (leia especialmente o README dele — explica a arquitetura auto-contida com `.grok/agents` e `.grok/skills`)
-- Agente deep-researcher: `~/.grok/agents/deep-researcher.md` (ótimo para oferecer "agentes de pesquisa profunda em codebases legadas")
+- Exemplo vivo de agentes: o projeto `whatsapp-grok-bot` (veja seu README para a arquitetura auto-contida com `.grok/agents` + skills customizadas)
+- Agente deep-researcher: referência em `~/.grok/agents/deep-researcher.md` (bom exemplo de skill para pesquisa profunda em codebases)
 
 ## Próximos passos sugeridos após o site no ar
 
-- Veja o guia completo em `LINKEDIN.md` (texto pronto para Experience, About, post de lançamento + orientação para a página "Code Solutions" que já existe no LinkedIn).
-- Use as planilhas em `~/Downloads/` (`LISTA DE EMPRESAS SC2024.xlsx` etc.) para outreach dirigido.
+- Veja o guia completo em `LINKEDIN.md` (textos prontos para Experience no LinkedIn, Company Page "Sobre", post de lançamento + estratégia para a página "Code Solutions" já existente).
+- Use listas de empresas-alvo para outreach dirigido.
 - Ofereça "piloto de agente" de 2–4 semanas como entrada de baixo risco.
-- Mais tarde podemos adicionar um PDF one-pager ou até um mini-site de cases mais profundos.
+- Mais tarde é possível adicionar um PDF one-pager ou um mini-site de cases mais profundos.
 
 ## Créditos / Contexto
 
