@@ -42,7 +42,7 @@ Dica de bilingual: o switcher simplesmente alterna `lang` no `<html>` e usa CSS 
 ## Imagens
 
 - `hero.jpg` e `agents-icon.jpg`: geradas com IA (xAI Imagine) para visual profissional e moderno.
-- `portrait.jpg`: **baseada na sua foto real** (arquivo `20260602_225119.jpg` em Downloads, editada com `image_edit` usando a foto como referência principal). Versão atual: cabelo corrigido para natural, roupa casual (apenas camiseta simples, sem terno), headshot profissional com fundo neutro moderno, iluminação de estúdio e crop adequado para site de serviços. Preserva sua aparência real. (Última edição: sem terno, camiseta, cabelo ajustado)
+- `portrait.jpg`: **baseada na sua foto real** (arquivo `20260602_225119.jpg` em Downloads, editada com `image_edit` usando a foto como referência principal). Versão atual: cabelo natural e bem penteado, roupa casual (apenas camiseta simples, sem terno), headshot profissional com fundo neutro moderno, iluminação de estúdio e crop adequado para site de serviços. Preserva sua aparência real. (Última edição: sem terno, camiseta, cabelo ajustado, orientação retrato)
 
 Referências salvas em `assets/`:
 - `user-original-photo.jpg`: sua foto original completa (para referência futura).
