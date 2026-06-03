@@ -2,13 +2,23 @@
 
 O site https://ivamartins.github.io/code-solutions-site/ foi projetado para ser seu principal ativo profissional para atrair clientes via PJ.
 
-A **melhor forma** de posicionar ele no LinkedIn é:
+A **melhor forma** de posicionar o site no LinkedIn (e a Code Solutions como marca de serviços) é:
 
-1. Adicionar como **Experiência** (dá mais peso nos algoritmos e buscas)
-2. Colocar no **Destaques (Featured)**
-3. Atualizar o **About (Resumo)**
-4. (Opcional mas poderoso) Criar uma **Company Page** para Code Solutions
+**Por que criar uma "Experiência" em vez de só colocar no Featured ou About?**
+- Colocar só no Featured ou no texto do About faz parecer um projeto pessoal ou portfólio.
+- Criar uma **Company Page + Experiência** transforma "Code Solutions" em uma entidade profissional real (mesmo sendo PJ).
+- Isso melhora muito a visibilidade em buscas no LinkedIn por "modernização legados", "Play Framework", "agentes IA", "backend sênior Porto Alegre" etc.
+- Empresas que procuram serviços via PJ encontram você mais facilmente.
+- É a abordagem que profissionais seniores e consultores independentes usam para posicionar sua marca pessoal/empresa.
+
+Passos principais (ordem recomendada):
+1. Criar Company Page para Code Solutions (fortemente recomendado)
+2. Adicionar como **Experiência** (Code Solutions como entrada atual, em adição ao seu job principal)
+3. Colocar o site no **Destaques (Featured)**
+4. Atualizar o **About (Resumo)**
 5. Fazer um post de lançamento
+
+Isso é muito mais forte do que só adicionar o link no seu perfil pessoal.
 
 ---
 
