@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Solutions | Ivã Martins — Engenharia Backend Sênior &amp; Agentes de IA | Porto Alegre</title>
+  <meta name="description" content="20+ anos modernizando sistemas legados, APIs de alto volume e plataformas escaláveis. Agora também crio agentes de IA profissionais e automações inteligentes entregáveis. Serviços via Code Solutions (PJ).">
+  <meta property="og:title" content="Code Solutions | Ivã Martins — Backend Sênior + Agentes de IA">
+  <meta property="og:description" content="Engenheiro Backend com 20+ anos (Java, Scala, Python, .NET, Azure). Especialista em migrações legadas que viraram padrão e criação de agentes IA customizados (ex: bots WhatsApp com Grok). Porto Alegre.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <meta property="og:type" content="website">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+    
+    :root {
+      --accent: 234 179 8;
+    }
+    
+    .font-display {
+      font-family: 'Space Grotesk', system_ui, sans-serif;
+    }
+    
+    .section-title {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+    }
+    
+    .nav-active {
+      color: rgb(234 179 8);
+      font-weight: 600;
+    }
+    
+    .service-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    }
+    
+    .case-card {
+      transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    .tech-pill {
+      background-color: #0f172a;
+      color: #e2e8f0;
+      font-size: 0.75rem;
+      padding: 0.125rem 0.625rem;
+      border-radius: 9999px;
+      font-weight: 500;
+    }
+    
+    .lang-en { display: none; }
+    html[lang="en"] .lang-pt { display: none; }
+    html[lang="en"] .lang-en { display: block; }
+    
+    .professional-gradient {
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+    }
+    
+    .accent-text {
+      color: rgb(234 179 8);
+    }
+    
+    .stat-number {
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased">
+  <!-- NAV -->
+  <nav class="bg-slate-900/95 backdrop-blur-lg border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center gap-x-3">
+          <div class="w-9 h-9 rounded-xl bg-yellow-500 flex items-center justify-center">
+            <span class="text-slate-950 font-bold text-2xl tracking-tighter">CS</span>
+          </div>
+          <div>
+            <div class="font-display font-semibold tracking-tighter text-xl">Code Solutions</div>
+            <div class="text-[10px] text-slate-500 -mt-1">Ivã Martins</div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex items-center gap-x-8 text-sm">
+          <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-pt">Sobre</a>
+          <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-en">About</a>
+          
+          <a href="#servicos" class="hover:text-yellow-400 transition-colors lang-pt">Serviços</a>
+          <a href="#servicos" class="hover:text-yellow-400 transition-colors lang-en">Services</a>
+          
+          <a href="#cases" class="hover:text-yellow-400 transition-colors lang-pt">Cases</a>
+          <a href="#cases" class="hover:text-yellow-400 transition-colors lang-en">Cases</a>
+          
+          <a href="#agentes" class="hover:text-yellow-400 transition-colors lang-pt">Agentes IA</a>
+          <a href="#agentes" class="hover:text-yellow-400 transition-colors lang-en">AI Agents</a>
+        </div>
+
+        <div class="flex items-center gap-x-3">
+          <!-- Language Switcher -->
+          <div class="flex items-center bg-slate-900 border border-slate-800 rounded-full p-1 text-xs">
+            <button onclick="switchLang('pt')" id="lang-pt-btn"
+                    class="px-3 py-1 rounded-full bg-yellow-500 text-slate-950 font-medium">PT</button>
+            <button onclick="switchLang('en')" id="lang-en-btn"
+                    class="px-3 py-1 rounded-full text-slate-400 hover:text-slate-200">EN</button>
+          </div>
+
+          <a href="#contato" 
+             class="hidden sm:inline-flex items-center px-4 py-2 rounded-full bg-white text-slate-950 text-sm font-semibold hover:bg-yellow-400 transition-all active:scale-[0.985]">
+            <span class="lang-pt">Receber proposta</span>
+            <span class="lang-en">Get a proposal</span>
+          </a>
+
+          <button onclick="window.open('https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20vi%20o%20site%20da%20Code%20Solutions%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.', '_blank')"
+                  class="md:hidden w-9 h-9 flex items-center justify-center rounded-full bg-emerald-500 text-white">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7">
+          <div class="inline-flex items-center gap-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs tracking-[1px] mb-6">
+            <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+            <span class="lang-pt">PORTO ALEGRE • DISPONÍVEL PARA PROJETOS</span>
+            <span class="lang-en">PORTO ALEGRE • AVAILABLE FOR PROJECTS</span>
+          </div>
+
+          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-semibold mb-6">
+            <span class="lang-pt">20+ anos modernizando<br>legados e construindo<br>plataformas que escalam.</span>
+            <span class="lang-en">20+ years modernizing<br>legacy systems and building<br>platforms that scale.</span>
+          </h1>
+          
+          <p class="max-w-lg text-xl text-slate-400 mb-8">
+            <span class="lang-pt">Engenheiro Backend sênior. Especialista em migrações críticas e agora também em <strong class="text-white">agentes de IA profissionais</strong> e automações inteligentes entregáveis.</span>
+            <span class="lang-en">Senior Backend Engineer. Specialist in critical migrations and now also in <strong class="text-white">professional AI agents</strong> and intelligent, production-ready automations.</span>
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="#contato" 
+               class="inline-flex items-center justify-center gap-x-2 px-8 h-12 rounded-2xl bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-slate-950 font-semibold text-base transition-all">
+              <span class="lang-pt">Solicitar proposta</span>
+              <span class="lang-en">Request a proposal</span>
+              <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+            
+            <button onclick="document.getElementById('agentes').scrollIntoView({ behavior: 'smooth' })" 
+                    class="inline-flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-900 text-sm font-medium transition-all">
+              <span class="lang-pt">Ver serviços de Agentes IA</span>
+              <span class="lang-en">See AI Agents services</span>
+            </button>
+
+            <a href="https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank"
+               class="inline-flex items-center gap-x-2 px-5 h-12 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 text-sm font-medium">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span class="hidden sm:inline">WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="mt-8 flex items-center gap-x-8 text-xs text-slate-500">
+            <div class="flex items-center gap-x-1.5">
+              <i class="fa-solid fa-check text-emerald-400"></i> 
+              <span class="lang-pt">PJ • Faturamento simples</span>
+              <span class="lang-en">PJ • Simple invoicing</span>
+            </div>
+            <div>Sicredi • Panvel • Quartile</div>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 relative">
+          <div class="aspect-[16/10] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/40">
+            <img src="assets/hero.jpg" alt="Code Solutions — Engenharia Backend e Agentes de IA" 
+                 class="w-full h-full object-cover">
+          </div>
+          <div class="absolute -bottom-4 -left-4 bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 text-sm shadow-xl hidden md:block">
+            <div class="flex items-center gap-x-3">
+              <div class="text-yellow-400"><i class="fa-solid fa-globe fa-lg"></i></div>
+              <div>
+                <div class="text-xs text-slate-400">Projetos em</div>
+                <div class="font-medium">Brasil • EUA (remote)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRUST BAR -->
+  <div class="border-y border-slate-800 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-6 py-5">
+      <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-4 text-sm text-slate-400">
+        <div class="flex items-center gap-x-2"><span class="font-semibold text-white">20+</span> anos de experiência</div>
+        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
+        <div>Migrações que viraram <span class="text-white">padrão de plataforma</span></div>
+        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
+        <div>Agentes IA em produção • Apps auto-contidos</div>
+        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
+        <div>Scrum Master • Pós em Java + IA</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="max-w-7xl mx-auto px-6 pt-20 pb-16">
+    <div class="grid md:grid-cols-12 gap-x-12 gap-y-10 items-start">
+      <div class="md:col-span-5">
+        <div class="sticky top-20">
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2">SOBRE MIM</div>
+          <h2 class="section-title tracking-tighter mb-6">
+            <span class="lang-pt">Senior Backend com<br>profundidade real em<br>legados e inovação.</span>
+            <span class="lang-en">Senior Backend with<br>real depth in legacy<br>modernization + innovation.</span>
+          </h2>
+          
+          <div class="rounded-2xl overflow-hidden border border-slate-800 mb-6">
+            <img src="assets/portrait.jpg" alt="Ivã Martins — Code Solutions" class="w-full">
+          </div>
+          
+          <div class="text-sm text-slate-400">
+            <span class="lang-pt">Porto Alegre, RS • Disponível para projetos remotos e presenciais no Sul/Sudeste.</span>
+            <span class="lang-en">Porto Alegre, RS • Open to remote projects and on-site in South/Southeast Brazil.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7 text-[15px] leading-relaxed text-slate-300 space-y-6">
+        <p class="lang-pt">
+          Olá, sou <strong class="text-white">Ivã Martins</strong>. Engenheiro Backend Sênior com mais de 20 anos construindo e modernizando sistemas complexos, APIs de alto volume e integrações de larga escala.
+        </p>
+        <p class="lang-en">
+          Hi, I'm <strong class="text-white">Ivã Martins</strong>. Senior Backend Engineer with over 20 years building and modernizing complex systems, high-volume APIs, and large-scale integrations.
+        </p>
+        
+        <p class="lang-pt">
+          Trabalhei extensivamente com Java (das versões iniciais até enterprise moderno), Python para dados e automação, Scala e arquiteturas event-driven com Flink + Kafka. Recentemente atuei com C#/.NET e Azure, incluindo features com IA em produção usando Claude e ChatGPT.
+        </p>
+        <p class="lang-en">
+          Extensive experience with Java (from early versions to modern enterprise), Python for data/automation, Scala and event-driven architectures with Flink + Kafka. More recently worked with C#/.NET and Azure, including production AI features using Claude and ChatGPT.
+        </p>
+
+        <div class="pt-3 border-t border-slate-800 text-sm">
+          <p class="lang-pt"><strong>Projetos de que mais me orgulho:</strong> reescrita completa do backend de e-commerce da Panvel (Grupo Dimed) e o pivot arquitetural no Sicredi — de POC Python para a arquitetura event-driven que se tornou padrão de toda a plataforma digital.</p>
+          <p class="lang-en"><strong>Projects I'm most proud of:</strong> complete backend rewrite of Panvel (Grupo Dimed) e-commerce and the architectural pivot at Sicredi — from a Python POC to the event-driven architecture that became the standard for their entire digital platform.</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 pt-2">
+          <div class="tech-pill">Java 17+ / Spring Boot / Quarkus</div>
+          <div class="tech-pill">Scala + Flink + Kafka</div>
+          <div class="tech-pill">Python + Azure</div>
+          <div class="tech-pill">.NET / C#</div>
+          <div class="tech-pill">Event-Driven Architecture</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section id="cases" class="bg-slate-900 border-y border-slate-800 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <div class="uppercase tracking-[2px] text-xs text-yellow-400">CASES DE DESTAQUE</div>
+          <h3 class="section-title tracking-tighter">Resultados que viraram referência</h3>
+        </div>
+        <a href="#contato" class="hidden md:inline text-sm text-yellow-400 hover:text-yellow-300">Quero resultados assim →</a>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Sicredi -->
+        <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
+          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">SICREDI • 2014–2021</div>
+          <h4 class="font-semibold text-xl mb-4">Pivot arquitetural que virou padrão da plataforma digital</h4>
+          <div class="space-y-4 text-sm text-slate-300">
+            <p class="lang-pt">Fui alocado como outsourcing. Comecei com POC de crawler em Python para o PFM (Gestão Financeira Pessoal). Liderei o pivot completo para <strong>Scala + Apache Flink + Kafka</strong> — arquitetura que se tornou o padrão para toda a plataforma digital da Sicredi.</p>
+            <p class="lang-en">Outsourced to the client. Started with a Python crawler POC for PFM (Personal Finance Manager). Led the full architectural pivot to <strong>Scala + Apache Flink + Kafka</strong> — the architecture that became the standard for Sicredi's entire digital platform.</p>
+            
+            <div class="pt-3 text-xs border-t border-slate-800 text-slate-400">Depois atuei em Conta Corrente e Poupança (Java 8 + Kafka + BFF em Kotlin).</div>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-1.5">
+            <div class="tech-pill text-[10px]">Scala</div>
+            <div class="tech-pill text-[10px]">Flink</div>
+            <div class="tech-pill text-[10px]">Kafka</div>
+            <div class="tech-pill text-[10px]">Event-Driven</div>
+          </div>
+        </div>
+
+        <!-- Panvel -->
+        <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
+          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">PANVEL (GRUPO DIMED) • 2012–2014</div>
+          <h4 class="font-semibold text-xl mb-4">Reescrita completa do backend de e-commerce + mobile</h4>
+          <div class="space-y-4 text-sm text-slate-300">
+            <p class="lang-pt">Atuei como Desenvolvedor Java e Scrum Master no projeto de modernização da plataforma de e-commerce. Liderança na implantação do Scrum, migração de legado para JSF, reescrita completa do backend, criação de e-commerce mobile (PrimeFaces Mobile) e migração de servidor WebSphere → JBoss.</p>
+            <p class="lang-en">Java Developer &amp; Scrum Master on the e-commerce modernization project. Led Scrum adoption, legacy migration to JSF, complete backend rewrite, mobile e-commerce (PrimeFaces Mobile), and WebSphere to JBoss migration.</p>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-1.5">
+            <div class="tech-pill text-[10px]">Java 7</div>
+            <div class="tech-pill text-[10px]">Spring + Hibernate</div>
+            <div class="tech-pill text-[10px]">JSF / PrimeFaces</div>
+            <div class="tech-pill text-[10px]">Scrum Master</div>
+          </div>
+        </div>
+
+        <!-- Quartile -->
+        <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
+          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">QUARTILE (EUA) • 2021–2026</div>
+          <h4 class="font-semibold text-xl mb-4">Backends de alto volume + IA em produção</h4>
+          <div class="space-y-4 text-sm text-slate-300">
+            <p class="lang-pt">Desenvolvi e mantive aplicações backend de alto volume com C# e Python em arquitetura Azure Functions. Implementei integrações assíncronas com Azure Service Bus e, principalmente, integrações avançadas com APIs de IA (Claude + ChatGPT) — usando intensamente Claude para automações e otimização de anúncios.</p>
+            <p class="lang-en">Developed and maintained high-volume backend applications in C# and Python on Azure Functions. Built async integrations with Service Bus and advanced AI API integrations (Claude + ChatGPT) — heavily using Claude for automations and ad optimization.</p>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-1.5">
+            <div class="tech-pill text-[10px]">Azure Functions</div>
+            <div class="tech-pill text-[10px]">C# + Python</div>
+            <div class="tech-pill text-[10px]">Claude / ChatGPT</div>
+            <div class="tech-pill text-[10px]">OpenAPI</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-xs text-slate-500 mt-8">+ CIEE (plataforma de recrutamento de alto volume), Hospital Osvaldo Cruz (Horus Clinic), migrações de core bancário (FLEXCUBE) e mais de 15 anos de sistemas corporativos.</p>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="max-w-2xl mb-10">
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400">O QUE OFEREÇO</div>
+      <h3 class="section-title tracking-tighter">Serviços de desenvolvimento e automação para empresas que precisam de resultado.</h3>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Service 1 -->
+      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+        <div class="w-11 h-11 rounded-2xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-5"><i class="fa-solid fa-sync fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2">Modernização de Sistemas Legados</h4>
+        <p class="text-sm text-slate-400 mb-4">Reengenharia, migração de monolitos para microsserviços/event-driven, reescrita de backends críticos preservando regras de negócio.</p>
+        <div class="text-xs text-orange-400">Exemplos reais: Sicredi, Panvel, CIEE, core bancário.</div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+        <div class="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5"><i class="fa-solid fa-plug fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2">Backends Escaláveis e APIs REST</h4>
+        <p class="text-sm text-slate-400 mb-4">Desenvolvimento de APIs de alto volume, microsserviços, integrações complexas com foco em performance, observabilidade e manutenibilidade.</p>
+        <div class="text-xs text-blue-400">Java/Spring Boot, Python, C#/.NET, Quarkus.</div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+        <div class="w-11 h-11 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-5"><i class="fa-solid fa-stream fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2">Arquiteturas Event-Driven &amp; Big Data</h4>
+        <p class="text-sm text-slate-400 mb-4">Processamento em tempo real, pipelines de dados, mensageria confiável. Experiências que se tornaram padrão corporativo.</p>
+        <div class="text-xs text-violet-400">Kafka • Flink • Scala • AWS/Azure</div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+        <div class="w-11 h-11 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-5"><i class="fa-solid fa-cloud fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2">Integrações Cloud &amp; Alto Volume</h4>
+        <p class="text-sm text-slate-400 mb-4">Azure Functions, Service Bus, AWS, funções serverless, sistemas de processamento assíncrono de grande escala.</p>
+      </div>
+
+      <!-- Service 5 - AGENTES (DESTAQUE) -->
+      <div class="service-card bg-slate-900 border border-yellow-500/40 rounded-3xl p-7 group ring-1 ring-yellow-500/10 relative">
+        <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider">DESTAQUE</div>
+        
+        <div class="w-11 h-11 rounded-2xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center mb-5">
+          <img src="assets/agents-icon.jpg" class="w-6 h-6 rounded" alt="">
+        </div>
+        <h4 class="font-semibold text-xl mb-2">Criação de Agentes IA e Automação Inteligente</h4>
+        <p class="text-sm text-slate-300 mb-4">Desenho e entrega de agentes e skills customizados para Grok, Claude e outros LLMs. Bots em canais (WhatsApp, etc), automações de workflow, agentes de pesquisa profunda, enriquecimento de dados e integração de IA em sistemas existentes.</p>
+        
+        <ul class="text-xs space-y-1 text-slate-400 mb-4">
+          <li class="flex gap-2"><span class="text-yellow-400">•</span> Agentes com raciocínio e regras de negócio específicas</li>
+          <li class="flex gap-2"><span class="text-yellow-400">•</span> Apps auto-contidos (o "cérebro" viaja com o código)</li>
+          <li class="flex gap-2"><span class="text-yellow-400">•</span> Deploy profissional (PM2, systemd, cloud)</li>
+          <li class="flex gap-2"><span class="text-yellow-400">•</span> Exemplos reais: bots WhatsApp com tom natural e seguro</li>
+        </ul>
+        
+        <div class="text-[10px] text-yellow-400">Entregáveis prontos para produção • Inspirado em 20+ anos de sistemas + prática recente com Grok CLI extensibility</div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+        <div class="w-11 h-11 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5"><i class="fa-solid fa-sitemap fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2">Fábrica de Software &amp; Consultoria</h4>
+        <p class="text-sm text-slate-400 mb-4">Desenvolvimento contínuo, squads sob medida, revisão arquitetural, troubleshooting de integrações críticas e mentoria técnica em ambientes ágeis.</p>
+      </div>
+    </div>
+
+    <div class="mt-8 text-xs text-center text-slate-500">Todos os serviços são prestados via <strong class="text-slate-400">Code Solutions (PJ)</strong> com proposta personalizada e escopo claro.</div>
+  </section>
+
+  <!-- AGENTES IA EM AÇÃO -->
+  <section id="agentes" class="max-w-7xl mx-auto px-6 pb-20">
+    <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 md:p-12">
+      <div class="flex flex-col md:flex-row gap-8 md:items-center">
+        <div class="md:w-5/12">
+          <div class="inline text-xs uppercase tracking-widest bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded">SERVIÇO DIFERENCIADOR</div>
+          <h3 class="text-3xl font-semibold tracking-tighter mt-3 mb-4">Agentes de IA que realmente funcionam em produção</h3>
+          <p class="text-slate-400">Não entrego apenas prompts. Entrego <strong>soluções completas e auto-contidas</strong> que seus times podem rodar, versionar e evoluir.</p>
+        </div>
+        
+        <div class="md:w-7/12 text-sm">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-slate-300">
+            <div class="font-medium mb-3">Exemplo real entregue (2025/2026):</div>
+            <div class="lang-pt">Bot WhatsApp que escuta mensagens e usa Grok com agente e skill customizados (definidos em <code class="text-yellow-400">.grok/agents</code> e <code class="text-yellow-400">.grok/skills</code> dentro do próprio projeto) para gerar respostas naturais, seguras e no tom brasileiro. Listener leve em Node (Baileys) + chamada stateless do Grok CLI com cwd apontando para as definições locais. Totalmente entregável: clone → npm start → funciona. Deploy com PM2 ou systemd.</div>
+            <div class="lang-en">WhatsApp bot that listens to messages and uses Grok with custom agent + skill (defined inside <code class="text-yellow-400">.grok/agents</code> and <code class="text-yellow-400">.grok/skills</code> in the project itself) to generate natural, safe, Brazilian-tone replies. Lightweight Node listener (Baileys) + stateless Grok CLI calls with cwd targeting local definitions. Fully deliverable: git clone → npm start. Production deploy with PM2 or systemd.</div>
+            
+            <div class="mt-4 text-xs text-emerald-400">→ Arquitetura documentada e repetível para qualquer cliente.</div>
+          </div>
+          <div class="text-xs mt-3 text-slate-400">Posso criar o mesmo padrão para seus processos internos, suporte, pesquisa, data enrichment ou qualquer workflow que precise de raciocínio + integração com sistemas existentes.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="border-t border-slate-800 py-16 bg-slate-900/40">
+    <div class="max-w-5xl mx-auto px-6">
+      <h3 class="text-center text-2xl font-semibold tracking-tight mb-10">Como funciona contratar via Code Solutions (PJ)</h3>
+      
+      <div class="grid md:grid-cols-4 gap-5 text-center">
+        <div class="p-5">
+          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">01</div>
+          <div class="font-medium mb-1">Conversa inicial</div>
+          <div class="text-xs text-slate-400">30-45 min para entender o problema, contexto e restrições.</div>
+        </div>
+        <div class="p-5">
+          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">02</div>
+          <div class="font-medium mb-1">Proposta clara</div>
+          <div class="text-xs text-slate-400">Escopo, entregáveis, prazos e investimento. Sem surpresa.</div>
+        </div>
+        <div class="p-5">
+          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">03</div>
+          <div class="font-medium mb-1">Execução com transparência</div>
+          <div class="text-xs text-slate-400">Atualizações frequentes, código versionado, reuniões quando necessário.</div>
+        </div>
+        <div class="p-5">
+          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">04</div>
+          <div class="font-medium mb-1">Entrega + faturamento PJ</div>
+          <div class="text-xs text-slate-400">Código + documentação + suporte de transição. Nota fiscal simples.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="max-w-3xl mx-auto px-6 py-20">
+    <div class="text-center mb-10">
+      <div class="text-yellow-400 text-xs tracking-[2px]">PRÓXIMO PASSO</div>
+      <h3 class="section-title tracking-tighter mt-2">Vamos conversar sobre o seu projeto?</h3>
+      <p class="text-slate-400 mt-3">Respondo propostas em até 48h. Prefiro escopos bem definidos com impacto claro.</p>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8">
+      <!-- Formspree form - user must replace the action URL with their own form ID -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="space-y-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-xs text-slate-400 mb-1.5">Nome / Empresa</label>
+            <input type="text" name="name" required class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-2xl px-4 py-3 text-sm outline-none">
+          </div>
+          <div>
+            <label class="block text-xs text-slate-400 mb-1.5">Email de contato</label>
+            <input type="email" name="_replyto" required class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-2xl px-4 py-3 text-sm outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs text-slate-400 mb-1.5">Tipo de projeto</label>
+          <select name="project_type" class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-2xl px-4 py-3 text-sm outline-none">
+            <option value="">Selecione...</option>
+            <option value="legado">Modernização / Migração de Legado</option>
+            <option value="agente">Agente IA / Automação / Bot</option>
+            <option value="api">API / Backend Escalável</option>
+            <option value="arquitetura">Consultoria de Arquitetura</option>
+            <option value="outro">Outro / Fábrica de Software</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs text-slate-400 mb-1.5">Descreva brevemente o que você precisa</label>
+          <textarea name="message" rows="5" required class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-3xl px-4 py-3 text-sm outline-none resize-y"></textarea>
+        </div>
+
+        <button type="submit" 
+                class="w-full h-12 rounded-2xl bg-white text-slate-950 font-semibold active:bg-yellow-300 transition flex items-center justify-center gap-x-2">
+          <span>Enviar proposta</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        
+        <p class="text-center text-[10px] text-slate-500">Seus dados são enviados de forma segura. Substitua YOUR_FORM_ID_HERE pelo seu ID gratuito do Formspree.</p>
+      </form>
+
+      <div class="my-8 flex items-center gap-4">
+        <div class="h-px flex-1 bg-slate-800"></div>
+        <div class="text-xs text-slate-500">ou</div>
+        <div class="h-px flex-1 bg-slate-800"></div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20vi%20o%20site%20da%20Code%20Solutions%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." 
+           target="_blank"
+           class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 font-medium">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>WhatsApp direto: +55 (51) 98115-1474</span>
+        </a>
+        
+        <a href="mailto:ivamartins@gmail.com" 
+           class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-800 text-sm">
+          <i class="fa-solid fa-envelope"></i>
+          <span>ivamartins@gmail.com</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-8 text-xs text-slate-500">
+      LinkedIn: <a href="https://linkedin.com/in/ivã-martins-71760b89" target="_blank" class="underline hover:text-slate-300">linkedin.com/in/ivã-martins-71760b89</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-8 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-y-3">
+      <div>© Code Solutions • Ivã Martins • Porto Alegre, RS — Serviços prestados via PJ</div>
+      <div class="flex items-center gap-x-4">
+        <a href="#sobre" class="hover:text-slate-300">Sobre</a>
+        <a href="#servicos" class="hover:text-slate-300">Serviços</a>
+        <a href="#agentes" class="hover:text-slate-300">Agentes IA</a>
+        <span class="text-slate-700">•</span>
+        <span>Site estático • Hospedado gratuitamente</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tailwind script config
+    function initializeTailwind() {
+      document.documentElement.style.setProperty('--accent', '234 179 8');
+    }
+
+    // Simple bilingual switcher
+    let currentLang = 'pt';
+    
+    function switchLang(lang) {
+      currentLang = lang;
+      document.documentElement.setAttribute('lang', lang);
+      
+      // Update buttons
+      const ptBtn = document.getElementById('lang-pt-btn');
+      const enBtn = document.getElementById('lang-en-btn');
+      
+      if (lang === 'pt') {
+        ptBtn.classList.add('bg-yellow-500', 'text-slate-950');
+        ptBtn.classList.remove('text-slate-400');
+        enBtn.classList.remove('bg-yellow-500', 'text-slate-950');
+        enBtn.classList.add('text-slate-400');
+      } else {
+        enBtn.classList.add('bg-yellow-500', 'text-slate-950');
+        enBtn.classList.remove('text-slate-400');
+        ptBtn.classList.remove('bg-yellow-500', 'text-slate-950');
+        ptBtn.classList.add('text-slate-400');
+      }
+      
+      // Persist
+      try { localStorage.setItem('cs_lang', lang); } catch(e){}
+    }
+
+    // Initialize language from localStorage or default PT
+    function initLang() {
+      const saved = localStorage.getItem('cs_lang');
+      if (saved === 'en') {
+        switchLang('en');
+      } else {
+        // default PT
+        const ptBtn = document.getElementById('lang-pt-btn');
+        if (ptBtn) ptBtn.classList.add('bg-yellow-500', 'text-slate-950');
+      }
+    }
+
+    // Keyboard support for lang
+    function setupKeyboard() {
+      document.addEventListener('keydown', function(e) {
+        if (e.metaKey && e.key.toLowerCase() === 'l') {
+          e.preventDefault();
+          switchLang(currentLang === 'pt' ? 'en' : 'pt');
+        }
+      });
+    }
+
+    // Smooth scroll for anchor links
+    function setupSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    }
+
+    // Form success handling (basic)
+    function setupForm() {
+      const form = document.querySelector('form[action*="formspree"]');
+      if (!form) return;
+
+      form.addEventListener('submit', function() {
+        // The real success is handled by Formspree redirect/thank you.
+        // We can show a quick toast if wanted.
+        setTimeout(() => {
+          const originalText = form.querySelector('button[type="submit"]').innerHTML;
+          // Formspree will take over
+        }, 800);
+      });
+    }
+
+    // Boot
+    function boot() {
+      initializeTailwind();
+      initLang();
+      setupKeyboard();
+      setupSmoothScroll();
+      setupForm();
+
+      // Optional: highlight current section in nav (simple)
+      console.log('%c[Code Solutions] Site profissional carregado. Bilingual + Tailwind CDN ready.', 'color:#64748b');
+    }
+
+    window.onload = boot;
+  </script>
+</body>
+</html>
