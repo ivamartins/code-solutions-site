@@ -42,12 +42,15 @@ Dica de bilingual: o switcher simplesmente alterna `lang` no `<html>` e usa CSS 
 ## Imagens
 
 - `hero.jpg` e `agents-icon.jpg`: geradas com IA (xAI Imagine) para visual profissional e moderno.
-- `portrait.jpg`: **baseada na sua foto real do perfil do LinkedIn** (extraída da página renderizada de `Profile-2.pdf` em Downloads, editada com referência de imagem via ferramenta de edição para remover UI, limpar fundo, ajustar iluminação e crop profissional adequado para site de serviços). Preserva sua aparência real com polimento para uso corporativo.
+- `portrait.jpg`: **baseada na sua foto real** (arquivo `20260602_225119.jpg` em Downloads, editada com `image_edit` usando a foto como referência principal para criar um headshot profissional limpo, com fundo neutro moderno, iluminação de estúdio e crop adequado para site de serviços). Preserva sua aparência real com polimento para uso corporativo.
 
-Para regenerar ou refazer o retrato a partir da foto do LinkedIn:
-- A referência completa da página está salva em `assets/linkedin-profile-page.png`.
-- Use a ferramenta `image_edit` passando essa PNG como imagem de referência + prompt para extrair/crop/limpar o headshot (ex: "extract the person's photo from the LinkedIn page render, clean professional headshot with soft background...").
-- Ou simplesmente substitua `portrait.jpg` por uma versão editada sua.
+Referências salvas em `assets/`:
+- `user-original-photo.jpg`: sua foto original completa (para referência futura).
+- `linkedin-profile-page.png`: versão anterior do LinkedIn (ainda mantida como backup).
+
+Para regenerar ou refazer o retrato:
+- Use a ferramenta `image_edit` passando `assets/user-original-photo.jpg` como imagem de referência + prompt detalhado (ex: "Create a clean professional head-and-shoulders corporate portrait from this reference photo... tight crop, studio lighting, neutral background...").
+- Ou simplesmente substitua `assets/portrait.jpg` por uma versão editada sua.
 
 Hero e ícone podem ser regenerados com `image_gen` usando prompts semelhantes (hero 16:9 abstrato tech+AI, ícone 1:1 para agentes).
 
