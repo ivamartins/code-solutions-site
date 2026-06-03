@@ -232,7 +232,7 @@ Use:
 (O banner foi atualizado para usar o mesmo estilo de logo monograma para consistência total entre site e LinkedIn.)
 
 ### 3. Consistência de marca
-- O site agora usa o mesmo logo-monogram.png no cabeçalho.
+- O site usa uma versão recortada só do ícone CS monograma (`assets/logo-cs.png`) no nav (sem o texto "CODE SOLUTIONS", para não ficar pequeno ao lado do título). O logo completo monograma é usado em outros contextos como LinkedIn e possivelmente hero se embutido.
 - Hero.jpg e linkedin-banner.jpg foram ajustados para combinar o estilo do logo principal.
 - Recomendação: use apenas o logo-monogram.png como logo oficial em todos os lugares (LinkedIn, site, materiais). Os outros arquivos (wordmark, cs-bold) são variações antigas e podem ser ignorados para evitar 4 logos diferentes.
 
