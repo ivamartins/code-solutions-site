@@ -298,3 +298,112 @@ A descrição da Experiência pode ser a mesma que está no guia abaixo (ela já
 Isso faz com que a empresa apareça de forma profissional no seu perfil principal.
 
 Se precisar de mais variações de logo (versão só em dourado, versão com mais destaque teal, versão horizontal para outros usos etc.), é só pedir.
+
+---
+
+## 6. Textos prontos para o About (Resumo) do perfil pessoal no LinkedIn
+
+Versões completas revisadas (full + short, PT + EN) com as correções de precisão aplicadas:
+
+- Panvel descrita com exatidão factual: "participei da reescrita completa do backend" + liderança na criação da versão mobile + liderança na implantação do Scrum.
+- Quartile incluído como trabalho recente internacional via Code Solutions (PJ).
+- Separação clara entre experiências anteriores (CLT) e serviços atuais via PJ (Code Solutions).
+
+**Ordem recomendada para LinkedIn:**
+1. Adicionar/atualizar a entrada de Experiência "Code Solutions"
+2. Adicionar o site nos Destaques (Featured)
+3. Atualizar o About do perfil com um dos textos abaixo.
+
+### Versão Completa (Detalhada) — Português
+
+```
+Engenheiro Backend Sênior com mais de 20 anos de experiência construindo, mantendo e modernizando sistemas complexos de larga escala em instituições financeiras e de varejo.
+
+Através da Code Solutions (PJ), minha estrutura para prestação de serviços independentes, atuo em engenharia backend de alto impacto, modernização de legados e criação de agentes de IA auto-contidos que se integram diretamente a sistemas existentes.
+
+Na Panvel (Grupo Dimed, 2012–2014) participei da reescrita completa do backend da plataforma de e-commerce e liderei a criação da versão mobile, além de liderar a implantação do Scrum no projeto de modernização.
+
+No Sicredi (2014–2021), atuei como consultor externo. Iniciei com um POC em Python para o PFM (Gestão Financeira Pessoal) e liderei a evolução completa para uma arquitetura orientada a eventos com Scala + Apache Flink + Kafka — solução adotada como padrão para toda a plataforma digital da instituição. Posteriormente atuei em Conta Corrente e Poupança (Java 8 + Kafka + BFF em Kotlin).
+
+Mais recentemente, via Code Solutions para cliente nos Estados Unidos (Quartile), desenvolvi e mantive aplicações backend de alto volume em C# e Python sobre Azure Functions, incluindo integrações assíncronas com Azure Service Bus e integrações avançadas com APIs de IA (Claude + ChatGPT) em produção, usando LLMs intensivamente para automações e otimização de workflows.
+
+Hoje via Code Solutions (PJ) entrego:
+• Manutenção, evolução e modernização de sistemas legados de alta complexidade (Java, Play Framework, Quarkus, Spring Boot, migrações preservando regras de negócio)
+• Backends escaláveis, APIs REST, microsserviços e arquiteturas event-driven (Kafka, Flink, Akka, Scala)
+• Criação de agentes profissionais de IA (bots WhatsApp integrados com Grok/Claude/ChatGPT, automações de workflow, integração de LLMs em sistemas legados)
+• Consultoria de arquitetura, performance e transformação digital
+
+Stack: Java (das versões iniciais até Spring Boot/Quarkus), Play Framework, Elasticsearch, Scala/Akka, Apache Kafka e Flink (processamento em tempo real), Python, C#/.NET, Azure Functions + Service Bus, AWS + integração com LLMs (Grok, Claude, ChatGPT) via custom skills e agents.
+
+Canoas, RS • Projetos remotos para todo o Brasil e também internacionalmente.
+
+Site com cases reais: https://ivamartins.github.io/code-solutions-site/
+LinkedIn da empresa: https://www.linkedin.com/company/code-solutions-it/
+```
+
+### Versão Curta (Concisa) — Português
+
+```
+Backend Engineer Sênior com 20+ anos em modernização de sistemas legados enterprise e criação de agentes de IA entregáveis.
+
+Via Code Solutions (PJ) entrego:
+- Manutenção e evolução de backends complexos (Java/Play/Quarkus/Spring Boot)
+- Arquiteturas event-driven de alto volume (Scala + Flink + Kafka)
+- Agentes IA auto-contidos (WhatsApp bots + LLMs: Grok, Claude, ChatGPT)
+
+Destaques da trajetória: Panvel (participação na reescrita completa do backend de e-commerce + liderança da versão mobile e implantação do Scrum); Sicredi (POC Python → arquitetura event-driven adotada como padrão da plataforma digital); Quartile (EUA, via PJ): backends alto volume em C#/Python/Azure Functions + integrações avançadas de IA em produção.
+
+Canoas, RS • Remoto Brasil e exterior.
+
+Site + cases: https://ivamartins.github.io/code-solutions-site/
+Empresa: https://www.linkedin.com/company/code-solutions-it/
+```
+
+### Versão Completa (Detalhada) — English
+
+```
+Senior Backend Engineer with over 20 years building, maintaining and modernizing complex large-scale systems for financial and retail institutions.
+
+Through Code Solutions (PJ), my independent services structure, I focus on high-impact backend engineering, legacy system modernization, and building self-contained AI agents that integrate directly with existing systems.
+
+At Panvel (Grupo Dimed, 2012–2014) I participated in the complete backend rewrite of the e-commerce platform and led the creation of the mobile version, in addition to leading the Scrum implementation on the modernization project.
+
+At Sicredi (2014–2021), I acted as an external consultant. I started with a Python POC for the Personal Finance Manager (PFM) and led the full evolution to an event-driven architecture with Scala + Apache Flink + Kafka — a solution adopted as the standard for the institution's entire digital platform. Later I worked on Current and Savings accounts (Java 8 + Kafka + Kotlin BFF).
+
+More recently, via Code Solutions for a United States client (Quartile), I developed and maintained high-volume backend applications in C# and Python on Azure Functions, including async integrations with Azure Service Bus and advanced AI API integrations (Claude + ChatGPT) in production, heavily leveraging LLMs for automations and workflow optimization.
+
+Today via Code Solutions (PJ) I deliver:
+• Maintenance, evolution and modernization of high-complexity legacy systems (Java, Play Framework, Quarkus, Spring Boot, migrations while preserving business rules)
+• Scalable backends, REST APIs, microservices and event-driven architectures (Kafka, Flink, Akka, Scala)
+• Professional self-contained AI agents (WhatsApp bots integrated with Grok/Claude/ChatGPT, workflow automations, LLM integration into legacy systems)
+• Architecture consulting, performance and digital transformation
+
+Core stack: Java (from early versions to Spring Boot/Quarkus), Play Framework, Elasticsearch, Scala/Akka, Apache Kafka and Flink (real-time processing), Python, C#/.NET, Azure Functions + Service Bus, AWS + LLM integration (Grok, Claude, ChatGPT) via custom skills and agents.
+
+Canoas, RS, Brazil • Remote projects across Brazil and internationally.
+
+Site with real cases: https://ivamartins.github.io/code-solutions-site/
+Company LinkedIn: https://www.linkedin.com/company/code-solutions-it/
+```
+
+### Versão Curta (Concisa) — English
+
+```
+Senior Backend Engineer (20+ years) specialized in enterprise legacy modernization and deliverable AI agents.
+
+Via Code Solutions (PJ) I provide:
+- Maintenance and evolution of complex backends (Java/Play/Quarkus/Spring Boot)
+- High-volume event-driven architectures (Scala + Flink + Kafka)
+- Self-contained AI agents (WhatsApp bots + LLMs: Grok, Claude, ChatGPT)
+
+Track record: Panvel (participated in full e-commerce backend rewrite + led mobile version and Scrum adoption); Sicredi (Python POC → event-driven architecture adopted as digital platform standard); Quartile (USA, via PJ): high-volume C#/Python backends on Azure Functions + advanced production AI integrations.
+
+Canoas, RS • Remote Brazil and international.
+
+Site + cases: https://ivamartins.github.io/code-solutions-site/
+Company: https://www.linkedin.com/company/code-solutions-it/
+```
+
+Esses textos já incorporam todas as correções de precisão e estão prontos para copiar e colar diretamente no LinkedIn.
+
+Se precisar de ajustes finos ou da versão atualizada para a Experiência "Code Solutions", é só pedir.

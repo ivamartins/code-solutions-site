@@ -10,6 +10,18 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ivamartins.github.io/code-solutions-site/">
 
+  <!-- Bilingual hreflang (helps Google understand PT/EN versions) -->
+  <link rel="alternate" hreflang="pt-BR" href="https://ivamartins.github.io/code-solutions-site/">
+  <link rel="alternate" hreflang="en" href="https://ivamartins.github.io/code-solutions-site/">
+  <link rel="alternate" hreflang="x-default" href="https://ivamartins.github.io/code-solutions-site/">
+
+  <!-- Performance preconnects (Core Web Vitals / speed signal) -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Code Solutions | Ivã Martins — Manutenção e Modernização de Sistemas Legados">
   <meta property="og:description" content="20+ anos de experiência em manutenção, evolução e modernização de sistemas legados com Java, Play Framework, Elasticsearch, Scala e Akka. Canoas (Porto Alegre metro), serviços via PJ.">
@@ -163,6 +175,44 @@
           "addressRegion": "RS",
           "addressCountry": "BR"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como fazer manutenção em sistemas legados Java e Play Framework?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oferecemos manutenção contínua, correção de bugs, evolução de funcionalidades e refatoração de aplicações legadas em Java e Play Framework (Java/Scala), sempre preservando as regras de negócio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês trabalham com manutenção e otimização de Elasticsearch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Realizamos troubleshooting de clusters, otimização de índices/queries, integração com Java/Play/Scala e busca avançada em plataformas de alto volume."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Modernizam sistemas em Scala, Akka, Kafka e Flink?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Tenho experiência liderando transformações arquiteturais event-driven em larga escala (como a que se tornou padrão em uma grande instituição financeira), usando Scala + Akka + Flink + Kafka, com manutenção e evolução de backends reativos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fazem migração de legados sem quebrar as regras de negócio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Essa é uma das minhas especialidades. Reengenharia de sistemas legados (Java, Play, e-commerce antigo, core bancário) para arquiteturas modernas, mantendo o que já funciona. Casos reais da minha trajetória em Sicredi e Panvel."
+            }
+          }
+        ]
       }
     ]
   }
@@ -343,8 +393,8 @@
         </p>
 
         <div class="pt-3 border-t border-slate-800 text-sm">
-          <p class="lang-pt"><strong>Projetos de que mais me orgulho:</strong> reescrita completa do backend de e-commerce da Panvel (Grupo Dimed) e a transformação arquitetural no Sicredi, que começou como um POC em Python e evoluiu para uma arquitetura orientada a eventos, tornando-se o padrão de toda a plataforma digital da instituição.</p>
-          <p class="lang-en"><strong>Projects I'm most proud of:</strong> complete backend rewrite of Panvel (Grupo Dimed) e-commerce and the architectural transformation at Sicredi, which started as a Python POC and evolved into an event-driven architecture, becoming the standard for the institution's entire digital platform.</p>
+          <p class="lang-pt"><strong>Projetos de que mais me orgulho:</strong> a modernização da plataforma de e-commerce da Panvel (Grupo Dimed), onde participei da reescrita completa do backend e liderei a criação da versão mobile e a implantação do Scrum, além da transformação arquitetural no Sicredi, que começou como um POC em Python e evoluiu para uma arquitetura orientada a eventos, tornando-se o padrão de toda a plataforma digital da instituição.</p>
+          <p class="lang-en"><strong>Projects I'm most proud of:</strong> the modernization of the Panvel (Grupo Dimed) e-commerce platform, where I participated in the complete backend rewrite and led the creation of the mobile version and the Scrum implementation, in addition to the architectural transformation at Sicredi, which started as a Python POC and evolved into an event-driven architecture, becoming the standard for the institution's entire digital platform.</p>
         </div>
 
         <div class="pt-3 text-xs text-slate-400">
@@ -427,10 +477,10 @@
         <!-- Panvel (2012–2014) - veio primeiro cronologicamente -->
         <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
           <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">PANVEL (GRUPO DIMED) • 2012–2014</div>
-          <h4 class="font-semibold text-xl mb-4">Reescrita completa do backend de e-commerce + mobile</h4>
+          <h4 class="font-semibold text-xl mb-4">Modernização da plataforma de e-commerce + versão mobile</h4>
           <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Atuei como Desenvolvedor Java e Scrum Master no projeto de modernização da plataforma de e-commerce. Liderança na implantação do Scrum, migração de legado para JSF, reescrita completa do backend, criação de e-commerce mobile (PrimeFaces Mobile) e migração de servidor WebSphere → JBoss.</p>
-            <p class="lang-en">Java Developer &amp; Scrum Master on the e-commerce modernization project. Led Scrum adoption, legacy migration to JSF, complete backend rewrite, mobile e-commerce (PrimeFaces Mobile), and WebSphere to JBoss migration.</p>
+            <p class="lang-pt">Atuei como Desenvolvedor Java e Scrum Master no projeto de modernização da plataforma de e-commerce. Liderei a implantação do Scrum e a criação da versão mobile, participei da reescrita completa do backend e das migrações de legado para JSF e de servidor WebSphere para JBoss.</p>
+            <p class="lang-en">Java Developer &amp; Scrum Master on the e-commerce modernization project. Led Scrum adoption and the creation of the mobile e-commerce. Participated in the complete backend rewrite, legacy migration to JSF, and WebSphere to JBoss migration.</p>
           </div>
           <div class="mt-5 flex flex-wrap gap-1.5">
             <div class="tech-pill text-[10px]">Java 7</div>
