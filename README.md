@@ -81,12 +81,16 @@ git push -u origin main
 **Alternativa simples (GitHub Pages):**
 - No seu repositório no GitHub, vá em **Settings → Pages**
 - Em "Build and deployment" (ou "Source"):
-  - Source: **Deploy from a branch**
-  - Branch: **main**
-  - Folder: **/ (root)**
-- Clique **Save**.
+  - Se aparecer a opção "Deploy from a branch", use:
+    - Source: **Deploy from a branch**
+    - Branch: **main**
+    - Folder: **/ (root)**
+    - Clique **Save**.
+  - Se não aparecer "Deploy from a branch" (comum na UI atual ou contas novas), use **GitHub Actions**:
+    - Source: **GitHub Actions**
+    - Salve. O repositório já inclui o workflow `.github/workflows/deploy-pages.yml` que faz o deploy estático automaticamente no push.
 - A seção "Verified domains" é opcional (só aparece se você quiser usar domínio customizado). Pode ignorar por enquanto.
-- Aguarde 1-2 minutos. O site ficará disponível em `https://ivamartins.github.io/code-solutions-site/`
+- Aguarde 1-2 minutos após o push (ou acione manualmente via Actions tab). O site ficará disponível em `https://ivamartins.github.io/code-solutions-site/`
 - Se aparecer mensagem de erro ou "Your site is ready to be published", clique para habilitar.
 
 **Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
