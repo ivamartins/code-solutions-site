@@ -60,24 +60,29 @@ Copie os arquivos resultantes para a pasta `assets/`.
 
 ### Opção recomendada (gratuita + excelente)
 
-1. Crie um repositório no GitHub (pode ser privado).
-2. Faça push deste diretório inteiro:
+1. Crie um repositório no GitHub (pode ser privado). Recomendo o nome `code-solutions-site`.
+2. Adicione o remote e faça push (repo já está inicializado com histórico):
 
 ```bash
 cd ~/code-solutions-site
-git init
-git add .
-git commit -m "Site profissional Code Solutions"
-git remote add origin git@github.com:seu-user/code-solutions-site.git
+git remote add origin git@github.com:SEU_USUARIO/code-solutions-site.git
 git branch -M main
 git push -u origin main
 ```
+
+   (Substitua `SEU_USUARIO` pelo seu username do GitHub. Use HTTPS `https://github.com/SEU_USUARIO/...` se preferir.)
 
 3. Vá em [Cloudflare Pages](https://pages.cloudflare.com) → Create a project → Connect to Git → selecione o repo.
    - Framework preset: **None**
    - Build command: (deixe vazio)
    - Output directory: `.` (ou `dist` se você adicionar build depois)
 4. Deploy automático em cada push. URL grátis tipo `seu-projeto.pages.dev`.
+
+**Alternativa simples (GitHub Pages):**
+- No repo do GitHub, vá em Settings → Pages → Source: Deploy from a branch → Branch: main → Save.
+- Site fica em `https://SEU_USUARIO.github.io/code-solutions-site/`
+
+**Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
 
 **Vantagens**: CDN global insano, bandwidth ilimitado, custom domain grátis, SSL automático, analytics grátis.
 
