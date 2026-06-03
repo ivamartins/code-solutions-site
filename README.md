@@ -79,20 +79,20 @@ git push -u origin main
 4. Deploy automático em cada push. URL grátis tipo `seu-projeto.pages.dev`.
 
 **Alternativa simples (GitHub Pages):**
-- **Atenção:** A página que você está vendo agora (com "Verified domains" e "Add a domain") é a configuração de **domínios verificados da sua conta** (https://github.com/settings/pages). Isso não publica o site.
-- Vá para a página **do repositório específico**: https://github.com/ivamartins/code-solutions-site/settings/pages
-- Em "Build and deployment" (ou "Source"):
-  - Se aparecer a opção "Deploy from a branch", use:
-    - Source: **Deploy from a branch**
-    - Branch: **main**
-    - Folder: **/ (root)**
-    - Clique **Save**.
-  - Se não aparecer "Deploy from a branch" (comum na UI atual ou contas novas), use **GitHub Actions**:
-    - Source: **GitHub Actions**
-    - Salve. O repositório já inclui o workflow `.github/workflows/deploy-pages.yml` que faz o deploy estático automaticamente no push.
-- A seção "Verified domains" é opcional (só aparece se você quiser usar domínio customizado). Pode ignorar por enquanto.
-- Aguarde 1-2 minutos após o push (ou acione manualmente via Actions tab). O site ficará disponível em `https://ivamartins.github.io/code-solutions-site/`
-- Se aparecer mensagem de erro ou "Your site is ready to be published", clique para habilitar.
+- **Importante:** Repositórios privados no plano gratuito do GitHub **não suportam** GitHub Pages. É por isso que você vê "Upgrade or make this repository public to enable Pages" e não tem as opções de deploy.
+- Para usar GitHub Pages grátis:
+  1. Vá em **Settings → General** do repositório.
+  2. Role até "Danger Zone" → **Change repository visibility** → torne o repositório **Public**.
+  3. Confirme.
+- Depois volte em **Settings → Pages** (https://github.com/ivamartins/code-solutions-site/settings/pages).
+- Agora as opções de Source devem aparecer:
+  - Use **GitHub Actions** (recomendado, já temos o workflow `.github/workflows/deploy-pages.yml`).
+  - Ou "Deploy from a branch" se aparecer: Branch main, Folder / (root).
+- A seção "Verified domains" (com "Add a domain") é para domínios customizados. Pode ignorar por enquanto.
+- Após salvar, o deploy roda automaticamente (ou acione manualmente na aba Actions).
+- Site: `https://ivamartins.github.io/code-solutions-site/`
+
+**Recomendação forte:** Para portfólio/profissional, repositório **público** é o ideal (mostra seu trabalho). Se quiser manter privado, use **Cloudflare Pages** ou **Netlify** (suportam repositórios privados grátis). Veja instruções abaixo.
 
 **Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
 
