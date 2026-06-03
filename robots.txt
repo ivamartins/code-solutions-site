@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap for search engines
+Sitemap: https://ivamartins.github.io/code-solutions-site/sitemap.xml
+
+# Code Solutions - Ivã Martins
+# Manutenção e modernização de sistemas legados (Java, Play Framework, Elasticsearch, Scala/Akka etc.)
+# Porto Alegre, RS - Serviços via PJ
