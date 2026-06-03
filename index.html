@@ -601,7 +601,7 @@
     // Simple bilingual switcher
     let currentLang = 'pt';
     
-    function switchLang(lang) {
+    function applyLang(lang) {
       currentLang = lang;
       document.documentElement.setAttribute('lang', lang);
       
@@ -620,21 +620,30 @@
         ptBtn.classList.remove('bg-yellow-500', 'text-slate-950');
         ptBtn.classList.add('text-slate-400');
       }
-      
-      // Persist
+    }
+
+    function switchLang(lang) {
+      applyLang(lang);
+      // Persist only on explicit user choice
       try { localStorage.setItem('cs_lang', lang); } catch(e){}
     }
 
-    // Initialize language from localStorage or default PT
+    // Initialize language:
+    // 1. Respect saved user preference (from button clicks)
+    // 2. Otherwise auto-detect from browser language config
     function initLang() {
       const saved = localStorage.getItem('cs_lang');
-      if (saved === 'en') {
-        switchLang('en');
-      } else {
-        // default PT
-        const ptBtn = document.getElementById('lang-pt-btn');
-        if (ptBtn) ptBtn.classList.add('bg-yellow-500', 'text-slate-950');
+      if (saved === 'en' || saved === 'pt') {
+        applyLang(saved);
+        return;
       }
+
+      // Auto-detect from browser language configuration (respects user's OS/browser settings)
+      const navLang = ((navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'pt').toLowerCase();
+      const autoLang = navLang.startsWith('pt') ? 'pt' : 'en';
+      applyLang(autoLang);
+      // Note: we do NOT save auto-detected value to localStorage, so it will re-detect
+      // on next load based on current browser config, until the user clicks PT/EN to choose explicitly.
     }
 
     // Keyboard support for lang
