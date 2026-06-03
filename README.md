@@ -206,7 +206,7 @@ code-solutions-site/
 
 ## Próximos passos sugeridos após o site no ar
 
-- Compartilhe o link em LinkedIn + com a rede.
+- Veja o guia completo em `LINKEDIN.md` (texto pronto para Experience, About, post de lançamento e Company Page).
 - Use as planilhas em `~/Downloads/` (`LISTA DE EMPRESAS SC2024.xlsx` etc.) para outreach dirigido.
 - Ofereça "piloto de agente" de 2–4 semanas como entrada de baixo risco.
 - Mais tarde podemos adicionar um PDF one-pager ou até um mini-site de cases mais profundos.
@@ -238,7 +238,7 @@ O site foi otimizado para aparecer quando empresas buscam **manutenção, suport
 - Links internos para #faq
 
 **Dicas extras para ranquear:**
-- Publique o site também em LinkedIn e compartilhe cases
+- Publique o site também em LinkedIn (guia completo em LINKEDIN.md) e compartilhe cases
 - Considere um domínio próprio barato (.com.br) + apontamento para o Pages (melhora confiança)
 - Adicione mais conteúdo ao longo do tempo (novos cases, posts no LinkedIn linkando o site)
 
