@@ -86,10 +86,15 @@ git push -u origin main
     - **GitHub Pages Jekyll** (ícone com "i") — ignore, é para sites Jekyll.
     - **Static HTML** (ícone HTML5) — **este é o que você precisa** (deploy de arquivos estáticos sem build).
   - Clique no botão **Configure** do card **Static HTML**.
-- Isso vai configurar o deploy usando GitHub Actions para o nosso site estático (já temos um workflow compatível em `.github/workflows/deploy-pages.yml`).
+- Isso vai abrir o editor do workflow (arquivo .github/workflows/static.yml com o template padrão para static HTML).
+- No topo direito, clique no botão verde **Commit changes...**
+  - Deixe a mensagem padrão ou personalize (ex: "Configure GitHub Pages static deploy").
+  - Selecione "Commit directly to the main branch".
+  - Clique **Commit changes**.
+- Isso adiciona o workflow ao repo e dispara o deploy automaticamente.
 - A seção "Verified domains" (com "Add a domain") é opcional para domínio customizado. Pode ignorar por enquanto.
-- Após configurar, o site será publicado em `https://ivamartins.github.io/code-solutions-site/`.
-- Vá na aba **Actions** do repo para acompanhar o deploy (pode levar 1-2 minutos).
+- Aguarde 1-2 minutos. Vá na aba **Actions** do repo para ver o workflow "pages build and deployment" rodando.
+- O site será publicado em `https://ivamartins.github.io/code-solutions-site/`.
 - Se aparecer "Your site is ready to be published", clique para habilitar.
 
 **Importante:** Se o repositório estiver privado no plano gratuito, pode aparecer aviso para tornar público ou usar Enterprise. Para portfólio, tornar público é normal e recomendado. Se quiser manter privado, use Cloudflare Pages (veja abaixo).
