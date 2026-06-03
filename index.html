@@ -117,7 +117,7 @@
             <span class="lang-en">Get a proposal</span>
           </a>
 
-          <button onclick="window.open('https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20vi%20o%20site%20da%20Code%20Solutions%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.', '_blank')"
+          <button id="wa-mobile-btn"
                   class="md:hidden w-9 h-9 flex items-center justify-center rounded-full bg-emerald-500 text-white">
             <i class="fa-brands fa-whatsapp"></i>
           </button>
@@ -161,7 +161,7 @@
               <span class="lang-en">See AI Agents services</span>
             </button>
 
-            <a href="https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank"
+            <a id="wa-hero-btn" href="#" target="_blank"
                class="inline-flex items-center gap-x-2 px-5 h-12 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 text-sm font-medium">
               <i class="fa-brands fa-whatsapp text-lg"></i>
               <span class="hidden sm:inline">WhatsApp</span>
@@ -563,17 +563,17 @@
       </div>
 
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a href="https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20vi%20o%20site%20da%20Code%20Solutions%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." 
+        <a id="wa-contact-btn" href="#"
            target="_blank"
            class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 font-medium">
           <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>WhatsApp direto: +55 (51) 98115-1474</span>
+          <span>Falar no WhatsApp</span>
         </a>
         
-        <a href="mailto:ivamartins@gmail.com" 
+        <a id="email-contact-btn" href="#"
            class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-800 text-sm">
           <i class="fa-solid fa-envelope"></i>
-          <span>ivamartins@gmail.com</span>
+          <span>Enviar email</span>
         </a>
       </div>
     </div>
@@ -680,6 +680,44 @@
       });
     }
 
+    // Setup contact links without exposing phone/email in HTML source (anti-crawler)
+    function setupContactLinks() {
+      // Split to make static HTML scraping harder
+      const waPrefix = '55';
+      const waDdd = '51';
+      const waNumber = '981151474';
+      const fullWa = waPrefix + waDdd + waNumber;
+      const waMessage = encodeURIComponent('Olá Ivã, vi o site da Code Solutions e gostaria de conversar sobre um projeto.');
+
+      const emailUser = 'ivamartins';
+      const emailDomain = 'gmail.com';
+      const fullEmail = emailUser + '@' + emailDomain;
+
+      // WhatsApp buttons (hero desktop, mobile nav, contact section)
+      const waLinks = [
+        document.getElementById('wa-hero-btn'),
+        document.getElementById('wa-mobile-btn'),
+        document.getElementById('wa-contact-btn')
+      ].filter(Boolean);
+
+      waLinks.forEach(el => {
+        const href = `https://wa.me/${fullWa}?text=${waMessage}`;
+        if (el.tagName === 'A') {
+          el.href = href;
+          el.target = '_blank';
+          el.rel = 'noopener';
+        } else if (el.tagName === 'BUTTON') {
+          el.onclick = () => window.open(href, '_blank');
+        }
+      });
+
+      // Email button
+      const emailBtn = document.getElementById('email-contact-btn');
+      if (emailBtn) {
+        emailBtn.href = `mailto:${fullEmail}`;
+      }
+    }
+
     // Boot
     function boot() {
       initializeTailwind();
@@ -687,6 +725,7 @@
       setupKeyboard();
       setupSmoothScroll();
       setupForm();
+      setupContactLinks();
 
       // Optional: highlight current section in nav (simple)
       console.log('%c[Code Solutions] Site profissional carregado. Bilingual + Tailwind CDN ready.', 'color:#64748b');

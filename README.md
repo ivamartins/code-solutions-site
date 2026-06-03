@@ -109,14 +109,19 @@ Passos:
 
 Alternativa simples (sem form): só os botões de WhatsApp + email já convertem muito bem para serviços senior.
 
-### WhatsApp
+### WhatsApp e Email (anti-crawler)
 
-O botão usa:
-```
-https://wa.me/5551981151474?text=Ol%C3%A1%20Iv%C3%A3%2C%20vi%20o%20site%20da%20Code%20Solutions...
-```
+Os botões de contato (WhatsApp e Email) não expõem o número de telefone nem o endereço de email no HTML estático para evitar crawlers/spam.
 
-Número: +55 (51) 98115-1474
+- Os textos visíveis são genéricos: "Falar no WhatsApp" e "Enviar email".
+- Os links reais (wa.me e mailto) são montados dinamicamente via JavaScript quando a página carrega (veja a função `setupContactLinks` no final do `<script>` em `index.html`).
+- Se precisar alterar seu número ou email, edite apenas as constantes dentro dessa função JS (as strings estão divididas para dificultar extração automática).
+
+Exemplo de como funciona internamente (não aparece no HTML renderizado):
+- wa.me + número montado + mensagem codificada
+- mailto + email montado
+
+Isso mantém a usabilidade (clique no ícone funciona normalmente) enquanto protege os dados de contato.
 
 ## Deploy passo a passo (copie e cole)
 
