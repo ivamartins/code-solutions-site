@@ -84,7 +84,7 @@ git push -u origin main
 - Branch: **main**
 - Folder: **/ (root)**
 - Clique Save.
-- O site ficará disponível em `https://SEU_USUARIO.github.io/code-solutions-site/`
+- O site ficará disponível em `https://ivamartins.github.io/code-solutions-site/`
 
 **Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
 
