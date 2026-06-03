@@ -117,18 +117,28 @@ Custo total ano 1: **R$ 0 de hospedagem + R$ 50–120 de domínio**.
 
 ### Formulário de contato (Formspree — grátis)
 
-O formulário já está no HTML apontando para:
+O formulário já está configurado e funcional apontando para:
 
 ```html
-action="https://formspree.io/f/YOUR_FORM_ID_HERE"
+action="https://formspree.io/f/xwvjebjd"
 ```
 
-Passos:
+Envios chegam no email cadastrado no Formspree (tier gratuito tem limite generoso para começar).
+
+### Como reconfigurar (se precisar recriar o form ou clonar o repo)
+
 1. Acesse https://formspree.io (conta grátis)
-2. Crie um novo form
-3. Copie o ID (ex: `xayz1234`)
-4. Substitua `YOUR_FORM_ID_HERE` no `index.html`
-5. Pronto — envios chegam no seu email (tier gratuito tem limite generoso para começar)
+2. Crie um novo form (nome sugerido: "Code Solutions - Contato do Site")
+3. Copie o ID (ex: `xayz1234`) — o link completo fica tipo https://formspree.io/f/xayz1234
+4. Substitua no `index.html` a action do form + atualize este README
+5. git add index.html README.md && git commit -m "config: atualizar Formspree ID" && git push
+
+O HTML já inclui (além dos campos normais):
+- `_subject` para o email chegar com título claro ("Nova proposta via site Code Solutions")
+- Honeypot (`_gotcha`) anti-spam básico
+- Envio via AJAX (fetch) com mensagem de sucesso na mesma página (sem redirecionar pro Formspree)
+
+A nota antiga de instrução foi removida do site visível (agora só "Seus dados são enviados de forma segura." / versão em inglês).
 
 Alternativa simples (sem form): só os botões de WhatsApp + email já convertem muito bem para serviços senior.
 

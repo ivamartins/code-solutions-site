@@ -512,8 +512,12 @@
     </div>
 
     <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8">
-      <!-- Formspree form - user must replace the action URL with their own form ID -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="space-y-5">
+      <!-- Formspree form for Code Solutions contact -->
+      <form action="https://formspree.io/f/xwvjebjd" method="POST" class="space-y-5">
+        <!-- Formspree extras -->
+        <input type="hidden" name="_subject" value="Nova proposta via site Code Solutions">
+        <!-- Honeypot anti-spam (deixe vazio) -->
+        <input type="text" name="_gotcha" style="display:none">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div>
             <label class="block text-xs text-slate-400 mb-1.5">Nome / Empresa</label>
@@ -544,12 +548,32 @@
 
         <button type="submit" 
                 class="w-full h-12 rounded-2xl bg-white text-slate-950 font-semibold active:bg-yellow-300 transition flex items-center justify-center gap-x-2">
-          <span>Enviar proposta</span>
+          <span class="lang-pt">Enviar proposta</span>
+          <span class="lang-en">Send proposal</span>
           <i class="fa-solid fa-paper-plane"></i>
         </button>
         
-        <p class="text-center text-[10px] text-slate-500">Seus dados são enviados de forma segura. Substitua YOUR_FORM_ID_HERE pelo seu ID gratuito do Formspree.</p>
+        <p class="text-center text-[10px] text-slate-500">
+          <span class="lang-pt">Seus dados são enviados de forma segura.</span>
+          <span class="lang-en">Your data is sent securely.</span>
+        </p>
       </form>
+
+      <!-- Success message (shown after AJAX submit) -->
+      <div id="form-success" class="hidden text-center py-6">
+        <div class="mx-auto w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-4">
+          <i class="fa-solid fa-check text-emerald-400 text-2xl"></i>
+        </div>
+        <div class="font-semibold text-lg lang-pt">Proposta enviada com sucesso!</div>
+        <div class="font-semibold text-lg lang-en">Proposal sent successfully!</div>
+        <p class="text-slate-400 mt-1 text-sm lang-pt">Obrigado pelo contato. Responderei em até 48h.</p>
+        <p class="text-slate-400 mt-1 text-sm lang-en">Thank you for reaching out. I'll reply within 48h.</p>
+        <button onclick="resetContactForm()" 
+                class="mt-4 text-xs underline text-slate-400 hover:text-slate-200">
+          <span class="lang-pt">Enviar outra mensagem</span>
+          <span class="lang-en">Send another message</span>
+        </button>
+      </div>
 
       <div class="my-8 flex items-center gap-4">
         <div class="h-px flex-1 bg-slate-800"></div>
@@ -669,19 +693,73 @@
       });
     }
 
-    // Form success handling (basic)
+    // Form handling with AJAX (no page redirect) + success state
     function setupForm() {
       const form = document.querySelector('form[action*="formspree"]');
       if (!form) return;
 
-      form.addEventListener('submit', function() {
-        // The real success is handled by Formspree redirect/thank you.
-        // We can show a quick toast if wanted.
-        setTimeout(() => {
-          const originalText = form.querySelector('button[type="submit"]').innerHTML;
-          // Formspree will take over
-        }, 800);
+      const successEl = document.getElementById('form-success');
+
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="lang-pt">Enviando...</span><span class="lang-en">Sending...</span> <i class="fa-solid fa-spinner fa-spin ml-1"></i>';
+        }
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            // Success
+            form.classList.add('hidden');
+            if (successEl) successEl.classList.remove('hidden');
+            form.reset();
+          } else {
+            // Formspree error (rate limit, spam, etc.)
+            const data = await response.json().catch(() => ({}));
+            const errMsg = data.error || 'Erro ao enviar. Tente pelo WhatsApp ou email.';
+            alert(errMsg);
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalBtnText;
+            }
+          }
+        } catch (err) {
+          console.error(err);
+          alert('Não foi possível enviar agora. Use o WhatsApp ou email por favor.');
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+          }
+        }
       });
+    }
+
+    function resetContactForm() {
+      const form = document.querySelector('form[action*="formspree"]');
+      const successEl = document.getElementById('form-success');
+      if (form) form.classList.remove('hidden');
+      if (successEl) successEl.classList.add('hidden');
+
+      // re-enable button if needed
+      const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        // restore original text (simple)
+        submitBtn.innerHTML = '<span class="lang-pt">Enviar proposta</span><span class="lang-en">Send proposal</span> <i class="fa-solid fa-paper-plane"></i>';
+      }
     }
 
     // Setup contact links without exposing phone/email in HTML source (anti-crawler)
