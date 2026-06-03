@@ -248,11 +248,10 @@ O deploy do GitHub Pages inclui automaticamente robots.txt e sitemap.xml.
 
 O site é estático (GitHub Pages), então para monitorar visitas, fontes de tráfego, páginas mais vistas, etc.:
 
-1. **Google Analytics 4** (mais completo, gratuito):
-   - Crie uma propriedade GA4 em https://analytics.google.com
-   - Copie o Measurement ID (G-XXXXXXXXXX)
-   - No `index.html`, procure o script de GA logo após as meta tags de Twitter e substitua `G-XXXXXXXXXX` pelo seu ID.
-   - Re-deploy (git push).
+1. **Google Analytics 4** (já configurado):
+   - O script com ID `G-4HE7M2HJV3` já está integrado no `<head>` do `index.html`.
+   - Acesse https://analytics.google.com para ver os dados (crie a propriedade GA4 se ainda não fez e vincule o ID).
+   - Se precisar trocar o ID no futuro, edite o script no HTML e faça push.
 
 2. **Alternativa mais privada e simples**: Plausible Analytics (plausible.io)
    - Sem cookies, GDPR-friendly, dashboard limpo.
