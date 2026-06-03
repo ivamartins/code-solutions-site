@@ -79,20 +79,20 @@ git push -u origin main
 4. Deploy automático em cada push. URL grátis tipo `seu-projeto.pages.dev`.
 
 **Alternativa simples (GitHub Pages):**
-- **Importante:** Repositórios privados no plano gratuito do GitHub **não suportam** GitHub Pages. É por isso que você vê "Upgrade or make this repository public to enable Pages" e não tem as opções de deploy.
-- Para usar GitHub Pages grátis:
-  1. Vá em **Settings → General** do repositório.
-  2. Role até "Danger Zone" → **Change repository visibility** → torne o repositório **Public**.
-  3. Confirme.
-- Depois volte em **Settings → Pages** (https://github.com/ivamartins/code-solutions-site/settings/pages).
-- Agora as opções de Source devem aparecer:
-  - Use **GitHub Actions** (recomendado, já temos o workflow `.github/workflows/deploy-pages.yml`).
-  - Ou "Deploy from a branch" se aparecer: Branch main, Folder / (root).
-- A seção "Verified domains" (com "Add a domain") é para domínios customizados. Pode ignorar por enquanto.
-- Após salvar, o deploy roda automaticamente (ou acione manualmente na aba Actions).
-- Site: `https://ivamartins.github.io/code-solutions-site/`
+- A página que você está vendo agora (https://github.com/ivamartins/code-solutions-site/settings/pages) é a correta do repositório.
+- Em **Build and deployment**:
+  - Source está em **GitHub Actions** (dropdown).
+  - Abaixo aparecem dois cards sugeridos:
+    - **GitHub Pages Jekyll** (ícone com "i") — ignore, é para sites Jekyll.
+    - **Static HTML** (ícone HTML5) — **este é o que você precisa** (deploy de arquivos estáticos sem build).
+  - Clique no botão **Configure** do card **Static HTML**.
+- Isso vai configurar o deploy usando GitHub Actions para o nosso site estático (já temos um workflow compatível em `.github/workflows/deploy-pages.yml`).
+- A seção "Verified domains" (com "Add a domain") é opcional para domínio customizado. Pode ignorar por enquanto.
+- Após configurar, o site será publicado em `https://ivamartins.github.io/code-solutions-site/`.
+- Vá na aba **Actions** do repo para acompanhar o deploy (pode levar 1-2 minutos).
+- Se aparecer "Your site is ready to be published", clique para habilitar.
 
-**Recomendação forte:** Para portfólio/profissional, repositório **público** é o ideal (mostra seu trabalho). Se quiser manter privado, use **Cloudflare Pages** ou **Netlify** (suportam repositórios privados grátis). Veja instruções abaixo.
+**Importante:** Se o repositório estiver privado no plano gratuito, pode aparecer aviso para tornar público ou usar Enterprise. Para portfólio, tornar público é normal e recomendado. Se quiser manter privado, use Cloudflare Pages (veja abaixo).
 
 **Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
 
