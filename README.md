@@ -1,119 +1,129 @@
 # Code Solutions — Site Profissional
 
-Site estático lindo e profissional para **Code Solutions** (Ivã Martins) — posicionando serviços de Engenharia Backend Sênior (20+ anos de legado, migrações, APIs, event-driven) + **criação de agentes e automações com IA** de forma profissional e entregável.
+**Site estático puro** (HTML + Tailwind via CDN + JavaScript) para **Code Solutions** (Ivã Martins).
+
+Não tem backend, não tem build, não tem servidor. São só arquivos estáticos servidos pelo GitHub Pages.
 
 - **Bilingue** (PT-BR primário + EN)
 - **Zero build / zero custo de hospedagem** (Tailwind via CDN)
 - **Alta conversão**: formulário + WhatsApp flutuante + CTAs claros
 - **Prova social real**: cases de Sicredi (plataforma digital padrão), Panvel, Quartile + o projeto real do **whatsapp-grok-bot** como exemplo vivo de "agentes como serviço"
 
+## Tecnologia
+
+- HTML5 + CSS (Tailwind via CDN: `<script src="https://cdn.tailwindcss.com">` no `<head>`)
+- JavaScript vanilla (navegação de idioma, links de contato protegidos, envio AJAX do form)
+- Formulário: Formspree (ID `xwvjebjd`) com honeypot e handler em JS (sem redirect)
+- Analytics: Google Analytics 4 (`G-4HE7M2HJV3`) + SEO (JSON-LD, sitemap, meta otimizadas para manutenção de legados Java/Play/Elasticsearch)
+- Deploy: GitHub Pages + GitHub Actions (workflow estático sem build step)
+- Preview local: qualquer servidor HTTP simples (python, npx serve, php etc.)
+
+O projeto inteiro roda como arquivos estáticos. O GitHub Pages é o ambiente de produção real.
+
 ## Arquivos principais
 
 - `index.html` — Site completo (único arquivo + pasta assets)
 - `assets/hero.jpg` — Banner principal (gerado com IA)
-- `assets/portrait.jpg` — Foto profissional / about (gerado com IA)
+- `assets/portrait.jpg` — Foto profissional / about
 - `assets/agents-icon.jpg` — Ícone ilustrativo para o serviço de Agentes
+- `assets/logo-cs.png` — Ícone CS monograma para nav do site
+- `assets/logo-monogram.png` — Logo oficial para LinkedIn Company Page
+- `assets/linkedin-banner.jpg` — Banner para capa da Company Page no LinkedIn
 
-## Como rodar localmente (teste rápido)
+## Como visualizar localmente
+
+O projeto é um site estático puro: apenas `index.html`, Tailwind CSS via CDN e JavaScript vanilla. Não requer build, backend, Node.js, Python ou qualquer dependência de runtime.
+
+Para visualizar edições localmente durante o desenvolvimento, inicie um servidor HTTP simples na raiz do projeto (escolha uma opção):
 
 ```bash
 cd ~/code-solutions-site
+
+# Opções (qualquer uma funciona):
 python3 -m http.server 8000
 # ou
 npx serve .
+# ou (se PHP estiver disponível)
+php -S localhost:8000 -t .
 ```
 
-Abra http://localhost:8000
+Acesse no navegador:  
+http://localhost:8000
 
-- Teste o switcher de idioma (PT / EN) no topo
-- Role todas as seções
-- Teste os botões de WhatsApp (abrem wa.me com texto pré-preenchido)
-- O formulário está apontando para placeholder do Formspree (veja abaixo)
+O site publicado é servido automaticamente pelo **GitHub Pages** (veja seção Hospedagem). Todo push na branch `main` dispara o workflow de deploy em `.github/workflows/`.
+
+Testes recomendados no preview:
+- Alternar idiomas (botões PT / EN)
+- Interagir com botões de WhatsApp e email (links montados via JS na carga da página)
+- Enviar o formulário de contato (integrado com Formspree via AJAX)
+- Verificar layout responsivo em diferentes tamanhos de tela
 
 ## Como editar o conteúdo
 
 1. Abra `index.html` em qualquer editor (VS Code, Zed, vim...).
 2. Busque por trechos em português (`lang-pt`) e inglês (`lang-en`).
-3. Os cases usam frases reais extraídas do currículo (Sicredi, Panvel, Quartile etc.).
-4. O exemplo de **Agentes IA** referencia diretamente a arquitetura do projeto `~/whatsapp-grok-bot` (leia o README dele para mais detalhes).
+3. Os cases são baseados em frases reais extraídas do currículo.
+4. O exemplo de **Agentes IA** referencia a arquitetura do projeto `whatsapp-grok-bot` (exemplo real de agente WhatsApp + Grok; leia o README dele para detalhes da estrutura com `.grok/agents` e skills).
 
 Dica de bilingual: o switcher simplesmente alterna `lang` no `<html>` e usa CSS + classes `.lang-pt` / `.lang-en`. É simples e confiável.
 
 ## Imagens
 
 - `hero.jpg` e `agents-icon.jpg`: geradas com IA (xAI Imagine) para visual profissional e moderno.
-- `portrait.jpg`: **baseada na sua foto real** (editada com `image_edit` usando a foto como referência principal para criar um headshot profissional limpo, com fundo neutro moderno, iluminação de estúdio e crop adequado para site de serviços). Preserva sua aparência real com polimento para uso corporativo.
+- `portrait.jpg`: Foto profissional do fundador (editada a partir de foto real para uso corporativo, com fundo neutro e iluminação de estúdio). Preserva a aparência real com polimento adequado para site de serviços.
 
-Referências salvas em `assets/`:
-- `user-original-photo.jpg`: sua foto original completa (para referência futura).
-- `linkedin-profile-page.png`: versão anterior do LinkedIn (ainda mantida como backup).
-
-Para regenerar ou refazer o retrato:
-- Use a ferramenta `image_edit` passando `assets/user-original-photo.jpg` como imagem de referência + prompt detalhado (ex: "Create a clean professional head-and-shoulders corporate portrait from this reference photo... tight crop, studio lighting, neutral background...").
-- Ou simplesmente substitua `assets/portrait.jpg` por uma versão editada sua.
+Para atualizar a foto do retrato: substitua diretamente o arquivo `assets/portrait.jpg` por uma versão profissional editada sua.
 
 Hero e ícone podem ser regenerados com `image_gen` usando prompts semelhantes (hero 16:9 abstrato tech+AI, ícone 1:1 para agentes).
 
 Copie os arquivos resultantes para a pasta `assets/`.
 
-## Hospedagem — A forma MAIS BARATA e profissional (zero custo de hosting)
+## Hospedagem (GitHub Pages — zero custo)
 
-### Opção recomendada (gratuita + excelente)
+O site está publicado em:
 
-1. Crie um repositório no GitHub (pode ser privado). Recomendo o nome `code-solutions-site`.
-2. Adicione o remote e faça push (repo já está inicializado com histórico):
+**https://ivamartins.github.io/code-solutions-site/**
+
+- Hospedagem 100% gratuita via GitHub Pages.
+- Deploy automático: todo `git push` na `main` executa o workflow em `.github/workflows/deploy-pages.yml` (ou `static.yml`) e publica os arquivos estáticos da raiz.
+- Sem servidores, sem build, sem custo de bandwidth para a maioria dos casos.
+
+### Comandos de rotina
 
 ```bash
 cd ~/code-solutions-site
-git remote add origin git@github.com:SEU_USUARIO/code-solutions-site.git
-git branch -M main
-git push -u origin main
+
+# 1. Teste local (opcional)
+python3 -m http.server 8000
+# ou npx serve .   ou php -S localhost:8000 -t .
+
+# 2. Envie as alterações
+git add .
+git commit -m "update: descrição curta da mudança"
+git push
 ```
 
-   (Substitua `SEU_USUARIO` pelo seu username do GitHub. Use HTTPS `https://github.com/SEU_USUARIO/...` se preferir.)
+Aguarde 30–90 segundos e verifique o site. Monitore o progresso na aba **Actions** do repositório (workflow "pages build and deployment").
 
-3. Vá em [Cloudflare Pages](https://pages.cloudflare.com) → Create a project → Connect to Git → selecione o repo.
-   - Framework preset: **None**
-   - Build command: (deixe vazio)
-   - Output directory: `.` (ou `dist` se você adicionar build depois)
-4. Deploy automático em cada push. URL grátis tipo `seu-projeto.pages.dev`.
+### Reconfigurar Pages (em clone ou repo novo)
 
-**Alternativa simples (GitHub Pages):**
-- A página que você está vendo agora (https://github.com/ivamartins/code-solutions-site/settings/pages) é a correta do repositório.
-- Em **Build and deployment**:
-  - Source está em **GitHub Actions** (dropdown).
-  - Abaixo aparecem dois cards sugeridos:
-    - **GitHub Pages Jekyll** (ícone com "i") — ignore, é para sites Jekyll.
-    - **Static HTML** (ícone HTML5) — **este é o que você precisa** (deploy de arquivos estáticos sem build).
-  - Clique no botão **Configure** do card **Static HTML**.
-- Isso vai abrir o editor do workflow (arquivo .github/workflows/static.yml com o template padrão para static HTML).
-- No topo direito, clique no botão verde **Commit changes...**
-  - Deixe a mensagem padrão ou personalize (ex: "Configure GitHub Pages static deploy").
-  - Selecione "Commit directly to the main branch".
-  - Clique **Commit changes**.
-- Isso adiciona o workflow ao repo e dispara o deploy automaticamente.
-- A seção "Verified domains" (com "Add a domain") é opcional para domínio customizado. Pode ignorar por enquanto.
-- Aguarde 1-2 minutos. Vá na aba **Actions** do repo para ver o workflow "pages build and deployment" rodando.
-- O site será publicado em `https://ivamartins.github.io/code-solutions-site/`.
-- Se aparecer "Your site is ready to be published", clique para habilitar.
+1. No GitHub: vá em **Settings → Pages**.
+2. Em "Build and deployment", defina Source como **GitHub Actions**.
+3. Escolha o template **Static HTML** e clique Configure → Commit changes.
+4. O workflow será criado em `.github/workflows/` e o deploy começará automaticamente.
 
-**Importante:** Se o repositório estiver privado no plano gratuito, pode aparecer aviso para tornar público ou usar Enterprise. Para portfólio, tornar público é normal e recomendado. Se quiser manter privado, use Cloudflare Pages (veja abaixo).
+**Alternativas** (caso queira migrar futuramente):
+- Cloudflare Pages: conecte o repo GitHub, preset "None", build command vazio, output directory `.`. Vantagens: CDN global, limits generosos, domínio custom fácil.
+- Netlify: excelente para preview de branches e forms.
 
-**Vantagens do Cloudflare**: CDN global mais rápido, bandwidth ilimitado, custom domain grátis fácil, analytics grátis.
+### Domínio próprio (opcional e barato)
 
-Alternativa excelente: **Netlify** (ótimo para forms e previews).
+- .com.br: registro.br (~R$50/ano)
+- .com: Namecheap/Hostinger em promo (~US$8–12 primeiro ano)
 
-### Domínio próprio (barato)
+Apontamento: CNAME para o domínio do Pages (ou use Cloudflare como front se migrar).
 
-- **.com.br**: registro.br (~R$ 40–60/ano)
-- **.com**: Namecheap ou Hostinger em promoção (US$ 8–12 no primeiro ano)
-
-Depois de comprar:
-- No Cloudflare Pages adicione o domínio customizado.
-- Siga as instruções de DNS (normalmente um CNAME).
-- Cloudflare pode gerenciar seu domínio inteiro (melhor performance + proxy grátis).
-
-Custo total ano 1: **R$ 0 de hospedagem + R$ 50–120 de domínio**.
+Custo total: R$ 0 de hospedagem + valor do domínio.
 
 ### Formulário de contato (Formspree — grátis)
 
@@ -138,7 +148,7 @@ O HTML já inclui (além dos campos normais):
 - Honeypot (`_gotcha`) anti-spam básico
 - Envio via AJAX (fetch) com mensagem de sucesso na mesma página (sem redirecionar pro Formspree)
 
-A nota antiga de instrução foi removida do site visível (agora só "Seus dados são enviados de forma segura." / versão em inglês).
+O texto visível do form é apenas "Seus dados são enviados de forma segura." (bilíngue).
 
 Alternativa simples (sem form): só os botões de WhatsApp + email já convertem muito bem para serviços senior.
 
@@ -156,26 +166,22 @@ Exemplo de como funciona internamente (não aparece no HTML renderizado):
 
 Isso mantém a usabilidade (clique no ícone funciona normalmente) enquanto protege os dados de contato.
 
-## Deploy passo a passo (copie e cole)
+## Comandos úteis (após setup inicial)
 
 ```bash
-# 1. Vá para a pasta
 cd ~/code-solutions-site
 
-# 2. (Opcional) teste local
+# Visualizar localmente
 python3 -m http.server 8000
+# ou: npx serve . 
 
-# 3. Git + push (primeira vez)
-git init
+# Publicar alterações (dispara deploy automático no GitHub Pages)
 git add .
-git commit -m "Initial professional site"
-git remote add origin git@github.com:SEU-USUARIO/code-solutions-site.git
-git push -u origin main
-
-# Depois só: git add . && git commit -m "update" && git push
+git commit -m "update: ..."
+git push
 ```
 
-Conecte o repo no Cloudflare Pages (ou Netlify). Feito.
+O deploy roda via GitHub Actions e fica disponível em ~1 minuto em https://ivamartins.github.io/code-solutions-site/
 
 ## Estrutura de pastas sugerida para evolução
 
@@ -184,9 +190,12 @@ code-solutions-site/
 ├── index.html          # O site (edite aqui)
 ├── README.md
 ├── assets/
+│   ├── agents-icon.jpg
 │   ├── hero.jpg
-│   ├── portrait.jpg
-│   └── agents-icon.jpg
+│   ├── linkedin-banner.jpg   # para capa da Company Page no LinkedIn
+│   ├── logo-cs.png           # ícone CS monograma (usado no nav do site)
+│   ├── logo-monogram.png     # logo oficial (usado no avatar da Company Page no LinkedIn)
+│   └── portrait.jpg
 └── (futuro) CNAME, _redirects, robots.txt etc.
 ```
 
@@ -199,8 +208,8 @@ code-solutions-site/
 
 ## Fontes de conteúdo (alta fidelidade)
 
-- Bio narrativa principal: `~/Hello my name is Ivã Martins.txt`
-- Experiência detalhada, clientes, tecnologias e bullets de impacto: currículos em `~/Documents/` e `~/Downloads/` (especialmente `Ivã_Martins_Resume.pdf` e os `Currículo*.pdf`)
+- Bio narrativa principal: texto biográfico fornecido (adaptado para o site)
+- Experiência detalhada, clientes, tecnologias e bullets de impacto: currículos fornecidos (com frases reais de conquistas)
 - Exemplo vivo de agentes: pasta completa `~/whatsapp-grok-bot/` (leia especialmente o README dele — explica a arquitetura auto-contida com `.grok/agents` e `.grok/skills`)
 - Agente deep-researcher: `~/.grok/agents/deep-researcher.md` (ótimo para oferecer "agentes de pesquisa profunda em codebases legadas")
 
@@ -213,7 +222,7 @@ code-solutions-site/
 
 ## Créditos / Contexto
 
-Site construído com Grok (xAI) usando todo o contexto profissional do seu currículo + a conversa compartilhada sobre trajetória backend + a experiência prática de construção de agentes customizados que fizemos aqui (whatsapp-grok-bot + skills/agents).
+Site construído com Grok (xAI) usando o contexto profissional do seu currículo e experiência prática com agentes de IA customizados.
 
 Qualquer dúvida ou ajuste (texto, layout, nova imagem, adicionar mais um case), é só pedir — edições são rápidas via search/replace ou re-geração.
 
@@ -277,5 +286,3 @@ No site:
 - O link em si é o mesmo para ambos os idiomas (e é o correto).
 
 Se quiser forçar de alguma forma (não recomendado), pode adicionar `?locale=pt_BR` ou `en_US`, mas o LinkedIn ignora na maioria dos casos para perfis pessoais.
-
-— Grok (executado em modo de implementação após aprovação do plano)

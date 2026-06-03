@@ -190,7 +190,7 @@ Se precisar de alguém com 20+ anos de experiência real em sistemas enterprise,
 
 ## Dicas extras
 
-- Use o print `assets/linkedin-profile-page.png` (se tiver) ou tire um screenshot limpo do site para o post.
+- Tire um screenshot limpo do site para o post.
 - Adicione o link do site também no campo "Website" das informações de contato do perfil.
 - Depois de postar, fixe o post no topo do seu perfil.
 - Compartilhe também no Stories ou em grupos de tecnologia/engenharia.
@@ -232,15 +232,12 @@ Use:
 (O banner foi atualizado para usar o mesmo estilo de logo monograma para consistência total entre site e LinkedIn.)
 
 ### 3. Consistência de marca
-- O site usa uma versão recortada só do ícone CS monograma (`assets/logo-cs.png`) no nav (sem o texto "CODE SOLUTIONS", para não ficar pequeno ao lado do título). O logo completo monograma é usado em outros contextos como LinkedIn e possivelmente hero se embutido.
+- O site usa a versão recortada do ícone CS monograma (`assets/logo-cs.png`) no nav (sem o texto "CODE SOLUTIONS", para não ficar pequeno ao lado do título).
+- O logo completo `logo-monogram.png` é usado para o avatar da Company Page no LinkedIn.
 - Hero.jpg e linkedin-banner.jpg foram ajustados para combinar o estilo do logo principal.
-- Recomendação: use apenas o logo-monogram.png como logo oficial em todos os lugares (LinkedIn, site, materiais). Os outros arquivos (wordmark, cs-bold) são variações antigas e podem ser ignorados para evitar 4 logos diferentes.
+- Recomendação: use apenas `logo-monogram.png` (LinkedIn) e `logo-cs.png` (site nav) como logos oficiais. Mantenha apenas os arquivos de imagem referenciados no projeto.
 
-É um banner largo profissional (wide 16:9, dark tech elegante com ícone geométrico de circuito, "CODE SOLUTIONS" em dourado/teal + "MANUTENÇÃO E MODERNIZAÇÃO DE SISTEMAS LEGADOS" + "Agentes de IA • Sistemas Enterprise"). Feito exatamente para capa de Company Page do LinkedIn. Vai ficar ótimo.
-
-Se preferir algo mais simples, pode usar também o `hero.jpg` do site (corte a parte superior ou esquerda).
-
-### 3. Sobre a empresa (About / Descrição)
+### 4. Sobre a empresa (About / Descrição)
 Cole algo como:
 
 Code Solutions é a estrutura PJ de Ivã Martins para prestação de serviços de engenharia backend e automação com IA.
