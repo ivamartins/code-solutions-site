@@ -244,4 +244,39 @@ O site foi otimizado para aparecer quando empresas buscam **manutenção, suport
 
 O deploy do GitHub Pages inclui automaticamente robots.txt e sitemap.xml.
 
+### Monitoramento de acesso (Analytics)
+
+O site é estático (GitHub Pages), então para monitorar visitas, fontes de tráfego, páginas mais vistas, etc.:
+
+1. **Google Analytics 4** (mais completo, gratuito):
+   - Crie uma propriedade GA4 em https://analytics.google.com
+   - Copie o Measurement ID (G-XXXXXXXXXX)
+   - No `index.html`, procure o script de GA logo após as meta tags de Twitter e substitua `G-XXXXXXXXXX` pelo seu ID.
+   - Re-deploy (git push).
+
+2. **Alternativa mais privada e simples**: Plausible Analytics (plausible.io)
+   - Sem cookies, GDPR-friendly, dashboard limpo.
+   - Pago mas barato (~US$ 9/mês para 1 site).
+   - Adicione o script deles no head (similar ao GA).
+
+3. **Microsoft Clarity** (gratuito): heatmaps + gravação de sessões de usuários (bom para UX).
+
+4. **Básico (sem script)**: GitHub repo insights mostra alguns dados de tráfego do Pages, mas é limitado.
+
+Recomendo começar com GA4 + Clarity juntos (gratuitos).
+
+### Links do LinkedIn por idioma
+
+Não é possível ter URLs diferentes do LinkedIn para PT e EN.
+
+- O perfil do LinkedIn é único (https://www.linkedin.com/in/ivã-martins-71760b89/).
+- O idioma da interface é definido pela configuração da conta do visitante ou pelo idioma do navegador.
+- Não existe parâmetro oficial confiável tipo `?locale=pt_BR` que force o idioma do perfil para todos os casos.
+
+No site:
+- O botão "Ver no LinkedIn" / "View on LinkedIn" e o texto abaixo agora são bilíngues (usam o sistema `.lang-pt` / `.lang-en` do site).
+- O link em si é o mesmo para ambos os idiomas (e é o correto).
+
+Se quiser forçar de alguma forma (não recomendado), pode adicionar `?locale=pt_BR` ou `en_US`, mas o LinkedIn ignora na maioria dos casos para perfis pessoais.
+
 — Grok (executado em modo de implementação após aprovação do plano)
