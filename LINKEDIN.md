@@ -13,6 +13,10 @@ A **melhor forma** de posicionar o site no LinkedIn (e a Code Solutions como mar
 
 **Importante (atualizado):** Você informou que já existe uma página "Code Solutions" no LinkedIn. Vamos usar isso a nosso favor em vez de ignorar.
 
+**⚠️ Regra crítica de separação (CLT vs PJ):** 
+Panvel (2012–2014) e Sicredi (2014–2021) foram realizados por você **como CLT / consultor externo** em outras empresas — **não** pela Code Solutions (PJ). Somente a partir de Quartile (2021+) os serviços foram prestados via a estrutura PJ. 
+Nunca coloque esses clientes antigos na descrição da Experiência "Code Solutions", no About da página da empresa, nem em posts como se a empresa os tivesse atendido. O site já faz a separação clara ("Resultados da minha trajetória" + "A expertise que entrego hoje via Code Solutions (PJ) é construída sobre..."). Mantenha isso em todos os lugares.
+
 A estratégia principal continua sendo: **adicione primeiro a Experiência usando o nome exato "Code Solutions"**. Isso faz o LinkedIn sugerir automaticamente a vinculação com a página existente.
 
 ---
@@ -92,7 +96,10 @@ LinkedIn company: https://www.linkedin.com/company/code-solutions-it/
 
 I serve remote projects throughout Brazil and also outside Brazil (on-site in South/Southeast when necessary).
 
-**Nota sobre a descrição do cargo atual:** Conforme sua preferência, esta versão foca só nas tecnologias e serviços que a Code Solutions pode entregar hoje (tech stack + ofertas), sem citar exemplos específicos de clientes passados (como Sicredi ou Panvel) dentro da descrição do cargo atual. Isso mantém o foco no que você atende agora via PJ. O track record completo continua disponível no site, no About do perfil e em posts (com contexto adequado).
+**Nota importante sobre clientes antigos (Panvel, Sicredi etc.):** 
+Nunca atribua esses projetos à Code Solutions (PJ) nem à página da empresa. Eles foram realizados por você como CLT / consultor externo em outras empresas. A Code Solutions só deve mencionar o que é entregue *hoje* via PJ (a partir de Quartile em diante, mais os serviços atuais de agentes e manutenção). O histórico antigo fica no seu perfil pessoal (nas experiências antigas) e no site, com a devida separação ("Resultados da minha trajetória" + frase de clarificação "A expertise que entrego hoje via Code Solutions (PJ) é construída sobre...").
+
+A descrição acima já segue essa regra (sem citar Panvel/Sicredi). Mantenha o mesmo cuidado no About da página da empresa e em qualquer post.
 
 ---
 
@@ -157,14 +164,14 @@ Acabei de colocar no ar o site da Code Solutions.
 
 https://ivamartins.github.io/code-solutions-site/
 
-Depois de 20+ anos modernizando sistemas legados em instituições como Panvel (Grupo Dimed) e Sicredi, e mais recentemente construindo backends com IA em produção, decidi criar um espaço profissional para concentrar minha atuação via PJ.
+Com mais de 20 anos de experiência modernizando sistemas legados e plataformas de alto volume em grandes instituições, e mais recentemente construindo backends com integração de IA em produção, criei a Code Solutions (PJ) para concentrar minha atuação em serviços de engenharia backend e automações inteligentes.
 
 No site você encontra:
-- Cases reais de transformação arquitetural (ex: evento-driven que virou padrão em banco)
-- Serviços focados em manutenção/evolução de legados (Java, Play Framework, Elasticsearch, Scala/Akka)
-- Exemplo prático de agentes de IA auto-contidos que entregamos (bot WhatsApp com .grok/agents + skills)
+- Exemplos reais da minha trajetória em transformações arquiteturais de grande escala
+- Serviços focados em manutenção, evolução e modernização de legados (Java, Play Framework, Elasticsearch, Scala/Akka + arquiteturas event-driven)
+- Exemplo prático de agentes de IA auto-contidos e entregáveis (incluindo bot WhatsApp com estrutura .grok/agents + skills)
 
-Se sua empresa precisa de alguém com profundidade real em sistemas complexos + capacidade de entregar soluções modernas (incluindo agentes), vamos conversar.
+Se sua empresa precisa de alguém com profundidade real em sistemas complexos + capacidade de entregar soluções modernas (incluindo agentes de IA), vamos conversar.
 
 Site: https://ivamartins.github.io/code-solutions-site/
 LinkedIn da empresa: https://www.linkedin.com/company/code-solutions-it/
@@ -180,11 +187,11 @@ https://ivamartins.github.io/code-solutions-site/
 
 Especialista em manutenção e modernização de sistemas legados (Java, Play Framework, Elasticsearch, Scala + Akka) e criação de agentes de IA entregáveis.
 
-Cases incluem Panvel, Sicredi e projetos com IA em produção.
+Com mais de 20 anos de experiência em plataformas de alto volume e transformações em grandes instituições financeiras e de varejo, agora via estrutura PJ (Code Solutions).
 
-Atuo via PJ para o Brasil e também para fora do Brasil.
+Atendo projetos remotos para o Brasil e também para fora do Brasil.
 
-Se precisar de alguém com 20+ anos de experiência real em sistemas enterprise, o link está aí.
+Se precisar de alguém com profundidade real em sistemas enterprise + automações com IA, o link está aí.
 
 ---
 
@@ -253,6 +260,8 @@ LinkedIn da empresa: https://www.linkedin.com/company/code-solutions-it/
 
 Atendemos projetos remotos para todo o Brasil e também para fora do Brasil a partir de Canoas.
 
+**⚠️ Cuidado importante:** Não mencione Panvel, Sicredi ou outros clientes anteriores a 2021 como se a Code Solutions tivesse atendido. Use apenas linguagem genérica de "expertise acumulada em posições CLT e consultoria externa". O site já tem a separação clara (cases como "Resultados da minha trajetória").
+
 **English version (for bilingual profiles or English LinkedIn interface):**
 
 Code Solutions is Ivã Martins' PJ structure for backend engineering and AI automation services.
@@ -267,6 +276,8 @@ Site: https://ivamartins.github.io/code-solutions-site/
 LinkedIn company: https://www.linkedin.com/company/code-solutions-it/
 
 We serve remote projects throughout Brazil and also internationally from Canoas.
+
+**⚠️ Important caution:** Do not mention Panvel, Sicredi or pre-2021 clients as if Code Solutions delivered them. Use only generic language about "expertise accumulated in CLT positions and external consulting". The site already makes the separation clear (cases under "Results from my career trajectory").
 
 ### 4. Outros campos importantes
 - **Indústria**: "Software Development" ou "Information Technology & Services" (o atual "IT System Custom Software Development" é um pouco estranho — mude se possível)

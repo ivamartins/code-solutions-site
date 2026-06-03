@@ -7,7 +7,7 @@ Não tem backend, não tem build, não tem servidor. São só arquivos estático
 - **Bilingue** (PT-BR primário + EN)
 - **Zero build / zero custo de hospedagem** (Tailwind via CDN)
 - **Alta conversão**: formulário + WhatsApp flutuante + CTAs claros
-- **Prova social real**: cases de Sicredi (plataforma digital padrão), Panvel, Quartile + o projeto real do **whatsapp-grok-bot** como exemplo vivo de "agentes como serviço"
+- **Prova social real**: exemplos de projetos de grande escala da trajetória do fundador (Sicredi, Panvel, Quartile) + o projeto real do **whatsapp-grok-bot** como exemplo vivo de "agentes como serviço"
 
 ## Tecnologia
 
