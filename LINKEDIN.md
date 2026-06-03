@@ -217,7 +217,47 @@ Depois de salvar a experiência:
 
 Isso faz o site aparecer de forma destacada no seu perfil.
 
+**Dica extra para os projetos base (GitHub):** Adicione também os repositórios principais como "Link" nos Destaques:
+- Título: `whatsapp-grok-bot — Agentes IA auto-contidos`
+- URL: https://github.com/ivamartins/whatsapp-grok-bot
+- (Repita para play-scala-base, quarkus-java-base, flink-kafka-scala-base-, akka-scala-base, elasticsearch-scala-base etc.)
+Use prints dos READMEs ou do site como capa. Isso prova na prática os stacks (Play, Quarkus, Flink/Kafka, Akka, ES, Agentes IA) sem poluir o About ou a Experiência principal.
+
 ---
+
+## Posts no LinkedIn sobre os projetos base
+
+Use posts para dar visibilidade (não precisa colocar tudo no perfil). Exemplo pronto (PT/EN):
+
+**Português (post recomendado):**
+Acabei de publicar mais um framework base open source: quarkus-java-base.
+
+Exemplo funcional e minimal de Quarkus (Java moderno) para modernização de sistemas legados — rápido, nativo, integrável com Kafka, agentes IA e stacks enterprise.
+
+Código + README com mapeamento para casos reais: https://github.com/ivamartins/quarkus-java-base
+
+Confira o portfólio completo com todos os bases funcionais (Play, Flink+Kafka, Akka, Elasticsearch, Agentes IA auto-contidos...): https://ivamartins.github.io/code-solutions-site/
+
+Útil como prova prática dos serviços que entrego via Code Solutions (independent consulting company).
+
+#Quarkus #Java #ModernizacaoDeLegados #Backend #CodeSolutions
+
+**English version:**
+Just published another open-source base framework: quarkus-java-base.
+
+A minimal, functional Quarkus (modern Java) example for legacy system modernization — fast, native, integrable with Kafka, AI agents and enterprise stacks.
+
+Code + README mapping to real cases: https://github.com/ivamartins/quarkus-java-base
+
+Full portfolio with all functional bases (Play, Flink+Kafka, Akka, Elasticsearch, self-contained AI agents...): https://ivamartins.github.io/code-solutions-site/
+
+Practical proof of the services I deliver via Code Solutions.
+
+#Quarkus #Java #LegacyModernization #Backend
+
+---
+
+## 3. Atualize seu About (Resumo)
 
 ## 3. Atualize seu About (Resumo)
 
