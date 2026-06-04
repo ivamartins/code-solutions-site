@@ -138,7 +138,9 @@ Founder of **Code Solutions**, my independent consulting company. I focus on hig
 
 I also create production-ready AI agents that integrate directly with existing systems.
 
-Site: https://ivamartins.github.io/code-solutions-site/
+GitHub with practical frameworks and examples: https://github.com/ivamartins (including quarkus-java-base, java-product-api with Spring Boot + Kafka, play-scala-base, flink-kafka, akka, elasticsearch, whatsapp-grok-bot for AI agents).
+
+Site with full portfolio and cases: https://ivamartins.github.io/code-solutions-site/
 Company LinkedIn: https://www.linkedin.com/company/code-solutions-it/
 
 Canoas • Remote projects in Brazil and internationally
@@ -172,6 +174,7 @@ We work with Java (enterprise), Play Framework, Spring Boot, Quarkus, Scala, Akk
 The expertise is built on over 20 years of experience with complex large-scale systems, accumulated in CLT positions, external consulting, and now through my own company.
 
 Site: https://ivamartins.github.io/code-solutions-site/
+GitHub with examples and frameworks: https://github.com/ivamartins
 LinkedIn company: https://www.linkedin.com/company/code-solutions-it/
 
 We serve remote projects throughout Brazil and also internationally from Canoas.
@@ -269,7 +272,9 @@ Fundador da **Code Solutions (PJ)**, minha estrutura para prestação de serviç
 
 Também crio agentes de IA profissionais e entregáveis que se integram com sistemas existentes.
 
-Site: https://ivamartins.github.io/code-solutions-site/
+GitHub com frameworks e exemplos práticos: https://github.com/ivamartins (incluindo quarkus-java-base, java-product-api com Spring Boot + Kafka, play-scala-base, flink-kafka, akka, elasticsearch, whatsapp-grok-bot para agentes IA).
+
+Site com portfólio completo e cases: https://ivamartins.github.io/code-solutions-site/
 LinkedIn da empresa: https://www.linkedin.com/company/code-solutions-it/
 
 Canoas • Projetos remotos no Brasil e também para fora do Brasil
@@ -399,6 +404,7 @@ Trabalhamos com Java (enterprise), Play Framework, Spring Boot, Quarkus, Scala, 
 Nossa expertise é fundamentada em mais de 20 anos de experiência em sistemas complexos de larga escala, acumulada em posições CLT e consultoria externa, e agora entregue através da Code Solutions.
 
 Site: https://ivamartins.github.io/code-solutions-site/
+GitHub com exemplos e frameworks: https://github.com/ivamartins
 LinkedIn da empresa: https://www.linkedin.com/company/code-solutions-it/
 
 Atendemos projetos remotos para todo o Brasil e também para fora do Brasil a partir de Canoas.
@@ -416,6 +422,7 @@ We work with Java (enterprise), Play Framework, Spring Boot, Quarkus, Scala, Akk
 The expertise is built on over 20 years of experience with complex large-scale systems, accumulated in CLT positions, external consulting, and now through my own company.
 
 Site: https://ivamartins.github.io/code-solutions-site/
+GitHub with examples and frameworks: https://github.com/ivamartins
 LinkedIn company: https://www.linkedin.com/company/code-solutions-it/
 
 We serve remote projects throughout Brazil and also internationally from Canoas.

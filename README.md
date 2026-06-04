@@ -7,7 +7,7 @@ Não tem backend, não tem build, não tem servidor. São só arquivos estático
 - **Bilingue** (PT-BR primário + EN)
 - **Zero build / zero custo de hospedagem** (Tailwind via CDN)
 - **Alta conversão**: formulário + WhatsApp flutuante + CTAs claros
-- **Prova social real**: exemplos de projetos de grande escala da trajetória do fundador (Sicredi, Panvel, Quartile) + o projeto real do **whatsapp-grok-bot** como exemplo vivo de "agentes como serviço"
+- **Prova prática**: frameworks open source funcionais nas stacks que atendo (Java, Play Framework, Scala/Akka, Kafka, Flink, Elasticsearch, Quarkus, agentes de IA). Destaque: **whatsapp-llm-bot** — agente WhatsApp LLM-agnostic (61 testes, deploy Docker/PM2/systemd).
 
 ## Tecnologia
 
@@ -63,7 +63,7 @@ Testes recomendados no preview:
 1. Abra `index.html` em qualquer editor (VS Code, Zed, vim...).
 2. Busque por trechos em português (`lang-pt`) e inglês (`lang-en`).
 3. Os cases são baseados em frases reais extraídas do currículo.
-4. O exemplo de **Agentes IA** referencia a arquitetura do projeto `whatsapp-grok-bot` (exemplo real de agente WhatsApp + Grok; leia o README dele para detalhes da estrutura com `.grok/agents` e skills).
+4. O exemplo de **Agentes IA** referencia a arquitetura do projeto `whatsapp-llm-bot` (exemplo real de agente WhatsApp LLM-agnostic, com cliente HTTP OpenAI-compatible; leia o README dele para detalhes da estrutura com `prompts/` e `src/llm-client.js`). A variante histórica `whatsapp-grok-bot` mostra a integração via CLI Grok + `.grok/agents` + skills.
 
 Dica de bilingual: o switcher simplesmente alterna `lang` no `<html>` e usa CSS + classes `.lang-pt` / `.lang-en`. É simples e confiável.
 
@@ -210,7 +210,7 @@ code-solutions-site/
 
 - Bio narrativa principal: texto biográfico fornecido (adaptado para o site)
 - Experiência detalhada, clientes, tecnologias e bullets de impacto: currículos fornecidos (com frases reais de conquistas)
-- Exemplo vivo de agentes: o projeto `whatsapp-grok-bot` (veja seu README para a arquitetura auto-contida com `.grok/agents` + skills customizadas)
+- Exemplo vivo de agentes: o projeto `whatsapp-llm-bot` (veja seu README para a arquitetura LLM-agnostic com `prompts/` + cliente HTTP OpenAI-compatible). A variante `whatsapp-grok-bot` mostra a integração via CLI Grok + `.grok/agents` + skills.
 - Agente deep-researcher: referência em `~/.grok/agents/deep-researcher.md` (bom exemplo de skill para pesquisa profunda em codebases)
 
 ## Próximos passos sugeridos após o site no ar
