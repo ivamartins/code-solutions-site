@@ -699,6 +699,34 @@
         <div class="text-slate-400 mt-1">Integração com Elasticsearch para search, indexação e observability em sistemas de alto volume. Exemplo de enriquecimento de dados legados.</div>
         <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Elasticsearch • Search</span></div>
       </div>
+
+      <!-- 8. Java 21 + Spring WebFlux (reactive microservices) -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+        <strong class="font-medium">spring-webflux-microservice</strong>
+        <div class="text-slate-400 mt-1">Microsserviço reativo em Java 21 + Spring Boot 3 + WebFlux. Persistência R2DBC no Postgres, read model no Mongo, cache Redis, eventos Kafka, integrações SOAP/SFTP/HTTP e CI/CD (GitLab + Jenkins). JVM tuning (G1GC).</div>
+        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/spring-webflux-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Java 21 • WebFlux • Kafka • R2DBC</span></div>
+      </div>
+
+      <!-- 9. Scala + Flink + Kafka - Data Mesh -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+        <strong class="font-medium">flink-data-mesh-pipeline</strong>
+        <div class="text-slate-400 mt-1">Pipeline Flink + Kafka implementando Data Mesh: dois data products independentes (orders, customers) unidos por enrichment em nível de plataforma. Contratos Pydantic + validadores Scala em paridade.</div>
+        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Data Mesh • Pydantic</span></div>
+      </div>
+
+      <!-- 10. Scala + Akka + AWS Fargate -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+        <strong class="font-medium">scala-akka-aws-microservice</strong>
+        <div class="text-slate-400 mt-1">Microsserviço production-ready Scala + Akka HTTP deployado em AWS Fargate. DynamoDB (primary), RDS Postgres opcional, CloudWatch, Terraform completo (VPC/ECS/ALB/observability) e GitHub Actions CI/CD com OIDC (sem long-lived keys).</div>
+        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Scala • Akka • Fargate • Terraform</span></div>
+      </div>
+
+      <!-- 11. dbt + Airflow + Postgres (data platform) -->
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+        <strong class="font-medium">dbt-airflow-data-platform</strong>
+        <div class="text-slate-400 mt-1">Plataforma de dados end-to-end: Airflow orquestra dbt (seed → run → test → publish) contra Postgres. Models staging/marts, contratos Pydantic, tests genéricos + singulares, Data Mesh por schema.</div>
+        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/dbt-airflow-data-platform" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">dbt • Airflow • Postgres • Data Quality</span></div>
+      </div>
     </div>
 
     <p class="text-center text-xs text-slate-500 mt-6">Outros exemplos (study): <a href="https://github.com/ivamartins/scala-zio-task-api" target="_blank" class="hover:underline">scala-zio-task-api</a>. Próximo: csharp-azure-ai-base (Azure + C# + IA para Quartile). • Todos os repositórios: <a href="https://github.com/ivamartins" target="_blank" class="text-yellow-400 hover:underline">github.com/ivamartins</a></p>
