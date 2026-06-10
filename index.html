@@ -636,96 +636,118 @@
 
   <!-- FRAMEWORKS BASE / BASE PROJECTS -->
   <section id="frameworks" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-800">
-    <div class="text-center mb-8">
+    <div class="text-center mb-10">
       <div class="inline text-xs uppercase tracking-widest bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded">PROVA DE CONCEITO</div>
       <h3 class="text-2xl font-semibold tracking-tight mt-3">Frameworks e Projetos Base / Base Frameworks & Projects</h3>
       <p class="text-slate-400 mt-2 max-w-2xl mx-auto">Exemplos funcionais open source que demonstram na prática os stacks e serviços de modernização de legados, arquiteturas event-driven e agentes de IA.</p>
       <p class="mt-1 text-sm"><a href="https://github.com/ivamartins" target="_blank" class="text-yellow-400 hover:underline">Ver todos os repositórios no GitHub →</a></p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-      <!-- 1. WhatsApp / AI Agents -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">whatsapp-llm-bot</strong>
-        <div class="text-slate-400 mt-1">Bot WhatsApp LLM-agnostic (qualquer API OpenAI-compatible: Grok, OpenAI, OpenRouter, Ollama). 61 testes, sem CLI, deploy Docker/PM2/systemd. Exemplo de agente de IA entregável.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/whatsapp-llm-bot" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Node + Baileys • LLM-agnostic • 61 tests</span></div>
-        <div class="mt-1 text-xs text-slate-500">Variante histórica (CLI Grok): <a href="https://github.com/ivamartins/whatsapp-grok-bot" target="_blank" class="text-slate-400 hover:underline">whatsapp-grok-bot</a></div>
-      </div>
-
-      <!-- 2. Java Spring Boot + Kafka -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">java-product-api</strong>
-        <div class="text-slate-400 mt-1">API de produtos completa com Spring Boot, integração com Kafka para mensageria assíncrona e eventos, PostgreSQL. Exemplo de backend Java enterprise com padrões modernos, testes e mensageria.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/java-product-api" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Spring Boot • Kafka • Java • PostgreSQL</span></div>
-      </div>
-
-      <!-- 3. Quarkus - destaque -->
-      <div class="bg-slate-950 border border-yellow-400/30 rounded-2xl p-5">
-        <div class="flex items-center justify-between">
-          <strong class="font-medium">quarkus-java-base</strong>
-          <span class="text-[10px] px-2 py-0.5 bg-yellow-400/10 text-yellow-400 rounded">DESTAQUE</span>
+    <!-- JAVA -->
+    <div class="mb-10">
+      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Java</h4>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <!-- Java 21 + Spring WebFlux -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">spring-webflux-microservice</strong>
+          <div class="text-slate-400 mt-1">Microsserviço reativo em Java 21 + Spring Boot 3 + WebFlux. R2DBC no Postgres, read model no Mongo, cache Redis, eventos Kafka, integrações SOAP/SFTP/HTTP e CI/CD (GitLab + Jenkins). JVM tuning (G1GC).</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/spring-webflux-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Java 21 • WebFlux • Kafka • R2DBC</span></div>
         </div>
-        <div class="text-slate-400 mt-1">Quarkus (Java moderno) como base para modernização de sistemas legados Java EE/Play/Spring. Rápido, nativo, pronto para microsserviços e integração com IA/Kafka.</div>
-        <div class="mt-2 text-xs">
-          <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a>
-          <span class="text-slate-500 ml-2">Java 17+ • Quarkus • REST • Modernização</span>
+
+        <!-- Quarkus - destaque -->
+        <div class="bg-slate-950 border border-yellow-400/30 rounded-2xl p-5">
+          <div class="flex items-center justify-between">
+            <strong class="font-medium">quarkus-java-base</strong>
+            <span class="text-[10px] px-2 py-0.5 bg-yellow-400/10 text-yellow-400 rounded">DESTAQUE</span>
+          </div>
+          <div class="text-slate-400 mt-1">Quarkus (Java moderno) como base para modernização de sistemas legados Java EE/Play/Spring. Rápido, nativo, pronto para microsserviços e integração com IA/Kafka.</div>
+          <div class="mt-2 text-xs">
+            <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a>
+            <span class="text-slate-500 ml-2">Java 17+ • Quarkus • REST • Modernização</span>
+          </div>
+        </div>
+
+        <!-- Java Spring Boot + Kafka -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">java-product-api</strong>
+          <div class="text-slate-400 mt-1">API de produtos completa com Spring Boot, integração com Kafka para mensageria assíncrona e eventos, PostgreSQL. Exemplo de backend Java enterprise com padrões modernos, testes e mensageria.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/java-product-api" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Spring Boot • Kafka • Java • PostgreSQL</span></div>
         </div>
       </div>
+    </div>
 
-      <!-- 4. Scala - Play Framework (foundational for legacy Play work) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">play-scala-base</strong>
-        <div class="text-slate-400 mt-1">Base funcional em Play Framework (Scala) para manutenção e evolução de legados. Inclui DB, evolutions e exemplos de modernização.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/play-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Play Scala • Legacy data</span></div>
+    <!-- SCALA -->
+    <div class="mb-10">
+      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Scala</h4>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <!-- Scala + Akka (resilient services, actors, persistence) -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">akka-scala-base</strong>
+          <div class="text-slate-400 mt-1">Serviços resilientes com Akka Typed + HTTP. Base para clustering, persistence (event sourcing) e integrações modernas sobre legados.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/akka-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Akka • HTTP • Resilience</span></div>
+        </div>
+
+        <!-- Scala + Akka + AWS Fargate -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">scala-akka-aws-microservice</strong>
+          <div class="text-slate-400 mt-1">Production-ready Scala + Akka HTTP deployado em AWS Fargate. DynamoDB (primary), RDS Postgres opcional, CloudWatch, Terraform completo (VPC/ECS/ALB/observability) e GitHub Actions CI/CD com OIDC (sem long-lived keys).</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Scala • Akka • Fargate • Terraform</span></div>
+        </div>
+
+        <!-- Scala + Flink + Kafka - Data Mesh -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">flink-data-mesh-pipeline</strong>
+          <div class="text-slate-400 mt-1">Pipeline Flink + Kafka implementando Data Mesh: dois data products independentes (orders, customers) unidos por enrichment em nível de plataforma. Contratos Pydantic + validadores Scala em paridade.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Data Mesh • Pydantic</span></div>
+        </div>
+
+        <!-- Scala - Flink + Kafka (event-driven big data) -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">flink-kafka-scala-base-</strong>
+          <div class="text-slate-400 mt-1">Streaming event-driven com Scala + Flink + Kafka. Base para pipelines em tempo real e arquiteturas adotadas como padrão em grandes plataformas.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-kafka-scala-base-" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Scala</span></div>
+        </div>
+
+        <!-- Scala - Play Framework (foundational for legacy Play work) -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">play-scala-base</strong>
+          <div class="text-slate-400 mt-1">Base funcional em Play Framework (Scala) para manutenção e evolução de legados. Inclui DB, evolutions e exemplos de modernização.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/play-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Play Scala • Legacy data</span></div>
+        </div>
+
+        <!-- Scala - Elasticsearch (search/observability on top of pipelines) -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">elasticsearch-scala-base</strong>
+          <div class="text-slate-400 mt-1">Integração com Elasticsearch para search, indexação e observability em sistemas de alto volume. Exemplo de enriquecimento de dados legados.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Elasticsearch • Search</span></div>
+        </div>
       </div>
+    </div>
 
-      <!-- 5. Scala - Flink + Kafka (event-driven big data, from Sicredi experience) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">flink-kafka-scala-base-</strong>
-        <div class="text-slate-400 mt-1">Streaming event-driven com Scala + Flink + Kafka. Base para pipelines em tempo real e arquiteturas adotadas como padrão em grandes plataformas.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-kafka-scala-base-" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Scala</span></div>
+    <!-- PYTHON -->
+    <div class="mb-10">
+      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Python / Data</h4>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <!-- dbt + Airflow + Postgres (data platform) -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">dbt-airflow-data-platform</strong>
+          <div class="text-slate-400 mt-1">Plataforma de dados end-to-end: Airflow orquestra dbt (seed → run → test → publish) contra Postgres. Models staging/marts, contratos Pydantic, tests genéricos + singulares, Data Mesh por schema.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/dbt-airflow-data-platform" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">dbt • Airflow • Postgres • Data Quality</span></div>
+        </div>
       </div>
+    </div>
 
-      <!-- 6. Scala - Akka (resilient services, actors, persistence) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">akka-scala-base</strong>
-        <div class="text-slate-400 mt-1">Serviços resilientes com Akka Typed + HTTP. Base para clustering, persistence (event sourcing) e integrações modernas sobre legados.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/akka-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Akka • HTTP • Resilience</span></div>
-      </div>
-
-      <!-- 7. Scala - Elasticsearch (search/observability on top of pipelines) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">elasticsearch-scala-base</strong>
-        <div class="text-slate-400 mt-1">Integração com Elasticsearch para search, indexação e observability em sistemas de alto volume. Exemplo de enriquecimento de dados legados.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Elasticsearch • Search</span></div>
-      </div>
-
-      <!-- 8. Java 21 + Spring WebFlux (reactive microservices) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">spring-webflux-microservice</strong>
-        <div class="text-slate-400 mt-1">Microsserviço reativo em Java 21 + Spring Boot 3 + WebFlux. Persistência R2DBC no Postgres, read model no Mongo, cache Redis, eventos Kafka, integrações SOAP/SFTP/HTTP e CI/CD (GitLab + Jenkins). JVM tuning (G1GC).</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/spring-webflux-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Java 21 • WebFlux • Kafka • R2DBC</span></div>
-      </div>
-
-      <!-- 9. Scala + Flink + Kafka - Data Mesh -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">flink-data-mesh-pipeline</strong>
-        <div class="text-slate-400 mt-1">Pipeline Flink + Kafka implementando Data Mesh: dois data products independentes (orders, customers) unidos por enrichment em nível de plataforma. Contratos Pydantic + validadores Scala em paridade.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Data Mesh • Pydantic</span></div>
-      </div>
-
-      <!-- 10. Scala + Akka + AWS Fargate -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">scala-akka-aws-microservice</strong>
-        <div class="text-slate-400 mt-1">Microsserviço production-ready Scala + Akka HTTP deployado em AWS Fargate. DynamoDB (primary), RDS Postgres opcional, CloudWatch, Terraform completo (VPC/ECS/ALB/observability) e GitHub Actions CI/CD com OIDC (sem long-lived keys).</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Scala • Akka • Fargate • Terraform</span></div>
-      </div>
-
-      <!-- 11. dbt + Airflow + Postgres (data platform) -->
-      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-        <strong class="font-medium">dbt-airflow-data-platform</strong>
-        <div class="text-slate-400 mt-1">Plataforma de dados end-to-end: Airflow orquestra dbt (seed → run → test → publish) contra Postgres. Models staging/marts, contratos Pydantic, tests genéricos + singulares, Data Mesh por schema.</div>
-        <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/dbt-airflow-data-platform" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">dbt • Airflow • Postgres • Data Quality</span></div>
+    <!-- NODE / AI AGENTS -->
+    <div>
+      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Node • AI Agents</h4>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <!-- WhatsApp / AI Agents -->
+        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
+          <strong class="font-medium">whatsapp-llm-bot</strong>
+          <div class="text-slate-400 mt-1">Bot WhatsApp LLM-agnostic (qualquer API OpenAI-compatible: Grok, OpenAI, OpenRouter, Ollama). 61 testes, sem CLI, deploy Docker/PM2/systemd. Exemplo de agente de IA entregável.</div>
+          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/whatsapp-llm-bot" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Node + Baileys • LLM-agnostic • 61 tests</span></div>
+          <div class="mt-1 text-xs text-slate-500">Variante histórica (CLI Grok): <a href="https://github.com/ivamartins/whatsapp-grok-bot" target="_blank" class="text-slate-400 hover:underline">whatsapp-grok-bot</a></div>
+        </div>
       </div>
     </div>
 
