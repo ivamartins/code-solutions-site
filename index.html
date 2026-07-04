@@ -219,37 +219,54 @@
   </script>
 
   <style>
-    /* Top banner (recruiter → portfolio) */
+    /* Top banner (recruiter → portfolio) — emphasized */
     .top-banner {
-      background: linear-gradient(90deg, rgb(234 179 8 / 0.12) 0%, rgb(234 179 8 / 0.04) 100%);
-      border-bottom: 1px solid rgb(234 179 8 / 0.2);
+      background: linear-gradient(90deg, rgb(234 179 8 / 0.22) 0%, rgb(234 179 8 / 0.08) 100%);
+      border-bottom: 1px solid rgb(234 179 8 / 0.35);
     }
     .top-banner a { color: rgb(253 224 71); }
     .top-banner a:hover { color: rgb(250 204 21); }
+    .top-banner .recruiter-cta {
+      background: rgb(234 179 8);
+      color: rgb(2 6 23);
+    }
+    .top-banner .recruiter-cta:hover {
+      background: rgb(250 204 21);
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 font-sans antialiased">
 
-  <!-- TOP BANNER: dismissible notice pointing recruiters to the portfolio site -->
+  <!-- TOP BANNER: emphasized notice pointing recruiters to the portfolio site -->
   <div id="recruiter-banner" class="top-banner">
-    <div class="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between gap-x-4 text-xs sm:text-sm">
-      <div class="flex items-center gap-x-2 sm:gap-x-3 min-w-0">
-        <i class="fa-solid fa-user-tie text-yellow-400 flex-shrink-0"></i>
-        <p class="text-slate-200 truncate">
+    <div class="max-w-7xl mx-auto px-6 py-3 sm:py-3.5 flex items-center justify-between gap-x-3 sm:gap-x-4 text-xs sm:text-sm">
+      <div class="flex items-center gap-x-2 sm:gap-x-3 min-w-0 flex-1">
+        <i class="fa-solid fa-user-tie text-yellow-400 flex-shrink-0 text-base sm:text-lg"></i>
+        <p class="text-slate-200 min-w-0">
           <span class="lang-pt">
-            <strong class="text-white">Recrutador(a)?</strong> Este é meu site de <em>serviços PJ</em>.
-            Para avaliar meu perfil como candidato, veja o
-            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="font-semibold underline underline-offset-2">site portfólio dedicado →</a>
+            <strong class="text-white">Recrutador(a)?</strong>
+            <span class="hidden sm:inline">Este é meu site de <em>serviços PJ</em>. Para avaliar meu perfil como candidato, vá para o</span>
+            <span class="sm:hidden">Avalie meu perfil no</span>
+            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
+               class="recruiter-cta inline-flex items-center gap-x-1.5 ml-1 sm:ml-2 px-3 py-1 rounded-full font-semibold whitespace-nowrap">
+              <span>site portfólio</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
           </span>
           <span class="lang-en">
-            <strong class="text-white">Recruiter?</strong> This is my <em>services site</em>.
-            For evaluating me as a candidate, see my
-            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="font-semibold underline underline-offset-2">dedicated portfolio site →</a>
+            <strong class="text-white">Recruiter?</strong>
+            <span class="hidden sm:inline">This is my <em>services site</em>. To evaluate me as a candidate, go to my</span>
+            <span class="sm:hidden">Evaluate me at my</span>
+            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
+               class="recruiter-cta inline-flex items-center gap-x-1.5 ml-1 sm:ml-2 px-3 py-1 rounded-full font-semibold whitespace-nowrap">
+              <span>portfolio site</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
           </span>
         </p>
       </div>
       <button onclick="dismissRecruiterBanner()" aria-label="Dismiss"
-              class="text-slate-400 hover:text-white flex-shrink-0 px-2 py-1">
+              class="text-slate-400 hover:text-white flex-shrink-0 px-2 py-1 rounded hover:bg-slate-800/50">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
@@ -267,21 +284,30 @@
           </div>
         </div>
 
-        <div class="hidden md:flex items-center gap-x-8 text-sm">
+        <div class="hidden md:flex items-center gap-x-6 text-sm">
           <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-pt">Sobre</a>
           <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-en">About</a>
-          
+
           <a href="#servicos" class="hover:text-yellow-400 transition-colors lang-pt">Serviços</a>
           <a href="#servicos" class="hover:text-yellow-400 transition-colors lang-en">Services</a>
-          
+
           <a href="#cases" class="hover:text-yellow-400 transition-colors lang-pt">Cases</a>
           <a href="#cases" class="hover:text-yellow-400 transition-colors lang-en">Cases</a>
-          
+
           <a href="#agentes" class="hover:text-yellow-400 transition-colors lang-pt">Agentes IA</a>
           <a href="#agentes" class="hover:text-yellow-400 transition-colors lang-en">AI Agents</a>
-          
+
           <a href="#frameworks" class="hover:text-yellow-400 transition-colors lang-pt">Frameworks Base</a>
           <a href="#frameworks" class="hover:text-yellow-400 transition-colors lang-en">Base Frameworks</a>
+
+          <!-- Recruiter link — emphasized to redirect to portfolio site -->
+          <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-x-1.5 px-3 py-1.5 rounded-full border border-yellow-500/50 bg-yellow-500/10 text-yellow-300 hover:bg-yellow-500/20 hover:text-yellow-200 transition-colors text-xs font-medium">
+            <i class="fa-solid fa-user-tie"></i>
+            <span class="lang-pt">Recrutador(a)?</span>
+            <span class="lang-en">Recruiter?</span>
+            <i class="fa-solid fa-arrow-right text-[9px]"></i>
+          </a>
         </div>
 
         <div class="flex items-center gap-x-3">
