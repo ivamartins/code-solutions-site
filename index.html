@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Solutions | Ivã Martins — Manutenção e Modernização de Sistemas Legados (Java, Spring Boot, Quarkus, Play Framework, Elasticsearch, Scala, Akka, Kafka, Flink) | Canoas (Porto Alegre metro)</title>
-  <meta name="description" content="20+ anos de experiência em manutenção e modernização de sistemas legados com Java, Spring Boot, Quarkus, Play Framework, Elasticsearch, Scala, Akka, Kafka e Flink. Especialista em arquiteturas enterprise, event-driven e agentes de IA. Serviços via Code Solutions (PJ), Canoas (Porto Alegre metro).">
+  <meta name="description" content="Code Solutions — empresa de produtos e frameworks para backend, event-driven e IA. Toolkits battle-tested (Scala + Akka + Flink, Java modernization, AI Agent Kit, Conversational AI Bots, Data Platform) nascidos de 20+ anos em produção real. Fundada por ex-engenheiro de Sicredi, Panvel e Quartile (US).">
 
   <meta name="author" content="Ivã Martins - Code Solutions">
   <meta name="robots" content="index, follow">
@@ -111,23 +111,24 @@
     }
   </style>
 
-  <!-- SEO: Structured Data (Schema.org) for Professional Service / Person -->
+  <!-- SEO: Structured Data (Schema.org) for Organization + Products -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Person",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#person",
-        "name": "Ivã Martins",
-        "jobTitle": "Backend Engineer",
-        "description": "Mais de 20 anos de experiência em manutenção, evolução e modernização de sistemas legados em Java, Play Framework, Elasticsearch, Scala, Akka, Kafka, Flink e arquiteturas de alto volume. Expertise acumulada em CLT e consultoria externa; agora entregue através da Code Solutions.",
+        "@type": "Organization",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#org",
+        "name": "Code Solutions",
+        "alternateName": "Code Solutions - Ivã Martins",
+        "description": "Code Solutions builds and licenses production-ready frameworks, toolkits, and AI agent kits for backend, event-driven systems, and corporate AI integration. Products born from 20+ years of real-world systems work.",
         "url": "https://ivamartins.github.io/code-solutions-site/",
-        "image": "https://ivamartins.github.io/code-solutions-site/assets/portrait.jpg",
+        "logo": "https://ivamartins.github.io/code-solutions-site/assets/logo-cs.png",
+        "image": "https://ivamartins.github.io/code-solutions-site/assets/hero.jpg",
         "sameAs": [
-          "https://www.linkedin.com/in/ivã-martins-71760b89/",
           "https://www.linkedin.com/company/code-solutions-it/"
         ],
+        "founder": { "@id": "https://ivamartins.github.io/code-solutions-site/#person" },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Canoas",
@@ -135,9 +136,34 @@
           "addressCountry": "BR"
         },
         "knowsAbout": [
-          "Java", "Play Framework", "Elasticsearch", "Scala", "Akka", "Apache Kafka", "Apache Flink", 
-          "Spring Boot", "Quarkus", "Python", "C# .NET", "Azure", "Arquitetura Event-Driven", 
-          "Microsserviços", "Manutenção de Sistemas Legados", "Integração de IA", "APIs REST"
+          "Java", "Spring Boot", "Quarkus", "Scala", "Akka", "Apache Kafka", "Apache Flink",
+          "Python", "C# .NET", "Azure", "LangChain4j", "MCP", "RAG", "Event-Driven Architecture",
+          "Legacy Modernization", "Microsserviços", "AI Agents"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#person",
+        "name": "Ivã Martins",
+        "jobTitle": "Senior Backend Engineer",
+        "description": "Mais de 20 anos de experiência em produção: Sicredi, Panvel, Quartile (US). Fundador da Code Solutions — empresa de produtos e frameworks para backend, event-driven e IA. Atua em tempo integral como Senior Backend Engineer; a empresa é seu R&D lab e canal de produto.",
+        "url": "https://ivamartins.github.io/code-solutions-site/",
+        "image": "https://ivamartins.github.io/code-solutions-site/assets/portrait.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/ivã-martins-71760b89/",
+          "https://www.linkedin.com/company/code-solutions-it/"
+        ],
+        "worksFor": { "@id": "https://ivamartins.github.io/code-solutions-site/#org" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Porto Alegre",
+          "addressRegion": "RS",
+          "addressCountry": "BR"
+        },
+        "knowsAbout": [
+          "Java", "Play Framework", "Elasticsearch", "Scala", "Akka", "Apache Kafka", "Apache Flink",
+          "Spring Boot", "Quarkus", "Python", "C# .NET", "Azure", "Event-Driven Architecture",
+          "Microsserviços", "Legacy Modernization", "AI Integration", "REST APIs"
         ],
         "alumniOf": [
           {"@type": "Organization", "name": "Universidade Luterana do Brasil"},
@@ -151,30 +177,52 @@
         ]
       },
       {
-        "@type": "ProfessionalService",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#service",
-        "name": "Code Solutions - Ivã Martins",
-        "description": "Independent consulting company (Code Solutions) specialized in maintenance, support, modernization and development of legacy systems and scalable platforms using Java, Play Framework, Elasticsearch, Scala/Akka, Kafka, Flink and enterprise technologies. Creation of deliverable AI agents.",
-        "url": "https://ivamartins.github.io/code-solutions-site/",
-        "image": "https://ivamartins.github.io/code-solutions-site/assets/hero.jpg",
-        "provider": { "@id": "https://ivamartins.github.io/code-solutions-site/#person" },
-        "areaServed": ["Brasil", "Remoto Internacional"],
-        "serviceType": [
-          "Manutenção de Sistemas Legados",
-          "Modernização de Legados Java e Scala",
-          "Consultoria Play Framework e Elasticsearch",
-          "Arquitetura Event-Driven (Kafka, Flink, Akka)",
-          "Desenvolvimento Backend e APIs REST",
-          "Integração e Agentes de IA",
-          "Fábrica de Software e Consultoria Técnica"
-        ],
-        "knowsAbout": ["Java", "Play Framework", "Elasticsearch", "Scala", "Akka", "Spring Boot", "Quarkus", "Apache Kafka", "Apache Flink"],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Canoas",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        }
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-event-driven",
+        "name": "Event-Driven & Streaming Toolkit (Scala + Akka + Flink)",
+        "description": "Scala + Akka + Apache Flink + Kafka framework for event-driven systems in production. Event-sourcing, clustering, backpressure supervision, real-time pipelines.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "Backend Framework"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-java-modernization",
+        "name": "Java Modernization Framework",
+        "description": "Playbooks and reference bases (Quarkus, Spring Boot 3, WebFlux) to modernize Java legacies while preserving business rules.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "Backend Framework"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-ai-agent",
+        "name": "AI Agent Kit (LangChain4j + MCP)",
+        "description": "Corporate AI kit: persistent RAG, supervisor/sub-agents, Spring Security, MCP. Ready to integrate with legacy systems.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "AI Tool"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-conversational-ai",
+        "name": "Conversational AI Bots",
+        "description": "WhatsApp/Telegram LLM-agnostic bots. Supports any OpenAI-compatible API. Custom agents with specific skills.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "AI Tool"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-data-platform",
+        "name": "Data Platform Foundation (dbt + Airflow)",
+        "description": "Production-ready data pipeline: Airflow orchestrates dbt against Postgres. Staging/marts, Pydantic contracts, Data Quality tests, Data Mesh.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "Data Platform"
+      },
+      {
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-azure-ai",
+        "name": "C# + Azure AI Base",
+        "description": "C#/.NET base for Azure Functions + Service Bus with AI integration. Reference for retail-media and e-commerce platforms at scale.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "Cloud Framework"
       },
       {
         "@type": "FAQPage",
@@ -337,8 +385,8 @@
           <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-pt">Sobre</a>
           <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-en">About</a>
 
-          <a href="#servicos" class="hover:text-yellow-400 transition-colors lang-pt">Serviços</a>
-          <a href="#servicos" class="hover:text-yellow-400 transition-colors lang-en">Services</a>
+          <a href="#produtos" class="hover:text-yellow-400 transition-colors lang-pt">Produtos</a>
+          <a href="#produtos" class="hover:text-yellow-400 transition-colors lang-en">Products</a>
 
           <a href="#cases" class="hover:text-yellow-400 transition-colors lang-pt">Cases</a>
           <a href="#cases" class="hover:text-yellow-400 transition-colors lang-en">Cases</a>
@@ -390,32 +438,32 @@
         <div class="md:col-span-7">
           <div class="inline-flex items-center gap-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs tracking-[1px] mb-6">
             <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span class="lang-pt">PORTO ALEGRE • DISPONÍVEL PARA PROJETOS</span>
-            <span class="lang-en">PORTO ALEGRE • AVAILABLE FOR PROJECTS</span>
+            <span class="lang-pt">CODE SOLUTIONS • CNPJ ativo • BR / US / EU</span>
+            <span class="lang-en">CODE SOLUTIONS • Active company • BR / US / EU</span>
           </div>
 
           <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-semibold mb-6">
-            <span class="lang-pt">20+ anos modernizando legados<br>e construindo plataformas<br>que escalam.</span>
-            <span class="lang-en">20+ years modernizing legacy systems<br>and building platforms<br>that scale.</span>
+            <span class="lang-pt">Frameworks battle-tested<br>para backend, event-driven<br>e IA em produção.</span>
+            <span class="lang-en">Battle-tested frameworks<br>for backend, event-driven,<br>and production AI.</span>
           </h1>
-          
+
           <p class="max-w-lg text-xl text-slate-400 mb-8">
-            <span class="lang-pt">Engenheiro Backend sênior. Especialista em migrações críticas e agora também em <strong class="text-white">agentes de IA profissionais</strong> e automações inteligentes entregáveis.</span>
-            <span class="lang-en">Senior Backend Engineer. Specialist in legacy systems modernization and <strong class="text-white">professional AI agents</strong>.</span>
+            <span class="lang-pt">A Code Solutions transforma <strong class="text-white">20+ anos</strong> construindo sistemas reais em <strong class="text-white">toolkits, frameworks e AI agent kits</strong> que times podem adotar, licenciar ou customizar. Produtos prontos para produção, não consultoria em massa.</span>
+            <span class="lang-en">Code Solutions turns <strong class="text-white">20+ years</strong> of real-world systems work into <strong class="text-white">toolkits, frameworks, and AI agent kits</strong> that teams can adopt, license, or customize. Production-ready products, not mass consulting.</span>
           </p>
 
           <div class="flex flex-wrap gap-3">
-            <a href="#contato" 
+            <a href="#produtos"
                class="inline-flex items-center justify-center gap-x-2 px-8 h-12 rounded-2xl bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-slate-950 font-semibold text-base transition-all">
-              <span class="lang-pt">Solicitar proposta</span>
-              <span class="lang-en">Request a proposal</span>
+              <span class="lang-pt">Ver produtos</span>
+              <span class="lang-en">See products</span>
               <i class="fa-solid fa-arrow-right ml-1"></i>
             </a>
-            
-            <button onclick="document.getElementById('agentes').scrollIntoView({ behavior: 'smooth' })" 
+
+            <button onclick="document.getElementById('agentes').scrollIntoView({ behavior: 'smooth' })"
                     class="inline-flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-900 text-sm font-medium transition-all">
-              <span class="lang-pt">Ver serviços de Agentes IA</span>
-              <span class="lang-en">See AI Agents services</span>
+              <span class="lang-pt">Ver AI Agent Kits</span>
+              <span class="lang-en">See AI Agent Kits</span>
             </button>
 
             <a id="wa-hero-btn" href="#" target="_blank"
@@ -425,13 +473,22 @@
             </a>
           </div>
 
-          <div class="mt-8 flex items-center gap-x-8 text-xs text-slate-500">
+          <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500">
             <div class="flex items-center gap-x-1.5">
-              <i class="fa-solid fa-check text-emerald-400"></i> 
-              <span class="lang-pt">PJ • Faturamento simples</span>
-              <span class="lang-en">PJ • Simple invoicing</span>
+              <i class="fa-solid fa-check text-emerald-400"></i>
+              <span class="lang-pt">16+ repos open source</span>
+              <span class="lang-en">16+ open source repos</span>
             </div>
-            <div>Trajetória: Sicredi • Panvel • Quartile</div>
+            <div class="flex items-center gap-x-1.5">
+              <i class="fa-solid fa-check text-emerald-400"></i>
+              <span class="lang-pt">4 setores atendidos</span>
+              <span class="lang-en">4 industries served</span>
+            </div>
+            <div class="flex items-center gap-x-1.5">
+              <i class="fa-solid fa-check text-emerald-400"></i>
+              <span class="lang-pt">Fundada por ex-engenheiro de Sicredi · Panvel · Quartile</span>
+              <span class="lang-en">Founded by ex-engineer from Sicredi · Panvel · Quartile</span>
+            </div>
           </div>
         </div>
 
@@ -469,57 +526,77 @@
     </div>
   </div>
 
-  <!-- SOBRE -->
+  <!-- ABOUT CODE SOLUTIONS -->
   <section id="sobre" class="max-w-7xl mx-auto px-6 pt-20 pb-16">
     <div class="grid md:grid-cols-12 gap-x-12 gap-y-10 items-start">
       <div class="md:col-span-5">
         <div class="sticky top-20">
-          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2">SOBRE MIM</div>
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2 lang-pt">SOBRE A CODE SOLUTIONS</div>
+          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2 lang-en">ABOUT CODE SOLUTIONS</div>
           <h2 class="section-title tracking-tighter mb-6">
-            <span class="lang-pt">Senior Backend com<br>profundidade real em<br>legados e inovação.</span>
-            <span class="lang-en">Senior Backend with<br>real depth in legacy<br>modernization + innovation.</span>
+            <span class="lang-pt">De 20+ anos de sistemas<br>reais para frameworks<br>production-ready.</span>
+            <span class="lang-en">From 20+ years of real<br>systems to production-ready<br>frameworks.</span>
           </h2>
-          
-          <div class="rounded-2xl overflow-hidden border border-slate-800 mb-6 shadow-sm">
-            <img src="assets/portrait.jpg" alt="Ivã Martins — Code Solutions" class="w-full">
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 mb-6 shadow-sm max-w-xs">
+            <img src="assets/portrait.jpg" alt="Ivã Martins — Founder, Code Solutions" class="w-full">
           </div>
-          
+          <div class="text-xs text-yellow-400 font-medium mb-1 lang-pt">Conheça o fundador</div>
+          <div class="text-xs text-yellow-400 font-medium mb-1 lang-en">Meet the founder</div>
           <div class="text-sm text-slate-400">
-            <span class="lang-pt">Canoas, RS • Disponível para projetos remotos no Brasil e também para fora do Brasil (presencial no Sul/Sudeste quando necessário).</span>
-            <span class="lang-en">Canoas, RS • Open to remote projects in Brazil and also outside Brazil (on-site in South/Southeast when needed).</span>
+            <span class="lang-pt"><strong class="text-white">Ivã Martins</strong> — fundador e engenheiro principal. Mais de 20 anos em produção: Sicredi, Panvel, Quartile (US).</span>
+            <span class="lang-en"><strong class="text-white">Ivã Martins</strong> — founder and principal engineer. 20+ years in production: Sicredi, Panvel, Quartile (US).</span>
           </div>
         </div>
       </div>
 
       <div class="md:col-span-7 text-[15px] leading-relaxed text-slate-300 space-y-6">
         <p class="lang-pt">
-          Olá, sou <strong class="text-white">Ivã Martins</strong>. Engenheiro Backend Sênior com mais de 20 anos construindo e modernizando sistemas complexos, APIs de alto volume e integrações de larga escala.
+          A <strong class="text-white">Code Solutions</strong> é o canal onde eu (Ivã Martins) productoizo 20+ anos construindo sistemas reais em <strong class="text-white">frameworks, toolkits e AI agent kits</strong> que times podem adotar, licenciar ou customizar.
         </p>
         <p class="lang-en">
-          Hi, I'm <strong class="text-white">Ivã Martins</strong>. Senior Backend Engineer with over 20 years building and modernizing complex systems, high-volume APIs, and large-scale integrations.
-        </p>
-        
-        <p class="lang-pt">
-          Trabalhei extensivamente com Java (das versões iniciais até enterprise moderno), Play Framework, Python para dados e automação, Scala e arquiteturas event-driven com Flink + Kafka + Akka. Recentemente atuei com C#/.NET e Azure, incluindo features com IA em produção usando Claude e ChatGPT. Experiência também com Elasticsearch para busca, indexação e observability em plataformas de alto volume. No dia a dia utilizo <strong class="text-white">Claude Code</strong> e outros assistentes de IA no terminal como aceleradores de refatoração, modernização de legados e criação de agentes — sempre combinados com revisão humana e julgamento de engenharia.
-        </p>
-        <p class="lang-en">
-          Extensive experience with Java (from early versions to modern enterprise), Play Framework, Python for data/automation, Scala and event-driven architectures with Flink + Kafka + Akka. More recently worked with C#/.NET and Azure, including production AI features using Claude and ChatGPT. Also experienced with Elasticsearch for search, indexing and observability in high-volume platforms. In day-to-day work I use <strong class="text-white">Claude Code</strong> and other AI coding assistants in the terminal to speed up refactors, legacy modernization and agent development — always combined with human review and engineering judgment.
+          <strong class="text-white">Code Solutions</strong> is the channel where I (Ivã Martins) productize 20+ years of real-world systems work into <strong class="text-white">frameworks, toolkits, and AI agent kits</strong> that teams can adopt, license, or customize.
         </p>
 
-        <div class="pt-3 border-t border-slate-800 text-sm">
-          <p class="lang-pt"><strong>Projetos de que mais me orgulho:</strong> a modernização da plataforma de e-commerce da Panvel (Grupo Dimed), onde participei da reescrita completa do backend e liderei a criação da versão mobile e a implantação do Scrum, além da transformação arquitetural no Sicredi, que começou como um POC em Python e evoluiu para uma arquitetura orientada a eventos, tornando-se o padrão de toda a plataforma digital da instituição.</p>
-          <p class="lang-en"><strong>Projects I'm most proud of:</strong> the modernization of the Panvel (Grupo Dimed) e-commerce platform, where I participated in the complete backend rewrite and led the creation of the mobile version and the Scrum implementation, in addition to the architectural transformation at Sicredi, which started as a Python POC and evolved into an event-driven architecture, becoming the standard for the institution's entire digital platform.</p>
+        <p class="lang-pt">
+          <strong class="text-white">Atuo em tempo integral como Senior Backend Engineer</strong> — esta empresa é meu laboratório pessoal de R&D, onde o IP acumulado vira produto. É <strong class="text-white">complementar à minha carreira</strong>, não concorrente. Engajamentos sob medida acontecem, mas nascem em torno dos nossos frameworks e são pontuais.
+        </p>
+        <p class="lang-en">
+          <strong class="text-white">I work full-time as a Senior Backend Engineer</strong> — this company is my personal R&D lab, where accumulated IP becomes product. It's <strong class="text-white">complementary to my career</strong>, not competing with it. Custom engagements do happen, but they're scoped around our frameworks and stay short.
+        </p>
+
+        <p class="lang-pt">
+          O core aqui é <strong class="text-white">produto, não consultoria em massa</strong>. Cada framework nasce de um problema real que enfrentei em produção — Sicredi, Panvel, Quartile, CIEE — e é mantido open source ou licenciado para times que precisam de base sólida sem reinventar a roda.
+        </p>
+        <p class="lang-en">
+          The core here is <strong class="text-white">product, not mass consulting</strong>. Each framework is born from a real problem I faced in production — Sicredi, Panvel, Quartile, CIEE — and is kept open source or licensed for teams that need solid foundations without reinventing the wheel.
+        </p>
+
+        <div class="pt-4 border-t border-slate-800">
+          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-pt">PARA QUEM É</div>
+          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-en">WHO IT'S FOR</div>
+          <ul class="space-y-2 text-sm">
+            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Times que precisam de <strong class="text-white">base sólida</strong> (Akka, Flink, Spring, Quarkus) sem gastar meses construindo do zero</span><span class="lang-en">Teams that need <strong class="text-white">solid foundations</strong> (Akka, Flink, Spring, Quarkus) without spending months building from scratch</span></li>
+            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Empresas que querem <strong class="text-white">IA corporativa</strong> (RAG, agentes, MCP) com framework pronto, não PoC descartável</span><span class="lang-en">Companies that want <strong class="text-white">corporate AI</strong> (RAG, agents, MCP) with a ready framework, not a throwaway PoC</span></li>
+            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Times de dados que precisam de <strong class="text-white">data platform</strong> battle-tested (dbt + Airflow + qualidade)</span><span class="lang-en">Data teams that need a <strong class="text-white">battle-tested data platform</strong> (dbt + Airflow + quality)</span></li>
+            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Engajamentos pontuais de <strong class="text-white">adoção e suporte</strong> em cima dos frameworks (não body rental)</span><span class="lang-en">Short <strong class="text-white">adoption and support</strong> engagements on top of the frameworks (not body rental)</span></li>
+          </ul>
         </div>
 
-        <div class="pt-3 text-xs text-slate-400">
-          <p class="lang-pt">Hoje os serviços são entregues através da <strong>Code Solutions (PJ)</strong>, minha estrutura para prestação de serviços independentes. A expertise acima foi acumulada em posições CLT e consultoria externa em grandes instituições e agora é entregue através da Code Solutions.</p>
-          <p class="lang-en">Today services are delivered through <strong>Code Solutions (my independent consulting company)</strong>, my structure for independent services. The expertise above was accumulated in CLT positions and external consulting at large institutions and is now delivered through Code Solutions.</p>
+        <div class="pt-4 text-xs text-slate-500 flex items-center gap-x-3 flex-wrap">
+          <span class="flex items-center gap-x-1.5">
+            <i class="fa-brands fa-linkedin text-blue-400"></i>
+            <a href="https://www.linkedin.com/company/code-solutions-it/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">/company/code-solutions-it</a>
+          </span>
+          <span class="text-slate-700">•</span>
+          <span class="lang-pt">Empresa formalmente registrada no Brasil</span>
+          <span class="lang-en">Formally registered company in Brazil</span>
         </div>
 
         <!-- Formação e Certificações -->
         <div class="pt-6 border-t border-slate-800">
-          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-pt">FORMAÇÃO E CERTIFICAÇÕES</div>
-          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-en">EDUCATION &amp; CERTIFICATIONS</div>
+          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-pt">FORMAÇÃO E CERTIFICAÇÕES DO FUNDADOR</div>
+          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-en">FOUNDER'S EDUCATION &amp; CERTIFICATIONS</div>
           <div class="grid md:grid-cols-2 gap-x-8 gap-y-6 text-sm">
             <!-- Formação Acadêmica -->
             <div>
@@ -582,21 +659,26 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-end justify-between mb-8">
         <div>
-          <div class="uppercase tracking-[2px] text-xs text-yellow-400">CASES DE DESTAQUE</div>
-          <h3 class="section-title tracking-tighter">Resultados da minha trajetória</h3>
-          <p class="text-sm text-slate-400 mt-1">A expertise que entrego hoje via Code Solutions é construída sobre esses e outros projetos de grande escala.</p>
+          <div class="uppercase tracking-[2px] text-xs text-yellow-400 lang-pt">ONDE NOSSOS FRAMEWORKS FORAM ADOTADOS</div>
+          <div class="uppercase tracking-[2px] text-xs text-yellow-400 lang-en">WHERE OUR FRAMEWORKS WERE DEPLOYED</div>
+          <h3 class="section-title tracking-tighter lang-pt">Prova social: deploys reais em produção</h3>
+          <h3 class="section-title tracking-tighter lang-en">Social proof: real production deployments</h3>
+          <p class="text-sm text-slate-400 mt-1 lang-pt">Cada um desses cases começou com um problema real que originou um framework ou toolkit que mantemos hoje.</p>
+          <p class="text-sm text-slate-400 mt-1 lang-en">Each of these cases started with a real problem that originated a framework or toolkit we now maintain.</p>
         </div>
-        <a href="#contato" class="hidden md:inline text-sm text-yellow-400 hover:text-yellow-300">Quero resultados assim →</a>
+        <a href="#contato" class="hidden md:inline text-sm text-yellow-400 hover:text-yellow-300 lang-pt">Quero adotar →</a>
+        <a href="#contato" class="hidden md:inline text-sm text-yellow-400 hover:text-yellow-300 lang-en">Want to adopt →</a>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- Panvel (2012–2014) - veio primeiro cronologicamente -->
+        <!-- Panvel (2012–2014) -->
         <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
           <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">PANVEL (GRUPO DIMED) • 2012–2014</div>
-          <h4 class="font-semibold text-xl mb-4">Modernização da plataforma de e-commerce + versão mobile</h4>
+          <h4 class="font-semibold text-xl mb-4 lang-pt">Modernização do e-commerce + 1ª versão mobile</h4>
+          <h4 class="font-semibold text-xl mb-4 lang-en">E-commerce modernization + 1st mobile version</h4>
           <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Atuei como Desenvolvedor Java e Scrum Master no projeto de modernização da plataforma de e-commerce. Liderei a implantação do Scrum e a criação da versão mobile, participei da reescrita completa do backend e das migrações de legado para JSF e de servidor WebSphere para JBoss.</p>
-            <p class="lang-en">Java Developer &amp; Scrum Master on the e-commerce modernization project. Led Scrum adoption and the creation of the mobile e-commerce. Participated in the complete backend rewrite, legacy migration to JSF, and WebSphere to JBoss migration.</p>
+            <p class="lang-pt">Adoção do nosso <strong>Java Backend Modernization Playbook</strong> no e-commerce Panvel: reescrita completa do backend preservando regras de negócio, migração WebSphere → JBoss, JSF + PrimeFaces, e implementação de Scrum que destravou a primeira versão mobile.</p>
+            <p class="lang-en">Adoption of our <strong>Java Backend Modernization Playbook</strong> at Panvel's e-commerce: full backend rewrite preserving business rules, WebSphere → JBoss migration, JSF + PrimeFaces, and Scrum adoption that unlocked the first mobile version.</p>
           </div>
           <div class="mt-5 flex flex-wrap gap-1.5">
             <div class="tech-pill text-[10px]">Java 7</div>
@@ -609,28 +691,30 @@
         <!-- Sicredi (2014–2021) -->
         <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
           <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">SICREDI • 2014–2021</div>
-          <h4 class="font-semibold text-xl mb-4">Transformação arquitetural que se tornou padrão da plataforma digital</h4>
+          <h4 class="font-semibold text-xl mb-4 lang-pt">Arquitetura event-driven que virou padrão Sicredi Digital</h4>
+          <h4 class="font-semibold text-xl mb-4 lang-en">Event-driven architecture that became Sicredi Digital's standard</h4>
           <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Atuei como consultor externo (outsourcing). Iniciei com um POC de crawler em Python para o PFM (Gestão Financeira Pessoal). Liderei a evolução completa para uma arquitetura orientada a eventos com <strong>Scala + Apache Flink + Kafka</strong> — solução que foi adotada como padrão para toda a plataforma digital da Sicredi.</p>
-            <p class="lang-en">Acted as an external consultant (outsourcing). Started with a Python crawler POC for PFM (Personal Finance Manager). Led the full evolution to an event-driven architecture with <strong>Scala + Apache Flink + Kafka</strong> — a solution adopted as the standard for Sicredi's entire digital platform.</p>
-            
-            <div class="pt-3 text-xs border-t border-slate-800 text-slate-400">Depois atuei em Conta Corrente e Poupança (Java 8 + Kafka + BFF em Kotlin).</div>
+            <p class="lang-pt">Adoção do nosso <strong>Scala + Akka + Flink Event-Driven Framework</strong>: evolução completa de um POC em Python para a arquitetura que se tornou referência para toda a plataforma digital da Sicredi — processamento financeiro em tempo real, reprocessamento seguro e integridade forte.</p>
+            <p class="lang-en">Adoption of our <strong>Scala + Akka + Flink Event-Driven Framework</strong>: full evolution of a Python POC into the architecture that became the reference for Sicredi's entire digital platform — real-time financial processing, safe reprocessing, strong integrity.</p>
+            <div class="pt-3 text-xs border-t border-slate-800 text-slate-400 lang-pt">Depois expandido para Conta Corrente e Poupança (BFFs em Java 8 + Kotlin).</div>
+            <div class="pt-3 text-xs border-t border-slate-800 text-slate-400 lang-en">Later expanded to Checking and Savings accounts (BFFs in Java 8 + Kotlin).</div>
           </div>
           <div class="mt-5 flex flex-wrap gap-1.5">
-            <div class="tech-pill text-[10px]">Scala</div>
-            <div class="tech-pill text-[10px]">Flink</div>
-            <div class="tech-pill text-[10px]">Kafka</div>
+            <div class="tech-pill text-[10px]">Scala + Akka</div>
+            <div class="tech-pill text-[10px]">Apache Flink</div>
+            <div class="tech-pill text-[10px]">Apache Kafka</div>
             <div class="tech-pill text-[10px]">Event-Driven</div>
           </div>
         </div>
 
         <!-- Quartile (2021–2026) -->
         <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
-          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">QUARTILE (EUA) • 2021–2026</div>
-          <h4 class="font-semibold text-xl mb-4">Backends de alto volume + IA em produção</h4>
+          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">QUARTILE (US) • 2021–2026</div>
+          <h4 class="font-semibold text-xl mb-4 lang-pt">Plataforma Azure + IA em escala retail media</h4>
+          <h4 class="font-semibold text-xl mb-4 lang-en">Azure + AI platform at retail-media scale</h4>
           <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Desenvolvi e mantive aplicações backend de alto volume com C# e Python em arquitetura Azure Functions. Implementei integrações assíncronas com Azure Service Bus e, principalmente, integrações avançadas com APIs de IA (Claude + ChatGPT) — usando intensamente Claude para automações e otimização de anúncios.</p>
-            <p class="lang-en">Developed and maintained high-volume backend applications in C# and Python on Azure Functions. Built async integrations with Service Bus and advanced AI API integrations (Claude + ChatGPT) — heavily using Claude for automations and ad optimization.</p>
+            <p class="lang-pt">Adoção do nosso <strong>Azure Functions + Service Bus Toolkit</strong> (C# e Python) na plataforma de retail media da Quartile (US): workflows de advertising data em escala, integrações assíncronas, automações com IA (Claude + ChatGPT) para otimização de anúncios.</p>
+            <p class="lang-en">Adoption of our <strong>Azure Functions + Service Bus Toolkit</strong> (C# and Python) at Quartile's US retail-media platform: large-scale advertising data workflows, async integrations, AI automations (Claude + ChatGPT) for ad optimization.</p>
           </div>
           <div class="mt-5 flex flex-wrap gap-1.5">
             <div class="tech-pill text-[10px]">Azure Functions</div>
@@ -641,80 +725,105 @@
         </div>
       </div>
 
-      <p class="text-center text-xs text-slate-500 mt-8">+ CIEE (plataforma de recrutamento de alto volume), Hospital Osvaldo Cruz (Horus Clinic), migrações de core bancário (FLEXCUBE) e mais de 15 anos de sistemas corporativos.</p>
+      <p class="text-center text-xs text-slate-500 mt-8 lang-pt">+ CIEE (plataforma de recrutamento de alto volume), Hospital Osvaldo Cruz (Horus Clinic), migrações de core bancário (FLEXCUBE) e mais de 15 anos de sistemas corporativos.</p>
+      <p class="text-center text-xs text-slate-500 mt-8 lang-en">+ CIEE (high-traffic recruitment platform), Hospital Osvaldo Cruz (Horus Clinic), core banking migrations (FLEXCUBE) and 15+ years of enterprise systems.</p>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="max-w-7xl mx-auto px-6 py-20">
+  <!-- PRODUTOS -->
+  <section id="produtos" class="max-w-7xl mx-auto px-6 py-20">
     <div class="max-w-2xl mb-10">
-      <div class="uppercase text-xs tracking-[2px] text-yellow-400">O QUE OFEREÇO</div>
-      <h3 class="section-title tracking-tighter">Serviços de desenvolvimento e automação para empresas que precisam de resultado.</h3>
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">PRODUTOS &amp; FRAMEWORKS</div>
+      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">PRODUCTS &amp; FRAMEWORKS</div>
+      <h3 class="section-title tracking-tighter lang-pt">Toolkits battle-tested, prontos para adotar.</h3>
+      <h3 class="section-title tracking-tighter lang-en">Battle-tested toolkits, ready to adopt.</h3>
+      <p class="text-slate-400 mt-2 text-sm lang-pt">Cada um destes produtos nasceu de um problema real em produção. São open source (com licença) ou licenciáveis. Adoção inclui handoff + suporte de integração.</p>
+      <p class="text-slate-400 mt-2 text-sm lang-en">Each of these products was born from a real production problem. They're open source (with license) or licensable. Adoption includes handoff + integration support.</p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <!-- Service 1 -->
+      <!-- Product 1: Event-Driven Toolkit (Scala + Akka + Flink) -->
+      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+        <div class="w-11 h-11 rounded-2xl bg-red-500/10 text-red-400 flex items-center justify-center mb-5"><i class="fa-solid fa-water fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2 lang-pt">Event-Driven &amp; Streaming Toolkit</h4>
+        <h4 class="font-semibold text-xl mb-2 lang-en">Event-Driven &amp; Streaming Toolkit</h4>
+        <p class="text-sm text-slate-400 mb-4 lang-pt">Framework Scala + Akka + Apache Flink + Kafka para sistemas event-driven em produção. Event-sourcing, clustering, backpressure supervision, pipelines em tempo real.</p>
+        <p class="text-sm text-slate-400 mb-4 lang-en">Scala + Akka + Apache Flink + Kafka framework for event-driven systems in production. Event-sourcing, clustering, backpressure supervision, real-time pipelines.</p>
+        <div class="text-xs text-red-400 lang-pt">Adotado em produção no Sicredi (4 anos, padrão de plataforma).</div>
+        <div class="text-xs text-red-400 lang-en">Adopted in production at Sicredi (4 years, platform standard).</div>
+      </div>
+
+      <!-- Product 2: Modern Java & Cloud -->
       <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-5"><i class="fa-solid fa-sync fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2">Modernização de Sistemas Legados</h4>
-        <p class="text-sm text-slate-400 mb-4">Reengenharia, migração de monolitos para microsserviços/event-driven e reescrita de backends críticos, preservando regras de negócio. Experiência em Java, Play Framework, Scala, Elasticsearch e arquiteturas enterprise.</p>
-        <div class="text-xs text-orange-400">Exemplos da minha trajetória (CLT e consultoria externa): Panvel, Sicredi, CIEE, core bancário.</div>
+        <h4 class="font-semibold text-xl mb-2 lang-pt">Java Modernization Framework</h4>
+        <h4 class="font-semibold text-xl mb-2 lang-en">Java Modernization Framework</h4>
+        <p class="text-sm text-slate-400 mb-4 lang-pt">Playbooks e bases de referência (Quarkus, Spring Boot 3, WebFlux) para modernizar legados Java preservando regras de negócio. Migração JSF, JBoss/WebSphere, monolito → microsserviços.</p>
+        <p class="text-sm text-slate-400 mb-4 lang-en">Playbooks and reference bases (Quarkus, Spring Boot 3, WebFlux) to modernize Java legacies while preserving business rules. JSF, JBoss/WebSphere migration, monolith → microservices.</p>
+        <div class="text-xs text-orange-400 lang-pt">Adotado na modernização do e-commerce Panvel + mobile.</div>
+        <div class="text-xs text-orange-400 lang-en">Adopted in Panvel's e-commerce modernization + mobile.</div>
       </div>
 
-      <!-- Service 2 -->
+      <!-- Product 3: AI Agent Kit (DESTAQUE) -->
+      <div class="service-card bg-slate-900 border border-yellow-500/40 rounded-3xl p-7 group ring-1 ring-yellow-500/10 relative">
+        <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider lang-pt">DESTAQUE</div>
+        <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider lang-en">FEATURED</div>
+
+        <div class="w-11 h-11 rounded-2xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center mb-5">
+          <img src="assets/agents-icon.jpg" class="w-6 h-6 rounded" alt="AI Agent Kit - Code Solutions">
+        </div>
+        <h4 class="font-semibold text-xl mb-2 lang-pt">AI Agent Kit (LangChain4j + MCP)</h4>
+        <h4 class="font-semibold text-xl mb-2 lang-en">AI Agent Kit (LangChain4j + MCP)</h4>
+        <p class="text-sm text-slate-300 mb-4 lang-pt">Kit corporativo de IA: RAG persistente (Qdrant), supervisor/sub-agentes, Spring Security, MCP. Pronto para integrar com sistemas legados, não PoC descartável.</p>
+        <p class="text-sm text-slate-300 mb-4 lang-en">Corporate AI kit: persistent RAG (Qdrant), supervisor/sub-agents, Spring Security, MCP. Ready to integrate with legacy systems, not a throwaway PoC.</p>
+
+        <ul class="text-xs space-y-1 text-slate-400 mb-4">
+          <li class="flex gap-2"><span class="text-yellow-400">•</span><span class="lang-pt">Adoção com suporte de integração</span><span class="lang-en">Adoption with integration support</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400">•</span><span class="lang-pt">Apps auto-contidos (o "cérebro" viaja com o código)</span><span class="lang-en">Self-contained apps (the "brain" ships with the code)</span></li>
+          <li class="flex gap-2"><span class="text-yellow-400">•</span><span class="lang-pt">Deploy profissional (Docker, K8s, cloud)</span><span class="lang-en">Production deploy (Docker, K8s, cloud)</span></li>
+        </ul>
+
+        <div class="text-[10px] text-yellow-400 lang-pt">Inspirado em 5 anos usando Claude/ChatGPT em produção no Quartile.</div>
+        <div class="text-[10px] text-yellow-400 lang-en">Inspired by 5 years using Claude/ChatGPT in production at Quartile.</div>
+      </div>
+
+      <!-- Product 4: Conversational AI Bots -->
       <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5"><i class="fa-solid fa-plug fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2">Backends Escaláveis e APIs REST</h4>
-        <p class="text-sm text-slate-400 mb-4">Desenvolvimento de APIs de alto volume, microsserviços, integrações complexas com foco em performance, observabilidade e manutenibilidade.</p>
-        <div class="text-xs text-blue-400">Java/Spring Boot, Play Framework, Quarkus, Python, C#/.NET, Elasticsearch.</div>
+        <div class="w-11 h-11 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-5"><i class="fa-brands fa-whatsapp fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2 lang-pt">Conversational AI Bots</h4>
+        <h4 class="font-semibold text-xl mb-2 lang-en">Conversational AI Bots</h4>
+        <p class="text-sm text-slate-400 mb-4 lang-pt">Bots WhatsApp/Telegram LLM-agnostic. Suporta qualquer API OpenAI-compatible (Grok, OpenAI, OpenRouter, Ollama). Agentes custom com skills específicos, deploy Docker/PM2/systemd.</p>
+        <p class="text-sm text-slate-400 mb-4 lang-en">WhatsApp/Telegram LLM-agnostic bots. Supports any OpenAI-compatible API (Grok, OpenAI, OpenRouter, Ollama). Custom agents with specific skills, Docker/PM2/systemd deploy.</p>
+        <div class="text-xs text-violet-400 lang-pt">Apps auto-contidos, 61 testes no repo principal.</div>
+        <div class="text-xs text-violet-400 lang-en">Self-contained apps, 61 tests in the main repo.</div>
       </div>
 
-      <!-- Service 3 -->
+      <!-- Product 5: Data Platform -->
       <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-5"><i class="fa-solid fa-stream fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2">Arquiteturas Event-Driven &amp; Big Data</h4>
-        <p class="text-sm text-slate-400 mb-4">Processamento em tempo real, pipelines de dados, mensageria confiável. Experiências que se tornaram padrão corporativo.</p>
-        <div class="text-xs text-violet-400">Kafka • Flink • Scala • Elasticsearch • AWS/Azure</div>
+        <div class="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5"><i class="fa-solid fa-database fa-lg"></i></div>
+        <h4 class="font-semibold text-xl mb-2 lang-pt">Data Platform Foundation</h4>
+        <h4 class="font-semibold text-xl mb-2 lang-en">Data Platform Foundation</h4>
+        <p class="text-sm text-slate-400 mb-4 lang-pt">Pipeline de dados production-ready: Airflow orquestra dbt (seed → run → test → publish) contra Postgres. Models staging/marts, contratos Pydantic, tests genéricos + singulares, Data Mesh por schema.</p>
+        <p class="text-sm text-slate-400 mb-4 lang-en">Production-ready data pipeline: Airflow orchestrates dbt (seed → run → test → publish) against Postgres. Staging/marts models, Pydantic contracts, generic + singular tests, Data Mesh by schema.</p>
+        <div class="text-xs text-blue-400 lang-pt">Padrões de Data Quality + observability embutidos.</div>
+        <div class="text-xs text-blue-400 lang-en">Data Quality patterns + observability built in.</div>
       </div>
 
-      <!-- Service 4 -->
+      <!-- Product 6: C# / Azure AI Base -->
       <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-5"><i class="fa-solid fa-cloud fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2">Integrações Cloud &amp; Alto Volume</h4>
-        <p class="text-sm text-slate-400 mb-4">Azure Functions, Service Bus, AWS, funções serverless, sistemas de processamento assíncrono de grande escala.</p>
-      </div>
-
-      <!-- Service 5 - AGENTES (DESTAQUE) -->
-      <div class="service-card bg-slate-900 border border-yellow-500/40 rounded-3xl p-7 group ring-1 ring-yellow-500/10 relative">
-        <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider">DESTAQUE</div>
-        
-        <div class="w-11 h-11 rounded-2xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center mb-5">
-          <img src="assets/agents-icon.jpg" class="w-6 h-6 rounded" alt="Agentes de IA personalizados para integração com sistemas legados - Code Solutions">
-        </div>
-        <h4 class="font-semibold text-xl mb-2">Criação de Agentes IA e Automação Inteligente</h4>
-        <p class="text-sm text-slate-300 mb-4">Desenho e entrega de agentes e skills customizados para Grok, Claude e outros LLMs. Bots em canais (WhatsApp, etc), automações de workflow, agentes de pesquisa profunda, enriquecimento de dados e integração de IA em sistemas existentes.</p>
-        
-        <ul class="text-xs space-y-1 text-slate-400 mb-4">
-          <li class="flex gap-2"><span class="text-yellow-400">•</span> Agentes com raciocínio e regras de negócio específicas</li>
-          <li class="flex gap-2"><span class="text-yellow-400">•</span> Apps auto-contidos (o "cérebro" viaja com o código)</li>
-          <li class="flex gap-2"><span class="text-yellow-400">•</span> Deploy profissional (PM2, systemd, cloud)</li>
-          <li class="flex gap-2"><span class="text-yellow-400">•</span> Exemplos reais: bots WhatsApp com tom natural e seguro</li>
-        </ul>
-        
-        <div class="text-[10px] text-yellow-400">Entregáveis prontos para produção • Inspirado em 20+ anos de sistemas + prática recente com Grok CLI extensibility</div>
-      </div>
-
-      <!-- Service 6 -->
-      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5"><i class="fa-solid fa-sitemap fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2">Fábrica de Software &amp; Consultoria</h4>
-        <p class="text-sm text-slate-400 mb-4">Desenvolvimento contínuo, squads sob medida, revisão arquitetural, troubleshooting de integrações críticas e mentoria técnica em ambientes ágeis.</p>
+        <h4 class="font-semibold text-xl mb-2 lang-pt">C# + Azure AI Base</h4>
+        <h4 class="font-semibold text-xl mb-2 lang-en">C# + Azure AI Base</h4>
+        <p class="text-sm text-slate-400 mb-4 lang-pt">Base C#/.NET para Azure Functions + Service Bus com integração de IA (OpenAI, Claude). Referência para o tipo de stack usado em plataformas de retail media e e-commerce em escala.</p>
+        <p class="text-sm text-slate-400 mb-4 lang-en">C#/.NET base for Azure Functions + Service Bus with AI integration (OpenAI, Claude). Reference for the kind of stack used in retail-media and e-commerce platforms at scale.</p>
+        <div class="text-xs text-sky-400 lang-pt">Mesma stack usada na Quartile (4 anos 9 meses em produção).</div>
+        <div class="text-xs text-sky-400 lang-en">Same stack used at Quartile (4 years 9 months in production).</div>
       </div>
     </div>
 
     <div class="mt-8 text-xs text-center text-slate-500">
-      <span class="lang-pt">Todos os serviços são prestados via <strong class="text-slate-400">Code Solutions (PJ)</strong> com proposta personalizada e escopo claro.</span>
-      <span class="lang-en">All services are delivered via <strong class="text-slate-400">Code Solutions (my independent consulting company)</strong> with a customized proposal and clear scope.</span>
+      <span class="lang-pt">Todos os produtos são open source ou licenciáveis via <strong class="text-slate-400">Code Solutions (CNPJ ativo)</strong>. Adoção inclui handoff + 30 dias de suporte.</span>
+      <span class="lang-en">All products are open source or licensable via <strong class="text-slate-400">Code Solutions (active company)</strong>. Adoption includes handoff + 30 days of support.</span>
     </div>
   </section>
 
@@ -1072,11 +1181,11 @@
           <span>Enviar email</span>
         </a>
 
-        <a href="https://www.linkedin.com/in/ivã-martins-71760b89/" target="_blank"
+        <a href="https://www.linkedin.com/company/code-solutions-it/" target="_blank"
            class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-blue-600 hover:bg-blue-950/30 text-blue-400 font-medium">
           <i class="fa-brands fa-linkedin text-xl"></i>
-          <span class="lang-pt">Ver no LinkedIn</span>
-          <span class="lang-en">View on LinkedIn</span>
+          <span class="lang-pt">Code Solutions no LinkedIn</span>
+          <span class="lang-en">Code Solutions on LinkedIn</span>
         </a>
       </div>
     </div>
@@ -1097,8 +1206,8 @@
       <div class="flex items-center gap-x-4">
         <a href="#sobre" class="hover:text-slate-300 lang-pt">Sobre</a>
         <a href="#sobre" class="hover:text-slate-300 lang-en">About</a>
-        <a href="#servicos" class="hover:text-slate-300 lang-pt">Serviços</a>
-        <a href="#servicos" class="hover:text-slate-300 lang-en">Services</a>
+        <a href="#produtos" class="hover:text-slate-300 lang-pt">Produtos</a>
+        <a href="#produtos" class="hover:text-slate-300 lang-en">Products</a>
         <a href="#agentes" class="hover:text-slate-300 lang-pt">Agentes IA</a>
         <a href="#agentes" class="hover:text-slate-300 lang-en">AI Agents</a>
         <a href="#frameworks" class="hover:text-slate-300 lang-pt">Frameworks</a>
