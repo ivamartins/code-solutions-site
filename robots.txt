@@ -5,5 +5,6 @@ Allow: /
 Sitemap: https://ivamartins.github.io/code-solutions-site/sitemap.xml
 
 # Code Solutions - Ivã Martins
-# Manutenção e modernização de sistemas legados (Java, Play Framework, Elasticsearch, Scala/Akka etc.)
-# Canoas, RS - Serviços via PJ
+# Empresa de produtos e frameworks para backend, event-driven e IA corporativa
+# Fundada por Ivã Martins, ex-engenheiro sênior de Sicredi, Panvel e Quartile (US)
+# Canoas, RS - Brasil - Atendimento remoto BR/US/EU
