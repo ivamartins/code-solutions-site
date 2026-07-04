@@ -233,6 +233,55 @@
     .top-banner .recruiter-cta:hover {
       background: rgb(250 204 21);
     }
+
+    /* Floating recruiter pill (bottom-right) */
+    .recruiter-float {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 40;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1rem;
+      border-radius: 9999px;
+      background: rgb(234 179 8);
+      color: rgb(2 6 23);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4), 0 0 0 1px rgba(234,179,8,0.4);
+      transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+      animation: recruiter-float-in 0.6s 1.2s ease-out both;
+    }
+    .recruiter-float:hover {
+      background: rgb(250 204 21);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -5px rgba(0,0,0,0.5), 0 0 0 1px rgba(234,179,8,0.6);
+    }
+    .recruiter-float .rf-icon { font-size: 0.9rem; }
+    .recruiter-float .rf-arrow { font-size: 0.7rem; transition: transform 0.2s; }
+    .recruiter-float:hover .rf-arrow { transform: translateX(2px); }
+    .recruiter-float .rf-close {
+      margin-left: 0.25rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(2 6 23);
+      opacity: 0.55;
+      transition: opacity 0.2s, background 0.2s;
+    }
+    .recruiter-float .rf-close:hover { opacity: 1; background: rgba(0,0,0,0.12); }
+    @media (max-width: 640px) {
+      .recruiter-float { font-size: 0.75rem; padding: 0.5rem 0.75rem; right: 0.75rem; bottom: 0.75rem; }
+      .recruiter-float .rf-label-full { display: none; }
+    }
+    @keyframes recruiter-float-in {
+      0%   { opacity: 0; transform: translateY(20px) scale(0.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 font-sans antialiased">
@@ -1279,6 +1328,44 @@
     }
 
     window.onload = boot;
+  </script>
+
+  <!-- FLOATING RECRUITER PILL (bottom-right, always visible unless dismissed) -->
+  <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
+     id="recruiter-float"
+     class="recruiter-float"
+     aria-label="Recruiter? Go to my portfolio site.">
+    <i class="fa-solid fa-user-tie rf-icon"></i>
+    <span class="rf-label-full">
+      <span class="lang-pt">Recrutador(a)?</span>
+      <span class="lang-en">Recruiter?</span>
+    </span>
+    <span class="rf-label-full" style="opacity:0.7; font-weight:500;">
+      <span class="lang-pt">Veja meu portfólio</span>
+      <span class="lang-en">See my portfolio</span>
+    </span>
+    <i class="fa-solid fa-arrow-right rf-arrow"></i>
+    <span class="rf-close" onclick="event.preventDefault(); event.stopPropagation(); dismissRecruiterFloat();" role="button" aria-label="Dismiss">
+      <i class="fa-solid fa-xmark" style="font-size:0.7rem;"></i>
+    </span>
+  </a>
+
+  <script>
+    // Recruiter float: dismiss + persist
+    function dismissRecruiterFloat() {
+      const el = document.getElementById('recruiter-float');
+      if (el) el.style.display = 'none';
+      try { localStorage.setItem('cs_float_dismissed', '1'); } catch(e) {}
+    }
+    // Hide on load if previously dismissed
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        if (localStorage.getItem('cs_float_dismissed') === '1') {
+          const el = document.getElementById('recruiter-float');
+          if (el) el.style.display = 'none';
+        }
+      } catch(e) {}
+    });
   </script>
 </body>
 </html>
