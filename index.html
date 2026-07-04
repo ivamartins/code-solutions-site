@@ -80,11 +80,11 @@
       font-weight: 600;
     }
     
-    .service-card {
+    .product-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    .service-card:hover {
+    .product-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
     }
@@ -265,39 +265,31 @@
             "name": "Como adotar um dos frameworks da Code Solutions?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cada framework é open source no GitHub (github.com/ivamartins). Adoção inclui conversa inicial, proposta clara com escopo e entregáveis, código versionado, updates frequentes e 30 dias de suporte de transição. Também oferecemos customização dos frameworks para necessidades específicas."
+              "text": "Cada framework é open source no GitHub (github.com/ivamartins, licença MIT). Adoção self-service: clone, leia o README, rode. Para adoção guiada com handoff + 30 dias de suporte, abra um engagement pago de adoção."
             }
           },
           {
             "@type": "Question",
-            "name": "Como fazer manutenção em sistemas legados Java e Play Framework?",
+            "name": "Vocês fazem manutenção de sistemas legados?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oferecemos manutenção contínua, correção de bugs, evolução de funcionalidades e refatoração de aplicações legadas em Java e Play Framework (Java/Scala), sempre preservando as regras de negócio."
+              "text": "Não somos consultoria de manutenção e não vendemos body-rental. A Code Solutions vende adoção guiada dos frameworks (handoff + 30 dias de suporte) e customização de escopo fechado. Se você precisa de manutenção contínua do seu sistema legado, recomendamos buscar um parceiro de staffing."
             }
           },
           {
             "@type": "Question",
-            "name": "Vocês trabalham com manutenção e otimização de Elasticsearch?",
+            "name": "Os frameworks de event-driven (Scala, Akka, Kafka, Flink) são prontos para produção?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim. Realizamos troubleshooting de clusters, otimização de índices/queries, integração com Java/Play/Scala e busca avançada em plataformas de alto volume."
+              "text": "Sim. O akka-scala-base, flink-kafka-scala-base e flink-data-mesh-pipeline nasceram da arquitetura que escalou para padrão no Sicredi Digital (4 anos em produção). O scala-akka-aws-microservice é o template de deploy AWS (Fargate + Terraform). Para adoção guiada ou arquitetura sob medida, abra um engagement."
             }
           },
           {
             "@type": "Question",
-            "name": "Modernizam sistemas em Scala, Akka, Kafka e Flink?",
+            "name": "Modernização de legados está nos frameworks?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim. Tenho experiência liderando transformações arquiteturais event-driven em larga escala (como a que se tornou padrão em uma grande instituição financeira), usando Scala + Akka + Flink + Kafka, com manutenção e evolução de backends reativos."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Fazem migração de legados sem quebrar as regras de negócio?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Essa é uma das minhas especialidades. Reengenharia de sistemas legados (Java, Play, e-commerce antigo, core bancário) para arquiteturas modernas, mantendo o que já funciona. Casos reais da minha trajetória em Sicredi e Panvel."
+              "text": "O quarkus-java-base e o java-product-api são as bases de referência para modernizar Java EE/Play/JSF para Spring Boot 3 ou Quarkus. São os patterns usados na reescrita do e-commerce Panvel e em sistemas de FLEXCUBE. Para engagement de customização (ex: playbook sob medida), abra conversa."
             }
           },
           {
@@ -305,7 +297,7 @@
             "name": "Posso integrar agentes de IA em um sistema legado sem reescrever tudo?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim. Nosso AI Agent Kit (LangChain4j + MCP) foi desenhado justamente para isso: integração com sistemas legados via APIs e mensageria, com RAG persistente e padrões de supervisor/sub-agente. Exemplo real em produção no springboot-langchain4j-rag-mcp no GitHub."
+              "text": "Sim. Nosso AI Agent Kit (LangChain4j + MCP + RAG persistente) foi desenhado justamente para isso: integração com sistemas legados via APIs e mensageria, com padrões de supervisor/sub-agente. Código open source em github.com/ivamartins/springboot-langchain4j-rag-mcp. Adoção self-service ou guiada disponível."
             }
           }
         ]
@@ -773,8 +765,8 @@
         </div>
       </div>
 
-      <p class="text-center text-xs text-slate-500 mt-8 lang-pt">+ CIEE (plataforma de recrutamento de alto volume), Hospital Osvaldo Cruz (Horus Clinic), migrações de core bancário (FLEXCUBE) e mais de 15 anos de sistemas corporativos.</p>
-      <p class="text-center text-xs text-slate-500 mt-8 lang-en">+ CIEE (high-traffic recruitment platform), Hospital Osvaldo Cruz (Horus Clinic), core banking migrations (FLEXCUBE) and 15+ years of enterprise systems.</p>
+    <p class="text-center text-xs text-slate-500 mt-8 lang-pt">+ 20+ anos de experiência corporativa (incluindo Sicredi, Panvel, Quartile, CIEE, Hospital Osvaldo Cruz, FLEXCUBE) — visível nos frameworks que mantemos hoje.</p>
+    <p class="text-center text-xs text-slate-500 mt-8 lang-en">+ 20+ years of corporate experience (including Sicredi, Panvel, Quartile, CIEE, Hospital Osvaldo Cruz, FLEXCUBE) — visible in the frameworks we maintain today.</p>
     </div>
   </section>
 
@@ -785,13 +777,13 @@
       <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">PRODUCTS &amp; FRAMEWORKS</div>
       <h3 class="section-title tracking-tighter lang-pt">Toolkits battle-tested, prontos para adotar.</h3>
       <h3 class="section-title tracking-tighter lang-en">Battle-tested toolkits, ready to adopt.</h3>
-      <p class="text-slate-400 mt-2 text-sm lang-pt">Cada um destes produtos nasceu de um problema real em produção. São open source (com licença) ou licenciáveis. Adoção inclui handoff + suporte de integração.</p>
-      <p class="text-slate-400 mt-2 text-sm lang-en">Each of these products was born from a real production problem. They're open source (with license) or licensable. Adoption includes handoff + integration support.</p>
+      <p class="text-slate-400 mt-2 text-sm lang-pt">Cada um destes produtos nasceu de um problema real em produção. São <strong class="text-white">open source sob licença MIT</strong> — use livremente. Adoção inclui handoff + suporte de integração.</p>
+      <p class="text-slate-400 mt-2 text-sm lang-en">Each of these products was born from a real production problem. They're <strong class="text-white">open source under the MIT license</strong> — use them freely. Adoption includes handoff + integration support.</p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
       <!-- Product 1: Event-Driven Toolkit (Scala + Akka + Flink) -->
-      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-red-500/10 text-red-400 flex items-center justify-center mb-5"><i class="fa-solid fa-water fa-lg"></i></div>
         <h4 class="font-semibold text-xl mb-2 lang-pt">Event-Driven &amp; Streaming Toolkit</h4>
         <h4 class="font-semibold text-xl mb-2 lang-en">Event-Driven &amp; Streaming Toolkit</h4>
@@ -802,7 +794,7 @@
       </div>
 
       <!-- Product 2: Modern Java & Cloud -->
-      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-5"><i class="fa-solid fa-sync fa-lg"></i></div>
         <h4 class="font-semibold text-xl mb-2 lang-pt">Java Modernization Framework</h4>
         <h4 class="font-semibold text-xl mb-2 lang-en">Java Modernization Framework</h4>
@@ -813,7 +805,7 @@
       </div>
 
       <!-- Product 3: AI Agent Kit (DESTAQUE) -->
-      <div class="service-card bg-slate-900 border border-yellow-500/40 rounded-3xl p-7 group ring-1 ring-yellow-500/10 relative">
+      <div class="product-card bg-slate-900 border border-yellow-500/40 rounded-3xl p-7 group ring-1 ring-yellow-500/10 relative">
         <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider lang-pt">DESTAQUE</div>
         <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider lang-en">FEATURED</div>
 
@@ -836,7 +828,7 @@
       </div>
 
       <!-- Product 4: Conversational AI Bots -->
-      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-5"><i class="fa-brands fa-whatsapp fa-lg"></i></div>
         <h4 class="font-semibold text-xl mb-2 lang-pt">Conversational AI Bots</h4>
         <h4 class="font-semibold text-xl mb-2 lang-en">Conversational AI Bots</h4>
@@ -847,7 +839,7 @@
       </div>
 
       <!-- Product 5: Data Platform -->
-      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5"><i class="fa-solid fa-database fa-lg"></i></div>
         <h4 class="font-semibold text-xl mb-2 lang-pt">Data Platform Foundation</h4>
         <h4 class="font-semibold text-xl mb-2 lang-en">Data Platform Foundation</h4>
@@ -858,7 +850,7 @@
       </div>
 
       <!-- Product 6: C# / Azure AI Base -->
-      <div class="service-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
+      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
         <div class="w-11 h-11 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-5"><i class="fa-solid fa-cloud fa-lg"></i></div>
         <h4 class="font-semibold text-xl mb-2 lang-pt">C# + Azure AI Base</h4>
         <h4 class="font-semibold text-xl mb-2 lang-en">C# + Azure AI Base</h4>
@@ -870,8 +862,8 @@
     </div>
 
     <div class="mt-8 text-xs text-center text-slate-500">
-      <span class="lang-pt">Todos os produtos são open source ou licenciáveis via <strong class="text-slate-400">Code Solutions (CNPJ ativo)</strong>. Adoção inclui handoff + 30 dias de suporte.</span>
-      <span class="lang-en">All products are open source or licensable via <strong class="text-slate-400">Code Solutions (active company)</strong>. Adoption includes handoff + 30 days of support.</span>
+      <span class="lang-pt">Todos os produtos são <strong class="text-slate-400">open source (MIT, uso gratuito)</strong> via <strong class="text-slate-400">Code Solutions (CNPJ ativo)</strong>. Adoção com handoff + 30 dias de suporte é o serviço pago opcional.</span>
+      <span class="lang-en">All products are <strong class="text-slate-400">open source (MIT, free to use)</strong> via <strong class="text-slate-400">Code Solutions (active company)</strong>. Adoption with handoff + 30 days of support is the optional paid service.</span>
     </div>
   </section>
 
@@ -1181,57 +1173,59 @@
 
       <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
         <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Como fazer manutenção em sistemas legados Java e Play Framework?</span>
-          <span class="lang-en">How do you maintain legacy Java and Play Framework systems?</span>
+          <span class="lang-pt">Vocês fazem manutenção de sistemas legados?</span>
+          <span class="lang-en">Do you maintain legacy systems?</span>
           <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
         </summary>
         <div class="mt-3 text-slate-400 lang-pt">
-          Oferecemos manutenção contínua, correção de bugs, evolução de funcionalidades e refatoração de aplicações legadas em Java e Play Framework (Java/Scala), sempre preservando as regras de negócio.
+          <strong class="text-white">Não somos consultoria de manutenção.</strong> A Code Solutions não vende horas de body-rental. O que oferecemos é <strong class="text-white">adoção guiada</strong> dos nossos frameworks (handoff + 30 dias de suporte) e <strong class="text-white">customização de escopo fechado</strong> em cima deles. Se você precisa de manutenção contínua do seu sistema legado, recomendamos buscar um parceiro de staffing — não somos o fit certo.
         </div>
         <div class="mt-3 text-slate-400 lang-en">
-          We provide ongoing maintenance, bug fixes, feature evolution and refactoring for legacy Java and Play Framework applications, always preserving existing business rules.
+          <strong class="text-white">We're not a maintenance consultancy.</strong> Code Solutions does not sell body-rental hours. What we offer is <strong class="text-white">guided adoption</strong> of our frameworks (handoff + 30 days of support) and <strong class="text-white">fixed-scope customization</strong> on top of them. If you need ongoing maintenance of your legacy system, we recommend finding a staffing partner — we're not the right fit.
         </div>
       </details>
 
       <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
         <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Vocês trabalham com manutenção e otimização de Elasticsearch?</span>
-          <span class="lang-en">Do you handle Elasticsearch maintenance and optimization?</span>
+          <span class="lang-pt">Como adotar o framework de Elasticsearch da Code Solutions?</span>
+          <span class="lang-en">How do I adopt the Code Solutions Elasticsearch framework?</span>
           <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
         </summary>
         <div class="mt-3 text-slate-400 lang-pt">
-          Sim. Realizamos troubleshooting de clusters, otimização de índices/queries, integração com Java/Play/Scala e busca avançada em plataformas de alto volume.
+          O framework <a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">elasticsearch-scala-base</a> é open source no GitHub (MIT). Adoção self-service: clone, leia o README, rode com `sbt run`. Para adoção guiada com handoff + 30 dias de suporte, ou customização para o seu caso de uso (índices custom, queries complexas, integração com Java/Play/Scala), é só abrir um engagement.
         </div>
         <div class="mt-3 text-slate-400 lang-en">
-          Yes. We perform cluster troubleshooting, index/query optimization, Java/Play/Scala integration and advanced search features for high-volume platforms.
+          The <a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">elasticsearch-scala-base</a> framework is open source on GitHub (MIT). Self-service adoption: clone, read the README, run with `sbt run`. For guided adoption with handoff + 30 days of support, or customization for your use case (custom indices, complex queries, Java/Play/Scala integration), just open an engagement.
         </div>
       </details>
 
       <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
         <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Modernizam sistemas em Scala, Akka, Kafka e Flink?</span>
-          <span class="lang-en">Do you modernize Scala, Akka, Kafka and Flink systems?</span>
+          <span class="lang-pt">Os frameworks de event-driven (Scala, Akka, Kafka, Flink) são prontos para produção?</span>
+          <span class="lang-en">Are the event-driven frameworks (Scala, Akka, Kafka, Flink) production-ready?</span>
           <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
         </summary>
         <div class="mt-3 text-slate-400 lang-pt">
-          Sim. Tenho experiência liderando transformações arquiteturais event-driven em larga escala (como a que se tornou padrão em uma grande instituição financeira), usando Scala + Akka + Flink + Kafka, com manutenção e evolução de backends reativos.
+          Sim. O <a href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">akka-scala-base</a>, <a href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-kafka-scala-base</a> e <a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-data-mesh-pipeline</a> nasceram da arquitetura que escalou para padrão no Sicredi Digital (4 anos em produção). O <a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">scala-akka-aws-microservice</a> é o template de deploy AWS (Fargate + Terraform). Para adoção guiada ou arquitetura sob medida, é só abrir um engagement.
         </div>
         <div class="mt-3 text-slate-400 lang-en">
-          Yes. I have experience leading large-scale event-driven architectural transformations (such as one that became the standard at a major financial institution), using Scala + Akka + Flink + Kafka, including maintenance and evolution of reactive backends.
+          Yes. The <a href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">akka-scala-base</a>, <a href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-kafka-scala-base</a>, and <a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-data-mesh-pipeline</a> frameworks were born from the architecture that scaled to the standard at Sicredi Digital (4 years in production). The <a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">scala-akka-aws-microservice</a> is the AWS deploy template (Fargate + Terraform). For guided adoption or custom architecture, just open an engagement.
         </div>
       </details>
 
       <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
         <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Fazem migração de legados sem quebrar as regras de negócio?</span>
-          <span class="lang-en">Can you migrate legacies without breaking business rules?</span>
+          <span class="lang-pt">Modernização de legados está nos frameworks?</span>
+          <span class="lang-en">Is legacy modernization in the frameworks?</span>
           <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
         </summary>
         <div class="mt-3 text-slate-400 lang-pt">
-          Essa é uma das minhas especialidades. Reengenharia de sistemas legados (Java, Play, e-commerce antigo, core bancário) para arquiteturas modernas, mantendo o que já funciona. Casos reais da minha trajetória em Sicredi e Panvel.
+          O <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">quarkus-java-base</a> e o <a href="https://github.com/ivamartins/java-product-api" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">java-product-api</a> são as bases de referência para modernizar Java EE/Play/JSF para Spring Boot 3 ou Quarkus. São os patterns usados na reescrita do e-commerce Panvel e em sistemas de FLEXCUBE. Adoção self-service: clone, leia o README. Para engagement de customização (ex: playbook sob medida para o seu sistema), é só abrir conversa.
         </div>
         <div class="mt-3 text-slate-400 lang-en">
-          This is one of my specialties. Re-engineering legacy systems (Java, Play, old e-commerce, banking cores) into modern architectures while keeping what already works. Real cases from my track record at Sicredi and Panvel.
+          The <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">quarkus-java-base</a> and <a href="https://github.com/ivamartins/java-product-api" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">java-product-api</a> are the reference bases for modernizing Java EE/Play/JSF to Spring Boot 3 or Quarkus. These are the patterns used in the Panvel e-commerce rewrite and FLEXCUBE systems. Self-service adoption: clone, read the README. For customization engagements (e.g., custom playbook for your system), just open a conversation.
+        </div>
+      </details>
         </div>
       </details>
     </div>
