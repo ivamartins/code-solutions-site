@@ -232,6 +232,30 @@
         "mainEntity": [
           {
             "@type": "Question",
+            "name": "O que é a Code Solutions exatamente?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Code Solutions é uma empresa de produtos e frameworks fundada por Ivã Martins. Construímos e licenciamos toolkits battle-tested para backend (Java, Scala, Spring, Quarkus), arquiteturas event-driven (Akka, Flink, Kafka) e IA corporativa (LangChain4j, RAG, MCP). Também fazemos engajamentos pontuais de adoção e suporte em cima dos nossos próprios frameworks. Não somos consultoria genérica — nosso core é IP acumulado, não horas de body-rental."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Code Solutions é o mesmo que o portfólio pessoal do Ivã?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. Este é o site da empresa (produtos e frameworks). O portfólio pessoal do Ivã (carreira, cases individuais, Open Source, CV) é separado. Se você está avaliando o Ivã como candidato a uma vaga, vá direto para o portfólio pessoal em https://ivamartins.github.io/portfolio/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como adotar um dos frameworks da Code Solutions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cada framework é open source no GitHub (github.com/ivamartins). Adoção inclui conversa inicial, proposta clara com escopo e entregáveis, código versionado, updates frequentes e 30 dias de suporte de transição. Também oferecemos customização dos frameworks para necessidades específicas."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Como fazer manutenção em sistemas legados Java e Play Framework?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -260,6 +284,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Essa é uma das minhas especialidades. Reengenharia de sistemas legados (Java, Play, e-commerce antigo, core bancário) para arquiteturas modernas, mantendo o que já funciona. Casos reais da minha trajetória em Sicredi e Panvel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso integrar agentes de IA em um sistema legado sem reescrever tudo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Nosso AI Agent Kit (LangChain4j + MCP) foi desenhado justamente para isso: integração com sistemas legados via APIs e mensageria, com RAG persistente e padrões de supervisor/sub-agente. Exemplo real em produção no springboot-langchain4j-rag-mcp no GitHub."
             }
           }
         ]
@@ -986,31 +1018,41 @@
   <!-- COMO FUNCIONA -->
   <section class="border-t border-slate-800 py-16 bg-slate-900/40">
     <div class="max-w-5xl mx-auto px-6">
-      <h3 class="text-center text-2xl font-semibold tracking-tight mb-10">
-  <span class="lang-pt">Como funciona contratar via Code Solutions (PJ)</span>
-  <span class="lang-en">How contracting via Code Solutions (my independent consulting company) works</span>
-</h3>
-      
+      <h3 class="text-center text-2xl font-semibold tracking-tight mb-3">
+        <span class="lang-pt">Como funciona adotar ou contratar via Code Solutions</span>
+        <span class="lang-en">How adoption or contracting via Code Solutions works</span>
+      </h3>
+      <p class="text-center text-sm text-slate-400 mb-10 lang-pt">Modelo flexível: <strong class="text-white">adoção de framework</strong> (licença + handoff) ou <strong class="text-white">engajamento sob medida</strong> (escopo fechado).</p>
+      <p class="text-center text-sm text-slate-400 mb-10 lang-en">Flexible model: <strong class="text-white">framework adoption</strong> (license + handoff) or <strong class="text-white">custom engagement</strong> (fixed scope).</p>
+
       <div class="grid md:grid-cols-4 gap-5 text-center">
         <div class="p-5">
           <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">01</div>
-          <div class="font-medium mb-1">Conversa inicial</div>
-          <div class="text-xs text-slate-400">30-45 min para entender o problema, contexto e restrições.</div>
+          <div class="font-medium mb-1 lang-pt">Conversa inicial</div>
+          <div class="font-medium mb-1 lang-en">Discovery call</div>
+          <div class="text-xs text-slate-400 lang-pt">30-45 min para entender o problema, contexto e restrições.</div>
+          <div class="text-xs text-slate-400 lang-en">30-45 min to understand the problem, context, and constraints.</div>
         </div>
         <div class="p-5">
           <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">02</div>
-          <div class="font-medium mb-1">Proposta clara</div>
-          <div class="text-xs text-slate-400">Escopo, entregáveis, prazos e investimento. Sem surpresa.</div>
+          <div class="font-medium mb-1 lang-pt">Proposta clara</div>
+          <div class="font-medium mb-1 lang-en">Clear proposal</div>
+          <div class="text-xs text-slate-400 lang-pt">Escopo, entregáveis, prazos e investimento. Sem surpresa.</div>
+          <div class="text-xs text-slate-400 lang-en">Scope, deliverables, timeline, and investment. No surprises.</div>
         </div>
         <div class="p-5">
           <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">03</div>
-          <div class="font-medium mb-1">Execução com transparência</div>
-          <div class="text-xs text-slate-400">Atualizações frequentes, código versionado, reuniões quando necessário.</div>
+          <div class="font-medium mb-1 lang-pt">Entrega</div>
+          <div class="font-medium mb-1 lang-en">Delivery</div>
+          <div class="text-xs text-slate-400 lang-pt">Código versionado, updates frequentes, reuniões quando necessário.</div>
+          <div class="text-xs text-slate-400 lang-en">Versioned code, frequent updates, meetings as needed.</div>
         </div>
         <div class="p-5">
           <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">04</div>
-          <div class="font-medium mb-1">Entrega + faturamento PJ</div>
-          <div class="text-xs text-slate-400">Código + documentação + suporte de transição. Nota fiscal simples.</div>
+          <div class="font-medium mb-1 lang-pt">Suporte + NF</div>
+          <div class="font-medium mb-1 lang-en">Support + Invoice</div>
+          <div class="text-xs text-slate-400 lang-pt">30 dias de suporte de transição. Nota fiscal PJ simples.</div>
+          <div class="text-xs text-slate-400 lang-en">30 days of transition support. Simple PJ invoice.</div>
         </div>
       </div>
     </div>
@@ -1026,6 +1068,34 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-4 text-sm">
+      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
+        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
+          <span class="lang-pt">O que é a Code Solutions exatamente?</span>
+          <span class="lang-en">What exactly is Code Solutions?</span>
+          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
+        </summary>
+        <div class="mt-3 text-slate-400 lang-pt">
+          Code Solutions é uma <strong class="text-white">empresa de produtos e frameworks</strong> fundada por Ivã Martins. Construímos e licenciamos <strong class="text-white">toolkits battle-tested</strong> para backend (Java, Scala, Spring, Quarkus), arquiteturas event-driven (Akka, Flink, Kafka) e IA corporativa (LangChain4j, RAG, MCP). Também fazemos engajamentos pontuais de adoção e suporte em cima dos nossos próprios frameworks. Não somos uma consultoria genérica — nosso core é IP acumulado, não horas de body-rental.
+        </div>
+        <div class="mt-3 text-slate-400 lang-en">
+          Code Solutions is a <strong class="text-white">products and frameworks company</strong> founded by Ivã Martins. We build and license <strong class="text-white">battle-tested toolkits</strong> for backend (Java, Scala, Spring, Quarkus), event-driven architectures (Akka, Flink, Kafka), and corporate AI (LangChain4j, RAG, MCP). We also take on short adoption and support engagements built on top of our own frameworks. We're not a generic consulting shop — our core is accumulated IP, not body-rental hours.
+        </div>
+      </details>
+
+      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
+        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
+          <span class="lang-pt">Code Solutions é o mesmo que o portfólio pessoal do Ivã?</span>
+          <span class="lang-en">Is Code Solutions the same as Ivã's personal portfolio?</span>
+          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
+        </summary>
+        <div class="mt-3 text-slate-400 lang-pt">
+          <strong class="text-white">Não.</strong> Este é o site da empresa (produtos e frameworks). O <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">portfólio pessoal do Ivã</a> (carreira, cases individuais, Open Source, CV) é separado. Se você está avaliando o Ivã como candidato a uma vaga, vá direto para o portfólio pessoal.
+        </div>
+        <div class="mt-3 text-slate-400 lang-en">
+          <strong class="text-white">No.</strong> This is the company site (products and frameworks). <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">Ivã's personal portfolio</a> (career, individual cases, open source, CV) is separate. If you're evaluating Ivã as a job candidate, go directly to his personal portfolio.
+        </div>
+      </details>
+
       <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
         <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
           <span class="lang-pt">Como fazer manutenção em sistemas legados Java e Play Framework?</span>
