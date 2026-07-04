@@ -217,8 +217,44 @@
     ]
   }
   </script>
+
+  <style>
+    /* Top banner (recruiter → portfolio) */
+    .top-banner {
+      background: linear-gradient(90deg, rgb(234 179 8 / 0.12) 0%, rgb(234 179 8 / 0.04) 100%);
+      border-bottom: 1px solid rgb(234 179 8 / 0.2);
+    }
+    .top-banner a { color: rgb(253 224 71); }
+    .top-banner a:hover { color: rgb(250 204 21); }
+  </style>
 </head>
 <body class="bg-slate-950 text-slate-200 font-sans antialiased">
+
+  <!-- TOP BANNER: dismissible notice pointing recruiters to the portfolio site -->
+  <div id="recruiter-banner" class="top-banner">
+    <div class="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between gap-x-4 text-xs sm:text-sm">
+      <div class="flex items-center gap-x-2 sm:gap-x-3 min-w-0">
+        <i class="fa-solid fa-user-tie text-yellow-400 flex-shrink-0"></i>
+        <p class="text-slate-200 truncate">
+          <span class="lang-pt">
+            <strong class="text-white">Recrutador(a)?</strong> Este é meu site de <em>serviços PJ</em>.
+            Para avaliar meu perfil como candidato, veja o
+            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="font-semibold underline underline-offset-2">site portfólio dedicado →</a>
+          </span>
+          <span class="lang-en">
+            <strong class="text-white">Recruiter?</strong> This is my <em>services site</em>.
+            For evaluating me as a candidate, see my
+            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="font-semibold underline underline-offset-2">dedicated portfolio site →</a>
+          </span>
+        </p>
+      </div>
+      <button onclick="dismissRecruiterBanner()" aria-label="Dismiss"
+              class="text-slate-400 hover:text-white flex-shrink-0 px-2 py-1">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
   <!-- NAV -->
   <nav class="bg-slate-900/95 backdrop-blur-lg border-b border-slate-800 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6">
@@ -1037,6 +1073,23 @@
       // Persist only on explicit user choice
       try { localStorage.setItem('cs_lang', lang); } catch(e){}
     }
+
+    // Recruiter banner: dismiss + persist
+    function dismissRecruiterBanner() {
+      const el = document.getElementById('recruiter-banner');
+      if (el) el.style.display = 'none';
+      try { localStorage.setItem('cs_banner_dismissed', '1'); } catch(e){}
+    }
+
+    // Hide banner on load if previously dismissed
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        if (localStorage.getItem('cs_banner_dismissed') === '1') {
+          const el = document.getElementById('recruiter-banner');
+          if (el) el.style.display = 'none';
+        }
+      } catch(e){}
+    });
 
     // Initialize language:
     // 1. Respect saved user preference (from button clicks)
