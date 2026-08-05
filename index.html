@@ -275,6 +275,21 @@
         }
       },
       {
+        "@type": "Product",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#product-banking-service",
+        "name": "Kotlin Banking Service",
+        "description": "Production-grade banking microservice in Kotlin + Spring Boot 3. Tactical DDD, Hexagonal Architecture, TDD, full observability (Prometheus + Zipkin + JSON logs), Resilience4j (Circuit Breaker + Retry), pessimistic locking, domain events, K8s health probes. Docker + docker-compose with Postgres + Kafka + Prometheus + Grafana + Zipkin.",
+        "brand": { "@type": "Brand", "name": "Code Solutions" },
+        "category": "Banking Microservice",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://github.com/ivamartins/kotlin-banking-service"
+        }
+      },
+      {
         "@type": "FAQPage",
         "@id": "https://ivamartins.github.io/code-solutions-site/#faq",
         "mainEntity": [
@@ -283,7 +298,7 @@
             "name": "O que é a Code Solutions exatamente?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Code Solutions é uma empresa de produtos e frameworks fundada por Ivã Martins. Operamos no modelo open core: os frameworks e toolkits (akka-scala-base, flink-kafka-scala-base, springboot-langchain4j-rag-mcp, whatsapp-llm-bot, dbt-airflow-data-platform, csharp-azure-ai-base, etc.) são 100% open source no GitHub (github.com/ivamartins, licença MIT) — use livremente. A Code Solutions vende serviços pagos em cima deles: adoção guiada (licença + handoff + 30 dias de suporte), customização de escopo fechado, treinamento e engenharia sob medida. Não somos consultoria genérica nem vendemos body-rental — nosso core é IP acumulado, não horas."
+              "text": "Code Solutions é uma empresa de produtos e frameworks fundada por Ivã Martins. Operamos no modelo open core: os frameworks e toolkits (akka-scala-base, flink-kafka-scala-base, kotlin-banking-service, springboot-langchain4j-rag-mcp, whatsapp-llm-bot, dbt-airflow-data-platform, csharp-azure-ai-base, etc.) são 100% open source no GitHub (github.com/ivamartins, licença MIT) — use livremente. A Code Solutions vende serviços pagos em cima deles: adoção guiada (licença + handoff + 30 dias de suporte), customização de escopo fechado, treinamento e engenharia sob medida. Não somos consultoria genérica nem vendemos body-rental — nosso core é IP acumulado, não horas."
             }
           },
           {
@@ -951,6 +966,19 @@
     <div class="mb-10">
       <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Java</h4>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+        <!-- Kotlin + Spring Boot 3 - destaque bancário -->
+        <div class="bg-slate-950 border border-yellow-400/30 rounded-2xl p-5">
+          <div class="flex items-center justify-between">
+            <strong class="font-medium">kotlin-banking-service</strong>
+            <span class="text-[10px] px-2 py-0.5 bg-yellow-400/10 text-yellow-400 rounded">DESTAQUE</span>
+          </div>
+          <div class="text-slate-400 mt-1">Microsserviço bancário Kotlin + Spring Boot 3 com DDD tático (Aggregate Root + Value Objects + Domain Events), Arquitetura Hexagonal pura (domínio sem dependências externas), TDD, observability completa (Prometheus + Zipkin + JSON logs), Resilience4j (Circuit Breaker + Retry), pessimistic locking para concorrência, K8s health probes. Docker multi-stage + docker-compose com Postgres + Kafka + Prometheus + Grafana + Zipkin. CI com GitHub Actions.</div>
+          <div class="mt-2 text-xs">
+            <a href="https://github.com/ivamartins/kotlin-banking-service" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a>
+            <span class="text-slate-500 ml-2">Kotlin • Spring Boot 3 • DDD • Hexagonal • PostgreSQL • Kafka • Resilience4j</span>
+          </div>
+        </div>
+
         <!-- Java 21 + Spring WebFlux -->
         <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
           <strong class="font-medium">spring-webflux-microservice</strong>
