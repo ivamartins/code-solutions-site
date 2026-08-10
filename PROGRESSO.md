@@ -1,10 +1,10 @@
 # Code Solutions — contexto e progresso do reposicionamento
 
 > Arquivo de continuidade. Se a sessão acabar ou faltar tokens, leia este arquivo e retome pelos itens **pendentes**.  
-> Atualizado: 2026-08-10  
+> Atualizado: 2026-08-10 (commit `828a31e` em `main`, push feito)  
 > Repo local: `/home/iva/workspace/code-solutions-site`  
 > Remote: `https://github.com/ivamartins/code-solutions-site.git`  
-> URL publicada (após push): `https://ivamartins.github.io/code-solutions-site/`
+> URL publicada: `https://ivamartins.github.io/code-solutions-site/`
 
 ---
 
@@ -111,12 +111,12 @@ Java, Spring Boot, Quarkus, APIs REST, PostgreSQL, Docker, Python, Kafka/integra
 - [x] Schema.org na home / sobre / contato
 - [x] Preview local validado (HTTP 200 nas 4 páginas + css/js)
 - [x] Este arquivo `PROGRESSO.md` (contexto + checklist)
+- [x] Commit de todas as alterações no git (`828a31e`)
+- [x] Push para `origin/main` (dispara GitHub Pages)
 
 ### Em andamento / fazer agora
 
-- [ ] Commit de todas as alterações no git
-- [ ] Push para `origin/main` (dispara GitHub Pages)
-- [ ] Verificar site ao vivo após deploy (~1–2 min)
+- [x] Verificar site ao vivo após deploy — HTTP 200, title novo na home e solucoes
 
 ### Pendente / opcional (próximas sessões)
 
