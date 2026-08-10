@@ -1,10 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap for search engines
 Sitemap: https://ivamartins.github.io/code-solutions-site/sitemap.xml
-
-# Code Solutions - Ivã Martins
-# Empresa de produtos e frameworks para backend, event-driven e IA corporativa
-# Fundada por Ivã Martins, ex-engenheiro sênior de Sicredi, Panvel e Quartile (US)
-# Canoas, RS - Brasil - Atendimento remoto BR/US/EU

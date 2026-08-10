@@ -3,165 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Solutions — Frameworks para Backend, Event-Driven e IA | Ivã Martins</title>
-  <meta name="description" content="Code Solutions é uma empresa de produtos e frameworks para backend, event-driven e IA corporativa. Toolkits battle-tested em Scala + Akka + Flink, Java modernization, AI Agent Kit (LangChain4j + MCP), Conversational AI Bots, Data Platform (dbt + Airflow) e C# + Azure AI. Fundada por Ivã Martins, ex-engenheiro sênior de Sicredi, Panvel e Quartile (US).">
-
-  <meta name="author" content="Ivã Martins - Code Solutions">
+  <title>Code Solutions | Software sob medida em Porto Alegre e Grande POA</title>
+  <meta name="description" content="Software house em Porto Alegre (CNPJ 43.985.337/0001-08). Sistemas sob medida, integrações e automação de WhatsApp para empresas da Grande Porto Alegre. Atendimento direto, escopo claro.">
+  <meta name="author" content="Code Solutions">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-  <meta name="keywords" content="Code Solutions, Ivã Martins, backend frameworks, event-driven architecture, AI agents, AI agent kit, LangChain4j, MCP, RAG, Apache Kafka, Apache Flink, Scala, Akka, Spring Boot, Quarkus, Java modernization, legacy modernization, microservices, Azure Functions, dbt, Airflow, data platform, consulting Brazil, remote backend, Sicredi, Panvel, Quartile, open source, Python, C# .NET">
-  <meta name="google-site-verification" content="UgodlMJvAhbkR8a8RzggV6O04Rpbf2jRk1eKt8O9GnE" />
-  <meta name="msvalidate.01" content="663F4891153290862AC32EEE704A517D" />
+  <meta name="keywords" content="software house Porto Alegre, software sob medida, desenvolvimento de software Grande Porto Alegre, sistema customizado, integração de sistemas, automação WhatsApp empresas, software para empresa, Code Solutions, CNPJ 43985337000108">
+  <meta name="google-site-verification" content="UgodlMJvAhbkR8a8RzggV6O04Rpbf2jRk1eKt8O9GnE">
+  <meta name="msvalidate.01" content="663F4891153290862AC32EEE704A517D">
   <link rel="canonical" href="https://ivamartins.github.io/code-solutions-site/">
-
-  <!-- Bilingual hreflang (helps Google understand PT/EN versions) -->
   <link rel="alternate" hreflang="pt-BR" href="https://ivamartins.github.io/code-solutions-site/">
   <link rel="alternate" hreflang="en" href="https://ivamartins.github.io/code-solutions-site/">
   <link rel="alternate" hreflang="x-default" href="https://ivamartins.github.io/code-solutions-site/">
-
-  <!-- Performance preconnects (Core Web Vitals / speed signal) -->
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Code Solutions — Frameworks para Backend, Event-Driven e IA">
-  <meta property="og:description" content="Empresa de produtos e frameworks battle-tested: Scala + Akka + Flink, Java modernization, AI Agent Kit (LangChain4j + MCP), Conversational AI, Data Platform. Fundada por Ivã Martins (Sicredi, Panvel, Quartile).">
+  <meta property="og:title" content="Code Solutions | Software sob medida em Porto Alegre">
+  <meta property="og:description" content="Software house na Grande Porto Alegre: sistemas sob medida, integrações e automação. CNPJ 43.985.337/0001-08.">
   <meta property="og:image" content="https://ivamartins.github.io/code-solutions-site/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Code Solutions — Frameworks battle-tested para backend, event-driven e IA. Fundada por Ivã Martins.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:site_name" content="Code Solutions | Ivã Martins">
+  <meta property="og:site_name" content="Code Solutions">
   <meta property="og:url" content="https://ivamartins.github.io/code-solutions-site/">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Code Solutions — Frameworks para Backend, Event-Driven e IA">
-  <meta name="twitter:description" content="Toolkits battle-tested em Scala + Akka + Flink, Java modernization, AI Agent Kit, Conversational AI, Data Platform. Fundada por Ivã Martins (Sicredi, Panvel, Quartile).">
+  <meta name="twitter:title" content="Code Solutions | Software sob medida em Porto Alegre">
+  <meta name="twitter:description" content="Sistemas sob medida, integrações e automação para empresas da Grande POA.">
   <meta name="twitter:image" content="https://ivamartins.github.io/code-solutions-site/assets/og-image.jpg">
-  <meta name="twitter:image:alt" content="Code Solutions — Frameworks battle-tested para backend, event-driven e IA. Fundada por Ivã Martins.">
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HE7M2HJV3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-4HE7M2HJV3');
   </script>
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
-    
-    :root {
-      --accent: 234 179 8;
-    }
-    
-    .font-display {
-      font-family: 'Space Grotesk', system_ui, sans-serif;
-    }
-    
-    .section-title {
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-      font-weight: 600;
-      letter-spacing: -0.025em;
-    }
-    
-    .nav-active {
-      color: rgb(234 179 8);
-      font-weight: 600;
-    }
-    
-    .product-card {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    }
-    
-    .case-card {
-      transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
-    }
-    
-    .tech-pill {
-      background-color: #0f172a;
-      color: #e2e8f0;
-      font-size: 0.75rem;
-      padding: 0.125rem 0.625rem;
-      border-radius: 9999px;
-      font-weight: 500;
-    }
-    
-    .lang-en { display: none; }
-    html[lang="en"] .lang-pt { display: none; }
-    html[lang="en"] .lang-en { display: block; }
-    
-    .professional-gradient {
-      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
-    }
-    
-    .accent-text {
-      color: rgb(234 179 8);
-    }
-    
-    .stat-number {
-      font-variant-numeric: tabular-nums;
-    }
-  </style>
-
-  <!-- SEO: Structured Data (Schema.org) for Organization + Products -->
+  <link rel="stylesheet" href="assets/site.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#org",
+        "@type": "ProfessionalService",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#business",
         "name": "Code Solutions",
-        "alternateName": "Code Solutions - Ivã Martins",
-        "description": "Code Solutions builds and licenses production-ready frameworks, toolkits, and AI agent kits for backend, event-driven systems, and corporate AI integration. Products born from 20+ years of real-world systems work.",
+        "alternateName": "Code Solutions Software House",
         "url": "https://ivamartins.github.io/code-solutions-site/",
         "logo": "https://ivamartins.github.io/code-solutions-site/assets/logo-cs.png",
         "image": "https://ivamartins.github.io/code-solutions-site/assets/og-image.jpg",
-        "sameAs": [
-          "https://www.linkedin.com/company/code-solutions-it/"
+        "description": "Software house em Porto Alegre especializada em software sob medida, integrações de sistemas e automação para empresas da Grande Porto Alegre.",
+        "taxID": "43.985.337/0001-08",
+        "priceRange": "$$",
+        "areaServed": [
+          { "@type": "City", "name": "Porto Alegre" },
+          { "@type": "AdministrativeArea", "name": "Grande Porto Alegre" },
+          { "@type": "State", "name": "Rio Grande do Sul" }
         ],
-        "founder": { "@id": "https://ivamartins.github.io/code-solutions-site/#person" },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Canoas",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        },
-        "knowsAbout": [
-          "Java", "Spring Boot", "Quarkus", "Scala", "Akka", "Apache Kafka", "Apache Flink",
-          "Python", "C# .NET", "Azure", "LangChain4j", "MCP", "RAG", "Event-Driven Architecture",
-          "Legacy Modernization", "Microsserviços", "AI Agents"
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#person",
-        "name": "Ivã Martins",
-        "jobTitle": "Senior Backend Engineer",
-        "description": "Mais de 20 anos de experiência em produção: Sicredi, Panvel, Quartile (US). Fundador da Code Solutions — empresa de produtos e frameworks para backend, event-driven e IA. Atua em tempo integral como Senior Backend Engineer; a empresa é seu R&D lab e canal de produto.",
-        "url": "https://ivamartins.github.io/code-solutions-site/",
-        "image": "https://ivamartins.github.io/code-solutions-site/assets/portrait.jpg",
-        "sameAs": [
-          "https://www.linkedin.com/in/ivã-martins-71760b89/",
-          "https://www.linkedin.com/company/code-solutions-it/"
-        ],
-        "worksFor": { "@id": "https://ivamartins.github.io/code-solutions-site/#org" },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Porto Alegre",
@@ -169,1538 +68,464 @@
           "addressCountry": "BR"
         },
         "knowsAbout": [
-          "Java", "Play Framework", "Elasticsearch", "Scala", "Akka", "Apache Kafka", "Apache Flink",
-          "Spring Boot", "Quarkus", "Python", "C# .NET", "Azure", "Event-Driven Architecture",
-          "Microsserviços", "Legacy Modernization", "AI Integration", "REST APIs"
+          "Custom software development",
+          "System integration",
+          "WhatsApp automation",
+          "Legacy modernization",
+          "Java",
+          "APIs"
         ],
-        "alumniOf": [
-          {"@type": "Organization", "name": "Universidade Luterana do Brasil"},
-          {"@type": "Organization", "name": "Uniritter"},
-          {"@type": "Organization", "name": "Universidade Pitágoras Unopar Anhanguera"}
-        ],
-        "hasCredential": [
-          "Professional Scrum Master I (PSM I)",
-          "Oracle Certified Associate Java SE",
-          "Java EE certifications"
-        ]
-      },
-      {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-event-driven",
-        "name": "Event-Driven & Streaming Toolkit (Scala + Akka + Flink)",
-        "description": "Scala + Akka + Apache Flink + Kafka framework for event-driven systems in production. Event-sourcing, clustering, backpressure supervision, real-time pipelines.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "Backend Framework",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/akka-scala-base"
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Soluções Code Solutions",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema sob medida" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Integração de sistemas" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação de WhatsApp" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Evolução de sistemas legados" } }
+          ]
         }
       },
       {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-java-modernization",
-        "name": "Java Modernization Framework",
-        "description": "Playbooks and reference bases (Quarkus, Spring Boot 3, WebFlux) to modernize Java legacies while preserving business rules.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "Backend Framework",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/quarkus-java-base"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-ai-agent",
-        "name": "AI Agent Kit (LangChain4j + MCP)",
-        "description": "Corporate AI kit: persistent RAG, supervisor/sub-agents, Spring Security, MCP. Ready to integrate with legacy systems.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "AI Tool",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/springboot-langchain4j-rag-mcp"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-conversational-ai",
-        "name": "Conversational AI Bots",
-        "description": "WhatsApp/Telegram LLM-agnostic bots. Supports any OpenAI-compatible API. Custom agents with specific skills.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "AI Tool",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/whatsapp-llm-bot"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-data-platform",
-        "name": "Data Platform Foundation (dbt + Airflow)",
-        "description": "Production-ready data pipeline: Airflow orchestrates dbt against Postgres. Staging/marts models, dbt generic + singular tests, Data Quality checks, Data Mesh by schema.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "Data Platform",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/dbt-airflow-data-platform"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-azure-ai",
-        "name": "C# + Azure AI Base",
-        "description": "C#/.NET base for Azure Functions + Service Bus with AI integration. Reference for retail-media and e-commerce platforms at scale.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "Cloud Framework",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/csharp-azure-ai-base"
-        }
-      },
-      {
-        "@type": "Product",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#product-banking-service",
-        "name": "Kotlin Banking Service",
-        "description": "Production-grade banking microservice in Kotlin + Spring Boot 3. Tactical DDD, Hexagonal Architecture, TDD, full observability (Prometheus + Zipkin + JSON logs), Resilience4j (Circuit Breaker + Retry), pessimistic locking, domain events, K8s health probes. Docker + docker-compose with Postgres + Kafka + Prometheus + Grafana + Zipkin.",
-        "brand": { "@type": "Brand", "name": "Code Solutions" },
-        "category": "Banking Microservice",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://github.com/ivamartins/kotlin-banking-service"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://ivamartins.github.io/code-solutions-site/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "O que é a Code Solutions exatamente?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Code Solutions é uma empresa de produtos e frameworks fundada por Ivã Martins. Operamos no modelo open core: os frameworks e toolkits (akka-scala-base, flink-kafka-scala-base, kotlin-banking-service, springboot-langchain4j-rag-mcp, whatsapp-llm-bot, dbt-airflow-data-platform, csharp-azure-ai-base, etc.) são 100% open source no GitHub (github.com/ivamartins, licença MIT) — use livremente. A Code Solutions vende serviços pagos em cima deles: adoção guiada (licença + handoff + 30 dias de suporte), customização de escopo fechado, treinamento e engenharia sob medida. Não somos consultoria genérica nem vendemos body-rental — nosso core é IP acumulado, não horas."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Os frameworks da Code Solutions são pagos?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Não. Todos os frameworks e toolkits são open source no GitHub sob licença MIT — você pode clonar, usar, modificar e distribuir livremente, sem pagar nada. O que cobramos é pelos serviços OPCIONAIS em cima deles: adoção guiada (handoff + 30 dias de suporte), customização sob medida (escopo fechado), treinamento e engenharia sob medida. Se você só quer usar os frameworks por conta própria, é gratuito. Se quiser ajuda na integração, customização ou suporte, aí sim é um engajamento pago."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Code Solutions é o mesmo que o portfólio pessoal do Ivã?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Não. Este é o site da empresa (produtos e frameworks). O portfólio pessoal do Ivã (carreira, cases individuais, Open Source, CV) é separado. Se você está avaliando o Ivã como candidato a uma vaga, vá direto para o portfólio pessoal em https://ivamartins.github.io/portfolio/."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Como adotar um dos frameworks da Code Solutions?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Cada framework é open source no GitHub (github.com/ivamartins, licença MIT). Adoção self-service: clone, leia o README, rode. Para adoção guiada com handoff + 30 dias de suporte, abra um engagement pago de adoção."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Vocês fazem manutenção de sistemas legados?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Não somos consultoria de manutenção e não vendemos body-rental. A Code Solutions vende adoção guiada dos frameworks (handoff + 30 dias de suporte) e customização de escopo fechado. Se você precisa de manutenção contínua do seu sistema legado, recomendamos buscar um parceiro de staffing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Os frameworks de event-driven (Scala, Akka, Kafka, Flink) são prontos para produção?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sim. O akka-scala-base, flink-kafka-scala-base e flink-data-mesh-pipeline nasceram da arquitetura que escalou para padrão no Sicredi Digital (4 anos em produção). O scala-akka-aws-microservice é o template de deploy AWS (Fargate + Terraform). Para adoção guiada ou arquitetura sob medida, abra um engagement."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Modernização de legados está nos frameworks?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "O quarkus-java-base e o java-product-api são as bases de referência para modernizar Java EE/Play/JSF para Spring Boot 3 ou Quarkus. São os patterns usados na reescrita do e-commerce Panvel e em sistemas de FLEXCUBE. Para engagement de customização (ex: playbook sob medida), abra conversa."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Posso integrar agentes de IA em um sistema legado sem reescrever tudo?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sim. Nosso AI Agent Kit (LangChain4j + MCP + RAG persistente) foi desenhado justamente para isso: integração com sistemas legados via APIs e mensageria, com padrões de supervisor/sub-agente. Código open source em github.com/ivamartins/springboot-langchain4j-rag-mcp. Adoção self-service ou guiada disponível."
-            }
-          }
-        ]
+        "@type": "WebSite",
+        "@id": "https://ivamartins.github.io/code-solutions-site/#website",
+        "url": "https://ivamartins.github.io/code-solutions-site/",
+        "name": "Code Solutions",
+        "publisher": { "@id": "https://ivamartins.github.io/code-solutions-site/#business" },
+        "inLanguage": ["pt-BR", "en"]
       }
     ]
   }
   </script>
-
-  <style>
-    /* Top banner (recruiter → portfolio) — emphasized */
-    .top-banner {
-      background: linear-gradient(90deg, rgb(234 179 8 / 0.22) 0%, rgb(234 179 8 / 0.08) 100%);
-      border-bottom: 1px solid rgb(234 179 8 / 0.35);
-    }
-    .top-banner a { color: rgb(253 224 71); }
-    .top-banner a:hover { color: rgb(250 204 21); }
-    .top-banner .recruiter-cta {
-      background: rgb(234 179 8);
-      color: rgb(2 6 23);
-    }
-    .top-banner .recruiter-cta:hover {
-      background: rgb(250 204 21);
-    }
-
-    /* Floating recruiter pill (bottom-right) */
-    .recruiter-float {
-      position: fixed;
-      right: 1rem;
-      bottom: 1rem;
-      z-index: 40;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.625rem 1rem;
-      border-radius: 9999px;
-      background: rgb(234 179 8);
-      color: rgb(2 6 23);
-      font-size: 0.8125rem;
-      font-weight: 600;
-      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4), 0 0 0 1px rgba(234,179,8,0.4);
-      transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-      animation: recruiter-float-in 0.6s 1.2s ease-out both;
-    }
-    .recruiter-float:hover {
-      background: rgb(250 204 21);
-      transform: translateY(-2px);
-      box-shadow: 0 14px 30px -5px rgba(0,0,0,0.5), 0 0 0 1px rgba(234,179,8,0.6);
-    }
-    .recruiter-float .rf-icon { font-size: 0.9rem; }
-    .recruiter-float .rf-arrow { font-size: 0.7rem; transition: transform 0.2s; }
-    .recruiter-float:hover .rf-arrow { transform: translateX(2px); }
-    .recruiter-float .rf-close {
-      margin-left: 0.25rem;
-      width: 1.25rem;
-      height: 1.25rem;
-      border-radius: 9999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: rgb(2 6 23);
-      opacity: 0.55;
-      transition: opacity 0.2s, background 0.2s;
-    }
-    .recruiter-float .rf-close:hover { opacity: 1; background: rgba(0,0,0,0.12); }
-    @media (max-width: 640px) {
-      .recruiter-float { font-size: 0.75rem; padding: 0.5rem 0.75rem; right: 0.75rem; bottom: 0.75rem; }
-      .recruiter-float .rf-label-full { display: none; }
-    }
-    @keyframes recruiter-float-in {
-      0%   { opacity: 0; transform: translateY(20px) scale(0.95); }
-      100% { opacity: 1; transform: translateY(0) scale(1); }
-    }
-  </style>
 </head>
-<body class="bg-slate-950 text-slate-200 font-sans antialiased">
-
-  <!-- TOP BANNER: emphasized notice pointing recruiters to the portfolio site -->
-  <div id="recruiter-banner" class="top-banner">
-    <div class="max-w-7xl mx-auto px-6 py-3 sm:py-3.5 flex items-center justify-between gap-x-3 sm:gap-x-4 text-xs sm:text-sm">
-      <div class="flex items-center gap-x-2 sm:gap-x-3 min-w-0 flex-1">
-        <i class="fa-solid fa-user-tie text-yellow-400 flex-shrink-0 text-base sm:text-lg"></i>
-        <p class="text-slate-200 min-w-0">
-          <span class="lang-pt">
-            <strong class="text-white">Olá, recrutador(a)!</strong>
-            <span class="hidden sm:inline">Você está no site da <strong class="text-white">Code Solutions</strong>, uma empresa de produtos que fundei. Para avaliar <em>meu perfil pessoal</em> como candidato (carreira, cases, Open Source), conheça</span>
-            <span class="sm:hidden">Avalie meu perfil pessoal no</span>
-            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
-               class="recruiter-cta inline-flex items-center gap-x-1.5 ml-1 sm:ml-2 px-3 py-1 rounded-full font-semibold whitespace-nowrap">
-              <span>portfólio pessoal do Ivã Martins</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </a>
-          </span>
-          <span class="lang-en">
-            <strong class="text-white">Hi, recruiter!</strong>
-            <span class="hidden sm:inline">You're on the <strong class="text-white">Code Solutions</strong> site, a products company I founded. To evaluate <em>my personal profile</em> as a candidate (career, cases, open source), see</span>
-            <span class="sm:hidden">Evaluate my personal profile at</span>
-            <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
-               class="recruiter-cta inline-flex items-center gap-x-1.5 ml-1 sm:ml-2 px-3 py-1 rounded-full font-semibold whitespace-nowrap">
-              <span>Ivã Martins' personal portfolio</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </a>
-          </span>
-        </p>
-      </div>
-      <button onclick="dismissRecruiterBanner()" aria-label="Dismiss"
-              class="text-slate-400 hover:text-white flex-shrink-0 px-2 py-1 rounded hover:bg-slate-800/50">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-  </div>
-
+<body class="antialiased">
   <!-- NAV -->
-  <nav class="bg-slate-900/95 backdrop-blur-lg border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex items-center gap-x-3">
-          <img src="assets/logo-cs.png" alt="Code Solutions" class="h-10 w-auto">
-          <div>
-            <div class="font-display font-semibold tracking-tighter text-xl">Code Solutions</div>
-            <div class="text-[10px] text-slate-500 -mt-1">Ivã Martins</div>
+  <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <img src="assets/logo-cs.png" alt="Code Solutions" class="w-8 h-8 rounded-lg object-cover">
+        <div class="leading-tight">
+          <div class="font-display font-semibold text-white text-sm tracking-wide">CODE SOLUTIONS</div>
+          <div class="text-[10px] text-slate-500 uppercase tracking-[0.14em]">
+            <span class="lang-pt">Software house · POA</span>
+            <span class="lang-en">Software house · POA</span>
           </div>
         </div>
-
-        <div class="hidden md:flex items-center gap-x-6 text-sm">
-          <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-pt">Sobre</a>
-          <a href="#sobre" class="hover:text-yellow-400 transition-colors lang-en">About</a>
-
-          <a href="#produtos" class="hover:text-yellow-400 transition-colors lang-pt">Produtos</a>
-          <a href="#produtos" class="hover:text-yellow-400 transition-colors lang-en">Products</a>
-
-          <a href="#cases" class="hover:text-yellow-400 transition-colors lang-pt">Cases</a>
-          <a href="#cases" class="hover:text-yellow-400 transition-colors lang-en">Cases</a>
-
-          <a href="#agentes" class="hover:text-yellow-400 transition-colors lang-pt">Agentes IA</a>
-          <a href="#agentes" class="hover:text-yellow-400 transition-colors lang-en">AI Agents</a>
-
-          <a href="#frameworks" class="hover:text-yellow-400 transition-colors lang-pt">Frameworks Base</a>
-          <a href="#frameworks" class="hover:text-yellow-400 transition-colors lang-en">Base Frameworks</a>
-
-          <!-- Recruiter link — emphasized to redirect to Ivã's personal portfolio -->
-          <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-x-1.5 px-3 py-1.5 rounded-full border border-yellow-500/50 bg-yellow-500/10 text-yellow-300 hover:bg-yellow-500/20 hover:text-yellow-200 transition-colors text-xs font-medium">
-            <i class="fa-solid fa-user-tie"></i>
-            <span class="lang-pt">Recrutador(a)? → portfólio do Ivã</span>
-            <span class="lang-en">Recruiter? → Ivã's portfolio</span>
-            <i class="fa-solid fa-arrow-right text-[9px]"></i>
-          </a>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="index.html" data-nav="home" class="nav-link">Home</a>
+        <a href="solucoes.html" data-nav="solucoes.html" class="nav-link">
+          <span class="lang-pt">Soluções</span><span class="lang-en">Solutions</span>
+        </a>
+        <a href="sobre.html" data-nav="sobre.html" class="nav-link">
+          <span class="lang-pt">Sobre</span><span class="lang-en">About</span>
+        </a>
+        <a href="contato.html" data-nav="contato.html" class="nav-link">
+          <span class="lang-pt">Contato</span><span class="lang-en">Contact</span>
+        </a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <div class="flex items-center bg-slate-900 border border-slate-700 rounded-lg p-0.5">
+          <button type="button" id="lang-pt-btn" onclick="switchLang('pt')" class="px-2.5 py-1 rounded-md text-xs font-semibold">PT</button>
+          <button type="button" id="lang-en-btn" onclick="switchLang('en')" class="px-2.5 py-1 rounded-md text-xs font-semibold">EN</button>
         </div>
-
-        <div class="flex items-center gap-x-3">
-          <!-- Language Switcher -->
-          <div class="flex items-center bg-slate-900 border border-slate-800 rounded-full p-1 text-xs">
-            <button onclick="switchLang('pt')" id="lang-pt-btn"
-                    class="px-3 py-1 rounded-full bg-yellow-500 text-slate-950 font-medium">PT</button>
-            <button onclick="switchLang('en')" id="lang-en-btn"
-                    class="px-3 py-1 rounded-full text-slate-400 hover:text-slate-200">EN</button>
-          </div>
-
-          <a href="#contato" 
-             class="hidden sm:inline-flex items-center px-4 py-2 rounded-full bg-white text-slate-950 text-sm font-semibold hover:bg-yellow-400 transition-all active:scale-[0.985]">
-            <span class="lang-pt">Receber proposta</span>
-            <span class="lang-en">Get a proposal</span>
-          </a>
-
-          <button id="wa-mobile-btn"
-                  class="md:hidden w-9 h-9 flex items-center justify-center rounded-full bg-emerald-500 text-white">
-            <i class="fa-brands fa-whatsapp"></i>
-          </button>
-        </div>
+        <a href="contato.html" class="hidden sm:inline-flex btn-primary text-sm px-3.5 py-2 rounded-lg">
+          <span class="lang-pt">Pedir proposta</span><span class="lang-en">Get a quote</span>
+        </a>
+        <button type="button" id="mobile-menu-btn" class="md:hidden text-slate-300 px-2 py-1" aria-label="Menu">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
       </div>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="relative">
-    <div class="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24">
-      <div class="grid md:grid-cols-12 gap-12 items-center">
-        <div class="md:col-span-7">
-          <div class="inline-flex items-center gap-x-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs tracking-[1px] mb-6">
-            <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-            <span class="lang-pt">CODE SOLUTIONS • CNPJ ativo • BR / US / EU</span>
-            <span class="lang-en">CODE SOLUTIONS • Active company • BR / US / EU</span>
-          </div>
-
-          <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-semibold mb-6">
-            <span class="lang-pt">Frameworks battle-tested<br>para backend, event-driven<br>e IA em produção.</span>
-            <span class="lang-en">Battle-tested frameworks<br>for backend, event-driven,<br>and production AI.</span>
-          </h1>
-
-          <p class="max-w-lg text-xl text-slate-400 mb-8">
-            <span class="lang-pt">A Code Solutions transforma <strong class="text-white">20+ anos</strong> construindo sistemas reais em <strong class="text-white">toolkits, frameworks e AI agent kits</strong> que times podem adotar, licenciar ou customizar. Produtos prontos para produção, não consultoria em massa.</span>
-            <span class="lang-en">Code Solutions turns <strong class="text-white">20+ years</strong> of real-world systems work into <strong class="text-white">toolkits, frameworks, and AI agent kits</strong> that teams can adopt, license, or customize. Production-ready products, not mass consulting.</span>
-          </p>
-
-          <div class="flex flex-wrap gap-3">
-            <a href="#produtos"
-               class="inline-flex items-center justify-center gap-x-2 px-8 h-12 rounded-2xl bg-yellow-400 hover:bg-yellow-300 active:bg-yellow-500 text-slate-950 font-semibold text-base transition-all">
-              <span class="lang-pt">Ver produtos</span>
-              <span class="lang-en">See products</span>
-              <i class="fa-solid fa-arrow-right ml-1"></i>
-            </a>
-
-            <button onclick="document.getElementById('agentes').scrollIntoView({ behavior: 'smooth' })"
-                    class="inline-flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-900 text-sm font-medium transition-all">
-              <span class="lang-pt">Ver AI Agent Kits</span>
-              <span class="lang-en">See AI Agent Kits</span>
-            </button>
-
-            <a id="wa-hero-btn" href="#" target="_blank"
-               class="inline-flex items-center gap-x-2 px-5 h-12 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 text-sm font-medium">
-              <i class="fa-brands fa-whatsapp text-lg"></i>
-              <span class="hidden sm:inline">WhatsApp</span>
-            </a>
-          </div>
-
-          <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500">
-            <div class="flex items-center gap-x-1.5">
-              <i class="fa-solid fa-check text-emerald-400"></i>
-              <span class="lang-pt">16+ repos open source</span>
-              <span class="lang-en">16+ open source repos</span>
-            </div>
-            <div class="flex items-center gap-x-1.5">
-              <i class="fa-solid fa-check text-emerald-400"></i>
-              <span class="lang-pt">4 setores atendidos</span>
-              <span class="lang-en">4 industries served</span>
-            </div>
-            <div class="flex items-center gap-x-1.5">
-              <i class="fa-solid fa-check text-emerald-400"></i>
-              <span class="lang-pt">Fundada por ex-engenheiro de Sicredi · Panvel · Quartile</span>
-              <span class="lang-en">Founded by ex-engineer from Sicredi · Panvel · Quartile</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="md:col-span-5 relative">
-          <div class="aspect-[16/10] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/40">
-            <img src="assets/hero.jpg" alt="Code Solutions — Engenharia Backend e Agentes de IA" 
-                 class="w-full h-full object-cover">
-          </div>
-          <div class="absolute -bottom-4 -left-4 bg-slate-900 border border-slate-700 rounded-2xl px-5 py-3 text-sm shadow-xl hidden md:block">
-            <div class="flex items-center gap-x-3">
-              <div class="text-yellow-400"><i class="fa-solid fa-globe fa-lg"></i></div>
-              <div>
-                <div class="text-xs text-slate-400">Projetos em</div>
-                <div class="font-medium">Brasil • EUA (remote)</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-950 px-5 py-3 space-y-2 text-sm">
+      <a href="index.html" class="block py-2 text-slate-200">Home</a>
+      <a href="solucoes.html" class="block py-2 text-slate-200"><span class="lang-pt">Soluções</span><span class="lang-en">Solutions</span></a>
+      <a href="sobre.html" class="block py-2 text-slate-200"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a>
+      <a href="contato.html" class="block py-2 text-yellow-400 font-medium"><span class="lang-pt">Contato / Proposta</span><span class="lang-en">Contact / Quote</span></a>
     </div>
   </header>
 
-  <!-- TRUST BAR -->
-  <div class="border-y border-slate-800 bg-slate-900/50">
-    <div class="max-w-7xl mx-auto px-6 py-5">
-      <div class="flex flex-wrap justify-center md:justify-between items-center gap-x-8 gap-y-4 text-sm text-slate-400">
-        <div class="flex items-center gap-x-2"><span class="font-semibold text-white">20+</span> anos de experiência</div>
-        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
-        <div>Migrações que viraram <span class="text-white">padrão de plataforma</span></div>
-        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
-        <div>Agentes IA em produção • Apps auto-contidos</div>
-        <div class="hidden md:block w-px h-3 bg-slate-700"></div>
-        <div>Scrum Master • Pós em Java + IA</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ABOUT CODE SOLUTIONS -->
-  <section id="sobre" class="max-w-7xl mx-auto px-6 pt-20 pb-16">
-    <div class="grid md:grid-cols-12 gap-x-12 gap-y-10 items-start">
-      <div class="md:col-span-5">
-        <div class="sticky top-20">
-          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2 lang-pt">SOBRE A CODE SOLUTIONS</div>
-          <div class="uppercase text-xs tracking-[2px] text-yellow-400 mb-2 lang-en">ABOUT CODE SOLUTIONS</div>
-          <h2 class="section-title tracking-tighter mb-6">
-            <span class="lang-pt">De 20+ anos de sistemas<br>reais para frameworks<br>production-ready.</span>
-            <span class="lang-en">From 20+ years of real<br>systems to production-ready<br>frameworks.</span>
-          </h2>
-
-          <div class="rounded-2xl overflow-hidden border border-slate-800 mb-6 shadow-sm max-w-xs">
-            <img src="assets/portrait.jpg" alt="Ivã Martins — Founder, Code Solutions" class="w-full">
-          </div>
-          <div class="text-xs text-yellow-400 font-medium mb-1 lang-pt">Conheça o fundador</div>
-          <div class="text-xs text-yellow-400 font-medium mb-1 lang-en">Meet the founder</div>
-          <div class="text-sm text-slate-400">
-            <span class="lang-pt"><strong class="text-white">Ivã Martins</strong> — fundador e engenheiro principal. Mais de 20 anos em produção: Sicredi, Panvel, Quartile (US).</span>
-            <span class="lang-en"><strong class="text-white">Ivã Martins</strong> — founder and principal engineer. 20+ years in production: Sicredi, Panvel, Quartile (US).</span>
-          </div>
+  <!-- HERO -->
+  <section class="relative overflow-hidden glow-accent hero-grid">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-medium tracking-wide text-yellow-400/90 bg-yellow-400/10 border border-yellow-400/20 rounded-full px-3 py-1 mb-5">
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="lang-pt">Porto Alegre · Grande POA · remoto quando fizer sentido</span>
+          <span class="lang-en">Porto Alegre · Greater POA · remote when it fits</span>
+        </div>
+        <h1 class="font-display section-title text-white mb-5">
+          <span class="lang-pt">Software house para empresas que precisam de sistemas de verdade</span>
+          <span class="lang-en">A software house for companies that need real systems</span>
+        </h1>
+        <p class="text-slate-300 text-lg leading-relaxed mb-4 max-w-xl">
+          <span class="lang-pt">Desenvolvemos <strong class="text-white">software sob medida</strong>, <strong class="text-white">integrações</strong> e <strong class="text-white">automações</strong> para negócios da Grande Porto Alegre — do processo no Excel ao sistema que a equipe usa no dia a dia.</span>
+          <span class="lang-en">We build <strong class="text-white">custom software</strong>, <strong class="text-white">integrations</strong> and <strong class="text-white">automation</strong> for Greater Porto Alegre businesses — from spreadsheet chaos to systems your team actually uses.</span>
+        </p>
+        <p class="text-slate-400 text-sm mb-8 max-w-xl">
+          <span class="lang-pt">Boutique de engenharia: escopo claro, fundador no código, sem fábrica de orçamento genérico.</span>
+          <span class="lang-en">Engineering boutique: clear scope, founder in the code, no generic quote mill.</span>
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="contato.html" class="btn-primary inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm">
+            <span class="lang-pt">Conversar sobre um projeto</span>
+            <span class="lang-en">Talk about a project</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="#" data-wa class="btn-ghost inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm text-slate-200">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+            WhatsApp
+          </a>
+          <a href="solucoes.html" class="btn-ghost inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm text-slate-200">
+            <span class="lang-pt">Ver soluções</span>
+            <span class="lang-en">See solutions</span>
+          </a>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-500">
+          <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i><span class="lang-pt">CNPJ 43.985.337/0001-08</span><span class="lang-en">CNPJ 43.985.337/0001-08</span></span>
+          <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i><span class="lang-pt">Proposta por escopo</span><span class="lang-en">Fixed-scope proposals</span></span>
+          <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i><span class="lang-pt">Atendimento em português</span><span class="lang-en">Portuguese-first support</span></span>
         </div>
       </div>
 
-      <div class="md:col-span-7 text-[15px] leading-relaxed text-slate-300 space-y-6">
-        <p class="lang-pt">
-          A <strong class="text-white">Code Solutions</strong> é o canal onde eu (Ivã Martins) productoizo 20+ anos construindo sistemas reais em <strong class="text-white">frameworks, toolkits e AI agent kits</strong> que times podem adotar, licenciar ou customizar.
-        </p>
-        <p class="lang-en">
-          <strong class="text-white">Code Solutions</strong> is the channel where I (Ivã Martins) productize 20+ years of real-world systems work into <strong class="text-white">frameworks, toolkits, and AI agent kits</strong> that teams can adopt, license, or customize.
-        </p>
-
-        <p class="lang-pt">
-          <strong class="text-white">Atuo em tempo integral como Senior Backend Engineer</strong> — esta empresa é meu laboratório pessoal de R&D, onde o IP acumulado vira produto. É <strong class="text-white">complementar à minha carreira</strong>, não concorrente. Engajamentos sob medida acontecem, mas nascem em torno dos nossos frameworks e são pontuais.
-        </p>
-        <p class="lang-en">
-          <strong class="text-white">I work full-time as a Senior Backend Engineer</strong> — this company is my personal R&D lab, where accumulated IP becomes product. It's <strong class="text-white">complementary to my career</strong>, not competing with it. Custom engagements do happen, but they're scoped around our frameworks and stay short.
-        </p>
-
-        <p class="lang-pt">
-          O core aqui é <strong class="text-white">produto, não consultoria em massa</strong>. Cada framework nasce de um problema real que enfrentei como engenheiro nessas empresas (Sicredi, Panvel, Quartile, CIEE) e é mantido como <strong class="text-white">open source sob licença MIT</strong>, para times que precisam de base sólida sem reinventar a roda. <strong class="text-white">Não vendemos os frameworks para essas empresas</strong> — os frameworks nasceram do trabalho lá, e a Code Solutions productoizou como IP open source depois.
-        </p>
-        <p class="lang-en">
-          The core here is <strong class="text-white">product, not mass consulting</strong>. Each framework was born from a real problem I faced as an engineer at these companies (Sicredi, Panvel, Quartile, CIEE) and is maintained as <strong class="text-white">open source under the MIT license</strong>, for teams that need solid foundations without reinventing the wheel. <strong class="text-white">We don't sell the frameworks to those companies</strong> — the frameworks came from the work there, and Code Solutions productized them as open source IP afterwards.
-        </p>
-
-        <div class="pt-4 border-t border-slate-800">
-          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-pt">PARA QUEM É</div>
-          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-en">WHO IT'S FOR</div>
-          <ul class="space-y-2 text-sm">
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Times que precisam de <strong class="text-white">base sólida</strong> (Akka, Flink, Spring, Quarkus) sem gastar meses construindo do zero</span><span class="lang-en">Teams that need <strong class="text-white">solid foundations</strong> (Akka, Flink, Spring, Quarkus) without spending months building from scratch</span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Empresas que querem <strong class="text-white">IA corporativa</strong> (RAG, agentes, MCP) com framework pronto, não PoC descartável</span><span class="lang-en">Companies that want <strong class="text-white">corporate AI</strong> (RAG, agents, MCP) with a ready framework, not a throwaway PoC</span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Times de dados que precisam de <strong class="text-white">data platform</strong> battle-tested (dbt + Airflow + qualidade)</span><span class="lang-en">Data teams that need a <strong class="text-white">battle-tested data platform</strong> (dbt + Airflow + quality)</span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Engajamentos pontuais de <strong class="text-white">adoção e suporte</strong> em cima dos frameworks (não body rental)</span><span class="lang-en">Short <strong class="text-white">adoption and support</strong> engagements on top of the frameworks (not body rental)</span></li>
-          </ul>
+      <!-- Hero mockup: custom system -->
+      <div class="mock-frame" aria-hidden="true">
+        <div class="mock-chrome">
+          <span class="mock-dot bg-red-400/80"></span>
+          <span class="mock-dot bg-amber-400/80"></span>
+          <span class="mock-dot bg-emerald-400/80"></span>
+          <span class="ml-3 text-[11px] text-slate-500 font-mono">app.suaempresa.local / pedidos</span>
         </div>
-
-        <div class="pt-4 text-xs text-slate-500 flex items-center gap-x-3 flex-wrap">
-          <span class="flex items-center gap-x-1.5">
-            <i class="fa-brands fa-linkedin text-blue-400"></i>
-            <a href="https://www.linkedin.com/company/code-solutions-it/" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300">/company/code-solutions-it</a>
-          </span>
-          <span class="text-slate-700">•</span>
-          <span class="lang-pt">Empresa formalmente registrada no Brasil</span>
-          <span class="lang-en">Formally registered company in Brazil</span>
-        </div>
-
-        <!-- Formação e Certificações -->
-        <div class="pt-6 border-t border-slate-800">
-          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-pt">FORMAÇÃO E CERTIFICAÇÕES DO FUNDADOR</div>
-          <div class="uppercase text-xs tracking-widest text-yellow-400 mb-3 lang-en">FOUNDER'S EDUCATION &amp; CERTIFICATIONS</div>
-          <div class="grid md:grid-cols-2 gap-x-8 gap-y-6 text-sm">
-            <!-- Formação Acadêmica -->
-            <div>
-              <div class="uppercase text-xs tracking-widest text-yellow-400 mb-2 lang-pt">FORMAÇÃO ACADÊMICA</div>
-              <div class="uppercase text-xs tracking-widest text-yellow-400 mb-2 lang-en">EDUCATION</div>
-              <div class="space-y-3 text-xs">
-                <div>
-                  <div class="font-medium text-slate-200 lang-pt">Pós-graduação Java Elite (em andamento)</div>
-                  <div class="font-medium text-slate-200 lang-en">Postgraduate Degree – Java Elite (in progress)</div>
-                  <div class="text-slate-400">Universidade Pitágoras Unopar Anhanguera</div>
-                  <div class="text-[10px] text-slate-400 mt-0.5 lang-pt">Foco: Java 17+, Spring Boot 3, Quarkus, Microsserviços e Integração Corporativa com IA (Langchain4j)</div>
-                  <div class="text-[10px] text-slate-400 mt-0.5 lang-en">Focus: Java 17+, Spring Boot 3, Quarkus, Microservices Architecture, and Corporate AI Integration with Langchain4j</div>
+        <div class="flex mock-body !p-0 min-h-[280px]">
+          <div class="mock-sidebar space-y-2">
+            <div class="mock-row accent w-2-3"></div>
+            <div class="mock-row w-1-2"></div>
+            <div class="mock-row w-2-3"></div>
+            <div class="mock-row w-1-3"></div>
+            <div class="mock-row w-1-2"></div>
+          </div>
+          <div class="flex-1 p-4 space-y-3">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">
+                  <span class="lang-pt">Painel operacional</span><span class="lang-en">Operations board</span>
                 </div>
-                <div>
-                  <div class="font-medium text-slate-200 lang-pt">Pós-graduação em Tecnologias Aplicadas a Sistemas de Informação com Métodos Ágeis</div>
-                  <div class="font-medium text-slate-200 lang-en">Postgraduate in Applied Information Systems Technologies with Agile Methods</div>
-                  <div class="text-slate-400">Uniritter • 2011–2013</div>
-                </div>
-                <div>
-                  <div class="font-medium text-slate-200 lang-pt">Graduação em Análise e Desenvolvimento de Software</div>
-                  <div class="font-medium text-slate-200 lang-en">Bachelor’s in Software Analysis and Development</div>
-                  <div class="text-slate-400">Universidade Luterana do Brasil • 2005–2011</div>
+                <div class="text-white font-display font-semibold text-sm">
+                  <span class="lang-pt">Pedidos · estoque · clientes</span>
+                  <span class="lang-en">Orders · inventory · clients</span>
                 </div>
               </div>
+              <span class="mock-pill">MVP</span>
             </div>
-
-            <!-- Certificações -->
-            <div>
-              <div class="uppercase text-xs tracking-widest text-yellow-400 mb-2 lang-pt">CERTIFICAÇÕES</div>
-              <div class="uppercase text-xs tracking-widest text-yellow-400 mb-2 lang-en">CERTIFICATIONS</div>
-              <ul class="space-y-1 text-xs text-slate-300 list-disc list-inside">
-                <li>Professional Scrum Master I (PSM I) – Scrum.org</li>
-                <li>Oracle Certified Associate, Java SE 5 / SE 6</li>
-                <li>Java EE 6 Web Services Developer</li>
-                <li>Java EE 6 Java Persistence API Component Developer</li>
-                <li>Java EE 5 Business Component Developer</li>
-                <li>Java EE 5 Web Component Developer</li>
-                <li>Java SE 5 Programmer</li>
-              </ul>
+            <div class="grid grid-cols-3 gap-2">
+              <div class="mock-card">
+                <div class="text-[10px] text-slate-500 mb-1"><span class="lang-pt">Abertos</span><span class="lang-en">Open</span></div>
+                <div class="text-lg font-semibold text-white tabular-nums">24</div>
+              </div>
+              <div class="mock-card">
+                <div class="text-[10px] text-slate-500 mb-1"><span class="lang-pt">Hoje</span><span class="lang-en">Today</span></div>
+                <div class="text-lg font-semibold text-yellow-400 tabular-nums">8</div>
+              </div>
+              <div class="mock-card">
+                <div class="text-[10px] text-slate-500 mb-1"><span class="lang-pt">Alertas</span><span class="lang-en">Alerts</span></div>
+                <div class="text-lg font-semibold text-emerald-400 tabular-nums">2</div>
+              </div>
+            </div>
+            <div class="mock-card space-y-2">
+              <div class="flex justify-between text-[11px]"><span class="text-slate-300">#1042 · Cliente Alpha</span><span class="text-yellow-400/90"><span class="lang-pt">Em separação</span><span class="lang-en">Picking</span></span></div>
+              <div class="mock-row w-2-3"></div>
+              <div class="flex justify-between text-[11px]"><span class="text-slate-300">#1041 · Beta Comércio</span><span class="text-emerald-400/90"><span class="lang-pt">Faturado</span><span class="lang-en">Invoiced</span></span></div>
+              <div class="mock-row w-1-2"></div>
+              <div class="flex justify-between text-[11px]"><span class="text-slate-300">#1040 · Gamma Ind.</span><span class="text-slate-400"><span class="lang-pt">Aguardando</span><span class="lang-en">Waiting</span></span></div>
+              <div class="mock-row w-1-3"></div>
             </div>
           </div>
-        </div>
-
-        <div class="flex flex-wrap gap-2 pt-2">
-          <div class="tech-pill">Java 17+ / Spring Boot / Quarkus / Play</div>
-          <div class="tech-pill">Scala + Flink + Kafka + Akka</div>
-          <div class="tech-pill">Python + Azure</div>
-          <div class="tech-pill">.NET / C#</div>
-          <div class="tech-pill">Event-Driven Architecture</div>
-          <div class="tech-pill">Elasticsearch</div>
-          <div class="tech-pill">Claude Code</div>
-          <div class="tech-pill">AI-Assisted Workflow</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CASES -->
-  <section id="cases" class="bg-slate-900 border-y border-slate-800 py-16">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex items-end justify-between mb-8">
-        <div>
-          <div class="uppercase tracking-[2px] text-xs text-yellow-400 lang-pt">ONDE OS FRAMEWORKS NASCERAM</div>
-          <div class="uppercase tracking-[2px] text-xs text-yellow-400 lang-en">WHERE THE FRAMEWORKS WERE BORN</div>
-          <h3 class="section-title tracking-tighter lang-pt">Origem dos frameworks: problemas reais em produção</h3>
-          <h3 class="section-title tracking-tighter lang-en">Framework origins: real production problems</h3>
-          <p class="text-sm text-slate-400 mt-1 lang-pt">Cada framework nasceu de um problema real que enfrentei como engenheiro nessas empresas. Extraí os patterns e produtoizei como open source.</p>
-          <p class="text-sm text-slate-400 mt-1 lang-en">Each framework was born from a real problem I faced as an engineer at these companies. I extracted the patterns and productized them as open source.</p>
-        </div>
-        <a href="#contato" class="hidden md:inline text-sm text-yellow-400 hover:text-yellow-300 lang-pt">Quero adotar →</a>
-        <a href="#contato" class="hidden md:inline text-sm text-yellow-400 hover:text-yellow-300 lang-en">Want to adopt →</a>
+  <!-- TRUST -->
+  <section class="border-y border-slate-800/80 bg-slate-950/50">
+    <div class="max-w-6xl mx-auto px-5 py-6">
+      <p class="text-center text-[11px] uppercase tracking-[0.2em] text-slate-500 mb-4">
+        <span class="lang-pt">Engenharia com background em ambientes de produção exigentes</span>
+        <span class="lang-en">Engineering background in demanding production environments</span>
+      </p>
+      <div class="flex flex-wrap justify-center gap-x-10 gap-y-3">
+        <span class="trust-item">Sicredi</span>
+        <span class="trust-item">Panvel / Dimed</span>
+        <span class="trust-item">Quartile</span>
+        <span class="trust-item">CIEE</span>
       </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <!-- Panvel (2012–2014) -->
-        <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
-          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">PANVEL (GRUPO DIMED) • 2012–2014</div>
-          <h4 class="font-semibold text-xl mb-4 lang-pt">Java Modernization Framework — nascido do e-commerce Panvel</h4>
-          <h4 class="font-semibold text-xl mb-4 lang-en">Java Modernization Framework — born from Panvel's e-commerce</h4>
-          <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Em 2 anos como Senior Java Engineer + Scrum Master no e-commerce Panvel (Grupo Dimed), liderei a reescrita completa do backend preservando regras de negócio críticas, a migração WebSphere → JBoss, a modernização de JSF + PrimeFaces, e a implementação de Scrum que destravou a primeira versão mobile. O <strong>Java Modernization Framework</strong> (quarkus-java-base, java-product-api) no GitHub é a abstração open source desses patterns.</p>
-            <p class="lang-en">Over 2 years as Senior Java Engineer + Scrum Master on Panvel's e-commerce (Grupo Dimed), I led the full backend rewrite preserving critical business rules, the WebSphere → JBoss migration, the JSF + PrimeFaces modernization, and the Scrum rollout that unlocked the first mobile version. The <strong>Java Modernization Framework</strong> (quarkus-java-base, java-product-api) on GitHub is the open source abstraction of those patterns.</p>
-          </div>
-          <div class="mt-5 flex flex-wrap gap-1.5">
-            <div class="tech-pill text-[10px]">Java 7</div>
-            <div class="tech-pill text-[10px]">Spring + Hibernate</div>
-            <div class="tech-pill text-[10px]">JSF / PrimeFaces</div>
-            <div class="tech-pill text-[10px]">Scrum Master</div>
-          </div>
-        </div>
-
-        <!-- Sicredi (2014–2021) -->
-        <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
-          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">SICREDI • 2014–2021 (via SoftDesign)</div>
-          <h4 class="font-semibold text-xl mb-4 lang-pt">Event-Driven &amp; Streaming Toolkit — nascido do Sicredi Digital</h4>
-          <h4 class="font-semibold text-xl mb-4 lang-en">Event-Driven &amp; Streaming Toolkit — born from Sicredi Digital</h4>
-          <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Em 4 anos como Senior Java | Scala Engineer no Sicredi Digital (via SoftDesign), liderei a evolução de um POC em Python para uma arquitetura event-driven completa — Scala + Akka + Apache Flink + Kafka + MongoDB — que se tornou referência para toda a plataforma digital: processamento financeiro em tempo real, reprocessamento seguro, integridade forte. Depois expandido para Conta Corrente e Poupança (BFFs em Java 8 + Kotlin). O <strong>Event-Driven &amp; Streaming Toolkit</strong> (akka-scala-base, flink-kafka-scala-base, flink-data-mesh-pipeline) no GitHub é a abstração open source desses patterns.</p>
-            <p class="lang-en">Over 4 years as Senior Java | Scala Engineer at Sicredi Digital (via SoftDesign), I led the evolution of a Python POC into a complete event-driven architecture — Scala + Akka + Apache Flink + Kafka + MongoDB — that became the reference for the entire digital platform: real-time financial processing, safe reprocessing, strong integrity. Later expanded to Checking and Savings accounts (BFFs in Java 8 + Kotlin). The <strong>Event-Driven &amp; Streaming Toolkit</strong> (akka-scala-base, flink-kafka-scala-base, flink-data-mesh-pipeline) on GitHub is the open source abstraction of those patterns.</p>
-          </div>
-          <div class="mt-5 flex flex-wrap gap-1.5">
-            <div class="tech-pill text-[10px]">Scala + Akka</div>
-            <div class="tech-pill text-[10px]">Apache Flink</div>
-            <div class="tech-pill text-[10px]">Apache Kafka</div>
-            <div class="tech-pill text-[10px]">MongoDB</div>
-            <div class="tech-pill text-[10px]">Event-Driven</div>
-          </div>
-        </div>
-
-        <!-- Quartile (2021–2026) -->
-        <div class="case-card bg-slate-950 border border-slate-800 rounded-3xl p-7">
-          <div class="uppercase text-xs text-emerald-400 tracking-widest mb-3">QUARTILE (US) • 2021–2026</div>
-          <h4 class="font-semibold text-xl mb-4 lang-pt">C# + Azure AI Base — nascido da plataforma Quartile</h4>
-          <h4 class="font-semibold text-xl mb-4 lang-en">C# + Azure AI Base — born from Quartile's platform</h4>
-          <div class="space-y-4 text-sm text-slate-300">
-            <p class="lang-pt">Em 4 anos e 9 meses como Senior Backend Engineer na Quartile (US, retail media), mantive backends de alto volume em C#/.NET 6/7/8 e Python sobre Azure Functions + Service Bus + SQL Server/T-SQL, com integrações assíncronas, stored procedures complexas, e uso intenso de Claude/ChatGPT para automações e otimização de anúncios. O <strong>csharp-azure-ai-base</strong> no GitHub é a base de referência open source desse stack.</p>
-            <p class="lang-en">Over 4 years 9 months as Senior Backend Engineer at Quartile (US, retail media), I maintained high-volume backends in C#/.NET 6/7/8 and Python on Azure Functions + Service Bus + SQL Server/T-SQL, with async integrations, complex stored procedures, and heavy use of Claude/ChatGPT for automations and ad optimization. The <strong>csharp-azure-ai-base</strong> on GitHub is the open source reference base for that stack.</p>
-          </div>
-          <div class="mt-5 flex flex-wrap gap-1.5">
-            <div class="tech-pill text-[10px]">C# / .NET</div>
-            <div class="tech-pill text-[10px]">Python</div>
-            <div class="tech-pill text-[10px]">Azure Functions</div>
-            <div class="tech-pill text-[10px]">Service Bus</div>
-            <div class="tech-pill text-[10px]">SQL Server</div>
-            <div class="tech-pill text-[10px]">Claude / ChatGPT</div>
-            <div class="tech-pill text-[10px]">OpenAPI</div>
-          </div>
-        </div>
-      </div>
-
-      <p class="text-center text-xs text-slate-500 mt-8 lang-pt"><strong>Importante:</strong> Os frameworks nasceram do trabalho que fiz como engenheiro nessas empresas — não são "produtos vendidos" pra elas. A Code Solutions productoizou os patterns open source, com licença MIT.</p>
-      <p class="text-center text-xs text-slate-500 mt-8 lang-en"><strong>Important:</strong> The frameworks were born from the work I did as an engineer at these companies — they are not "products sold" to them. Code Solutions productized the patterns as open source, under the MIT license.</p>
+      <p class="text-center text-xs text-slate-600 mt-3 max-w-2xl mx-auto">
+        <span class="lang-pt">Contexto da trajetória do fundador — não são clientes comerciais da Code Solutions.</span>
+        <span class="lang-en">Founder's career context — not commercial clients of Code Solutions.</span>
+      </p>
     </div>
   </section>
 
-  <!-- PRODUTOS -->
-  <section id="produtos" class="max-w-7xl mx-auto px-6 py-20">
+  <!-- PROBLEMS -->
+  <section class="max-w-6xl mx-auto px-5 py-16 md:py-20">
     <div class="max-w-2xl mb-10">
-      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">PRODUTOS &amp; FRAMEWORKS</div>
-      <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">PRODUCTS &amp; FRAMEWORKS</div>
-      <h3 class="section-title tracking-tighter lang-pt">Toolkits battle-tested, prontos para adotar.</h3>
-      <h3 class="section-title tracking-tighter lang-en">Battle-tested toolkits, ready to adopt.</h3>
-      <p class="text-slate-400 mt-2 text-sm lang-pt">Cada um destes produtos nasceu de um problema real em produção. São <strong class="text-white">open source sob licença MIT</strong> — use livremente. Adoção inclui handoff + suporte de integração.</p>
-      <p class="text-slate-400 mt-2 text-sm lang-en">Each of these products was born from a real production problem. They're <strong class="text-white">open source under the MIT license</strong> — use them freely. Adoption includes handoff + integration support.</p>
+      <div class="text-xs uppercase tracking-[0.18em] text-yellow-400 mb-2">
+        <span class="lang-pt">Para quem é</span><span class="lang-en">Who it's for</span>
+      </div>
+      <h2 class="font-display section-title text-white mb-3">
+        <span class="lang-pt">Se o processo da sua empresa não cabe em planilha nem em sistema genérico</span>
+        <span class="lang-en">When your process doesn't fit a spreadsheet or a generic app</span>
+      </h2>
+      <p class="text-slate-400">
+        <span class="lang-pt">Atendemos comércios, distribuidoras, indústrias leves, prestadores de serviço, escritórios e operações B2B de médio porte na Grande Porto Alegre.</span>
+        <span class="lang-en">We work with trade, distribution, light industry, service firms, offices and mid-size B2B operations in Greater Porto Alegre.</span>
+      </p>
     </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-      <!-- Product 1: Event-Driven Toolkit (Scala + Akka + Flink) -->
-      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-red-500/10 text-red-400 flex items-center justify-center mb-5"><i class="fa-solid fa-water fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2 lang-pt">Event-Driven &amp; Streaming Toolkit</h4>
-        <h4 class="font-semibold text-xl mb-2 lang-en">Event-Driven &amp; Streaming Toolkit</h4>
-        <p class="text-sm text-slate-400 mb-4 lang-pt">Framework Scala + Akka + Apache Flink + Kafka para sistemas event-driven em produção. Event-sourcing, clustering, backpressure supervision, pipelines em tempo real.</p>
-        <p class="text-sm text-slate-400 mb-4 lang-en">Scala + Akka + Apache Flink + Kafka framework for event-driven systems in production. Event-sourcing, clustering, backpressure supervision, real-time pipelines.</p>
-        <div class="text-xs text-red-400 lang-pt">Nascido de 4 anos construindo event-driven no Sicredi Digital.</div>
-        <div class="text-xs text-red-400 lang-en">Born from 4 years building event-driven at Sicredi Digital.</div>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <i class="fa-solid fa-table text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold text-white mb-2"><span class="lang-pt">Excel no limite</span><span class="lang-en">Spreadsheet overload</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">Pedidos, estoque e clientes espalhados em abas que só uma pessoa entende.</span><span class="lang-en">Orders, stock and clients scattered across sheets only one person understands.</span></p>
       </div>
-
-      <!-- Product 2: Modern Java & Cloud -->
-      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-orange-500/10 text-orange-400 flex items-center justify-center mb-5"><i class="fa-solid fa-sync fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2 lang-pt">Java Modernization Framework</h4>
-        <h4 class="font-semibold text-xl mb-2 lang-en">Java Modernization Framework</h4>
-        <p class="text-sm text-slate-400 mb-4 lang-pt">Playbooks e bases de referência (Quarkus, Spring Boot 3, WebFlux) para modernizar legados Java preservando regras de negócio. Migração JSF, JBoss/WebSphere, monolito → microsserviços.</p>
-        <p class="text-sm text-slate-400 mb-4 lang-en">Playbooks and reference bases (Quarkus, Spring Boot 3, WebFlux) to modernize Java legacies while preserving business rules. JSF, JBoss/WebSphere migration, monolith → microservices.</p>
-        <div class="text-xs text-orange-400 lang-pt">Nascido da reescrita do e-commerce Panvel (Java 7 → Java moderno).</div>
-        <div class="text-xs text-orange-400 lang-en">Born from Panvel's e-commerce rewrite (Java 7 → modern Java).</div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <i class="fa-solid fa-link-slash text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold text-white mb-2"><span class="lang-pt">Sistemas que não conversam</span><span class="lang-en">Systems that don't talk</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">ERP, e-commerce, planilha e WhatsApp — a equipe digita tudo duas vezes.</span><span class="lang-en">ERP, storefront, spreadsheets and WhatsApp — the team types everything twice.</span></p>
       </div>
-
-      <!-- Product 3: AI Agent Kit (DESTAQUE) -->
-      <div class="product-card bg-slate-900 border border-yellow-500/40 rounded-3xl p-7 group ring-1 ring-yellow-500/10 relative">
-        <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider lang-pt">DESTAQUE</div>
-        <div class="absolute top-6 right-6 text-[10px] px-2.5 py-px rounded bg-yellow-400 text-black font-semibold tracking-wider lang-en">FEATURED</div>
-
-        <div class="w-11 h-11 rounded-2xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center mb-5">
-          <img src="assets/agents-icon.jpg" class="w-6 h-6 rounded" alt="AI Agent Kit - Code Solutions">
-        </div>
-        <h4 class="font-semibold text-xl mb-2 lang-pt">AI Agent Kit (LangChain4j + MCP)</h4>
-        <h4 class="font-semibold text-xl mb-2 lang-en">AI Agent Kit (LangChain4j + MCP)</h4>
-        <p class="text-sm text-slate-300 mb-4 lang-pt">Kit corporativo de IA: RAG persistente (Qdrant), supervisor/sub-agentes, Spring Security, MCP. Pronto para integrar com sistemas legados, não PoC descartável.</p>
-        <p class="text-sm text-slate-300 mb-4 lang-en">Corporate AI kit: persistent RAG (Qdrant), supervisor/sub-agents, Spring Security, MCP. Ready to integrate with legacy systems, not a throwaway PoC.</p>
-
-        <ul class="text-xs space-y-1 text-slate-400 mb-4">
-          <li class="flex gap-2"><span class="text-yellow-400">•</span><span class="lang-pt">Adoção com suporte de integração</span><span class="lang-en">Adoption with integration support</span></li>
-          <li class="flex gap-2"><span class="text-yellow-400">•</span><span class="lang-pt">Apps auto-contidos (o "cérebro" viaja com o código)</span><span class="lang-en">Self-contained apps (the "brain" ships with the code)</span></li>
-          <li class="flex gap-2"><span class="text-yellow-400">•</span><span class="lang-pt">Deploy profissional (Docker, K8s, cloud)</span><span class="lang-en">Production deploy (Docker, K8s, cloud)</span></li>
-        </ul>
-
-        <div class="text-[10px] text-yellow-400 lang-pt">Inspirado em 4 anos usando Claude/ChatGPT em produção na Quartile (US).</div>
-        <div class="text-[10px] text-yellow-400 lang-en">Inspired by 4 years using Claude/ChatGPT in production at Quartile (US).</div>
-      </div>
-
-      <!-- Product 4: Conversational AI Bots -->
-      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-violet-500/10 text-violet-400 flex items-center justify-center mb-5"><i class="fa-brands fa-whatsapp fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2 lang-pt">Conversational AI Bots</h4>
-        <h4 class="font-semibold text-xl mb-2 lang-en">Conversational AI Bots</h4>
-        <p class="text-sm text-slate-400 mb-4 lang-pt">Bots WhatsApp/Telegram LLM-agnostic. Suporta qualquer API OpenAI-compatible (Grok, OpenAI, OpenRouter, Ollama). Agentes custom com skills específicos, deploy Docker/PM2/systemd.</p>
-        <p class="text-sm text-slate-400 mb-4 lang-en">WhatsApp/Telegram LLM-agnostic bots. Supports any OpenAI-compatible API (Grok, OpenAI, OpenRouter, Ollama). Custom agents with specific skills, Docker/PM2/systemd deploy.</p>
-        <div class="text-xs text-violet-400 lang-pt">Apps auto-contidos, 61 testes no repo principal.</div>
-        <div class="text-xs text-violet-400 lang-en">Self-contained apps, 61 tests in the main repo.</div>
-      </div>
-
-      <!-- Product 5: Data Platform -->
-      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5"><i class="fa-solid fa-database fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2 lang-pt">Data Platform Foundation</h4>
-        <h4 class="font-semibold text-xl mb-2 lang-en">Data Platform Foundation</h4>
-          <p class="text-sm text-slate-400 mb-4 lang-pt">Pipeline de dados production-ready: Airflow orquestra dbt (seed → run → test → publish) contra Postgres. Models staging/marts, dbt tests genéricos + singulares, Data Quality checks, Data Mesh por schema.</p>
-          <p class="text-sm text-slate-400 mb-4 lang-en">Production-ready data pipeline: Airflow orchestrates dbt (seed → run → test → publish) against Postgres. Staging/marts models, generic + singular dbt tests, Data Quality checks, Data Mesh by schema.</p>
-        <div class="text-xs text-blue-400 lang-pt">Padrões de Data Quality + observability embutidos.</div>
-        <div class="text-xs text-blue-400 lang-en">Data Quality patterns + observability built in.</div>
-      </div>
-
-      <!-- Product 6: C# / Azure AI Base -->
-      <div class="product-card bg-slate-900 border border-slate-800 rounded-3xl p-7 group">
-        <div class="w-11 h-11 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center mb-5"><i class="fa-solid fa-cloud fa-lg"></i></div>
-        <h4 class="font-semibold text-xl mb-2 lang-pt">C# + Azure AI Base</h4>
-        <h4 class="font-semibold text-xl mb-2 lang-en">C# + Azure AI Base</h4>
-        <p class="text-sm text-slate-400 mb-4 lang-pt">Base C#/.NET para Azure Functions + Service Bus com integração de IA (OpenAI, Claude). Referência para o tipo de stack usado em plataformas de retail media e e-commerce em escala.</p>
-        <p class="text-sm text-slate-400 mb-4 lang-en">C#/.NET base for Azure Functions + Service Bus with AI integration (OpenAI, Claude). Reference for the kind of stack used in retail-media and e-commerce platforms at scale.</p>
-        <div class="text-xs text-sky-400 lang-pt">Nascido de 4 anos e 9 meses na Quartile (US) com backends de alto volume.</div>
-        <div class="text-xs text-sky-400 lang-en">Born from 4 years 9 months at Quartile (US) with high-volume backends.</div>
-      </div>
-    </div>
-
-    <div class="mt-8 text-xs text-center text-slate-500">
-      <span class="lang-pt">Todos os produtos são <strong class="text-slate-400">open source (MIT, uso gratuito)</strong> via <strong class="text-slate-400">Code Solutions (CNPJ ativo)</strong>. Adoção com handoff + 30 dias de suporte é o serviço pago opcional.</span>
-      <span class="lang-en">All products are <strong class="text-slate-400">open source (MIT, free to use)</strong> via <strong class="text-slate-400">Code Solutions (active company)</strong>. Adoption with handoff + 30 days of support is the optional paid service.</span>
-    </div>
-  </section>
-
-  <!-- AGENTES IA EM AÇÃO -->
-  <section id="agentes" class="max-w-7xl mx-auto px-6 pb-20">
-    <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8 md:p-12">
-      <div class="flex flex-col md:flex-row gap-8 md:items-center">
-        <div class="md:w-5/12">
-          <div class="inline text-xs uppercase tracking-widest bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded">SERVIÇO DIFERENCIADOR</div>
-          <h3 class="text-3xl font-semibold tracking-tighter mt-3 mb-4">Agentes de IA que realmente funcionam em produção</h3>
-          <p class="text-slate-400">Não entrego apenas prompts. Entrego <strong>soluções completas e auto-contidas</strong> que seus times podem rodar, versionar e evoluir.</p>
-        </div>
-        
-        <div class="md:w-7/12 text-sm">
-          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-slate-300">
-            <div class="font-medium mb-3">Exemplo real entregue (2025/2026):</div>
-            <div class="lang-pt">Bot WhatsApp que escuta mensagens e usa Grok com agente e skill customizados (definidos em <code class="text-yellow-400">.grok/agents</code> e <code class="text-yellow-400">.grok/skills</code> dentro do próprio projeto) para gerar respostas naturais, seguras e no tom brasileiro. Listener leve em Node (Baileys) + chamada stateless do Grok CLI com cwd apontando para as definições locais. Totalmente entregável: clone → npm start → funciona. Deploy com PM2 ou systemd.</div>
-            <div class="lang-en">WhatsApp bot that listens to messages and uses Grok with custom agent + skill (defined inside <code class="text-yellow-400">.grok/agents</code> and <code class="text-yellow-400">.grok/skills</code> in the project itself) to generate natural, safe, Brazilian-tone replies. Lightweight Node listener (Baileys) + stateless Grok CLI calls with cwd targeting local definitions. Fully deliverable: git clone → npm start. Production deploy with PM2 or systemd.</div>
-            
-            <div class="mt-4 text-xs text-emerald-400">→ Arquitetura documentada e repetível para qualquer cliente.</div>
-          </div>
-          <div class="text-xs mt-3 text-slate-400">
-            Posso criar o mesmo padrão para seus processos internos, suporte, pesquisa, data enrichment ou qualquer workflow que precise de raciocínio + integração com sistemas existentes.
-            <a href="#frameworks" class="text-yellow-400 hover:underline">→ Confira os frameworks base e exemplos de código (incluindo Quarkus para modernização Java)</a>
-          </div>
-        </div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <i class="fa-brands fa-whatsapp text-yellow-400 mb-3"></i>
+        <h3 class="font-semibold text-white mb-2"><span class="lang-pt">Atendimento no caos</span><span class="lang-en">Chaotic support</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">Orçamentos e status de pedido perdidos no chat. Resposta lenta, venda perdida.</span><span class="lang-en">Quotes and order status lost in chat. Slow replies, lost sales.</span></p>
       </div>
     </div>
   </section>
 
-  <!-- FRAMEWORKS BASE / BASE PROJECTS -->
-  <section id="frameworks" class="max-w-7xl mx-auto px-6 py-16 border-t border-slate-800">
-    <div class="text-center mb-10">
-      <div class="inline text-xs uppercase tracking-widest bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded">PROVA DE CONCEITO</div>
-      <h3 class="text-2xl font-semibold tracking-tight mt-3">Frameworks e Projetos Base / Base Frameworks & Projects</h3>
-      <p class="text-slate-400 mt-2 max-w-2xl mx-auto">Exemplos funcionais open source que demonstram na prática os stacks e serviços de modernização de legados, arquiteturas event-driven e agentes de IA.</p>
-      <p class="mt-1 text-sm"><a href="https://github.com/ivamartins" target="_blank" class="text-yellow-400 hover:underline">Ver todos os repositórios no GitHub →</a></p>
-    </div>
-
-    <!-- JAVA -->
-    <div class="mb-10">
-      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Java</h4>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-        <!-- Kotlin + Spring Boot 3 - destaque bancário -->
-        <div class="bg-slate-950 border border-yellow-400/30 rounded-2xl p-5">
-          <div class="flex items-center justify-between">
-            <strong class="font-medium">kotlin-banking-service</strong>
-            <span class="text-[10px] px-2 py-0.5 bg-yellow-400/10 text-yellow-400 rounded">DESTAQUE</span>
-          </div>
-          <div class="text-slate-400 mt-1">Microsserviço bancário Kotlin + Spring Boot 3 com DDD tático (Aggregate Root + Value Objects + Domain Events), Arquitetura Hexagonal pura (domínio sem dependências externas), TDD, observability completa (Prometheus + Zipkin + JSON logs), Resilience4j (Circuit Breaker + Retry), pessimistic locking para concorrência, K8s health probes. Docker multi-stage + docker-compose com Postgres + Kafka + Prometheus + Grafana + Zipkin. CI com GitHub Actions.</div>
-          <div class="mt-2 text-xs">
-            <a href="https://github.com/ivamartins/kotlin-banking-service" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a>
-            <span class="text-slate-500 ml-2">Kotlin • Spring Boot 3 • DDD • Hexagonal • PostgreSQL • Kafka • Resilience4j</span>
-          </div>
-        </div>
-
-        <!-- Java 21 + Spring WebFlux -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">spring-webflux-microservice</strong>
-          <div class="text-slate-400 mt-1">Microsserviço reativo em Java 21 + Spring Boot 3 + WebFlux. R2DBC no Postgres, read model no Mongo, cache Redis, eventos Kafka, integrações SOAP/SFTP/HTTP e CI/CD (GitLab + Jenkins). JVM tuning (G1GC).</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/spring-webflux-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Java 21 • WebFlux • Kafka • R2DBC</span></div>
-        </div>
-
-        <!-- Quarkus - destaque -->
-        <div class="bg-slate-950 border border-yellow-400/30 rounded-2xl p-5">
-          <div class="flex items-center justify-between">
-            <strong class="font-medium">quarkus-java-base</strong>
-            <span class="text-[10px] px-2 py-0.5 bg-yellow-400/10 text-yellow-400 rounded">DESTAQUE</span>
-          </div>
-          <div class="text-slate-400 mt-1">Quarkus (Java moderno) como base para modernização de sistemas legados Java EE/Play/Spring. Rápido, nativo, pronto para microsserviços e integração com IA/Kafka.</div>
-          <div class="mt-2 text-xs">
-            <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a>
-            <span class="text-slate-500 ml-2">Java 17+ • Quarkus • REST • Modernização</span>
-          </div>
-        </div>
-
-        <!-- Java Spring Boot + Kafka -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">java-product-api</strong>
-          <div class="text-slate-400 mt-1">API de produtos completa com Spring Boot, integração com Kafka para mensageria assíncrona e eventos, PostgreSQL. Exemplo de backend Java enterprise com padrões modernos, testes e mensageria.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/java-product-api" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Spring Boot • Kafka • Java • PostgreSQL</span></div>
-        </div>
-
-        <!-- Java + Spring Boot + LangChain4j + Qdrant + Agentes + MCP + Security -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">springboot-langchain4j-rag-mcp</strong>
-          <div class="text-slate-400 mt-1">Demo integrando Spring Boot + LangChain4j + Qdrant (RAG persistente) + Agentes (Supervisor + 3 sub-agentes com memória isolada) + MCP + Spring Security. Compara modo simples (1 LLM) vs modo agente (orquestração) e mostra checagem de permissão baseada em roles dentro de @Tool methods. Qdrant via Docker.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/springboot-langchain4j-rag-mcp" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Java 17+ • Spring Boot • LangChain4j • Qdrant • Agentes • MCP • Security</span></div>
-        </div>
-
-        <!-- Java + Observability starter -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">observability-spring-boot</strong>
-          <div class="text-slate-400 mt-1">Starter Spring Boot 3 production-ready: OpenTelemetry tracing + Prometheus metrics + logs JSON estruturados + /health e /isready (K8s) + Swagger UI + Spring Security base + request correlation ID + global exception handler. Docker compose com Prometheus + Grafana + dashboard Grafana pré-pronto.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/observability-spring-boot" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Java 17+ • OpenTelemetry • Prometheus • Grafana • Swagger</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SCALA -->
-    <div class="mb-10">
-      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Scala</h4>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-        <!-- Scala + Akka (resilient services, actors, persistence) -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">akka-scala-base</strong>
-          <div class="text-slate-400 mt-1">Serviços resilientes com Akka Typed + HTTP. Base para clustering, persistence (event sourcing) e integrações modernas sobre legados.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/akka-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Akka • HTTP • Resilience</span></div>
-        </div>
-
-        <!-- Scala + Akka + AWS Fargate -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">scala-akka-aws-microservice</strong>
-          <div class="text-slate-400 mt-1">Production-ready Scala + Akka HTTP deployado em AWS Fargate. DynamoDB (primary), RDS Postgres opcional, CloudWatch, Terraform completo (VPC/ECS/ALB/observability) e GitHub Actions CI/CD com OIDC (sem long-lived keys).</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Scala • Akka • Fargate • Terraform</span></div>
-        </div>
-
-        <!-- Scala + Flink + Kafka - Data Mesh -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">flink-data-mesh-pipeline</strong>
-          <div class="text-slate-400 mt-1">Pipeline Flink + Kafka implementando Data Mesh: dois data products independentes (orders, customers) unidos por enrichment em nível de plataforma. Contratos Pydantic + validadores Scala em paridade.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Data Mesh • Pydantic</span></div>
-        </div>
-
-        <!-- Scala - Flink + Kafka (event-driven big data) -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">flink-kafka-scala-base</strong>
-          <div class="text-slate-400 mt-1">Streaming event-driven com Scala + Flink + Kafka. Base para pipelines em tempo real e arquiteturas adotadas como padrão em grandes plataformas.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Flink • Kafka • Scala</span></div>
-        </div>
-
-        <!-- Scala - Play Framework (foundational for legacy Play work) -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">play-scala-base</strong>
-          <div class="text-slate-400 mt-1">Base funcional em Play Framework (Scala) para manutenção e evolução de legados. Inclui DB, evolutions e exemplos de modernização.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/play-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Play Scala • Legacy data</span></div>
-        </div>
-
-        <!-- Scala - Elasticsearch (search/observability on top of pipelines) -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">elasticsearch-scala-base</strong>
-          <div class="text-slate-400 mt-1">Integração com Elasticsearch para search, indexação e observability em sistemas de alto volume. Exemplo de enriquecimento de dados legados.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Elasticsearch • Search</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PYTHON -->
-    <div class="mb-10">
-      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Python / Data</h4>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-        <!-- dbt + Airflow + Postgres (data platform) -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">dbt-airflow-data-platform</strong>
-          <div class="text-slate-400 mt-1">Plataforma de dados end-to-end: Airflow orquestra dbt (seed → run → test → publish) contra Postgres. Models staging/marts, dbt tests genéricos + singulares, Data Quality checks, Data Mesh por schema.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/dbt-airflow-data-platform" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">dbt • Airflow • Postgres • Data Quality</span></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- NODE / AI AGENTS -->
-    <div>
-      <h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">Node • AI Agents</h4>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
-        <!-- WhatsApp / AI Agents -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl p-5">
-          <strong class="font-medium">whatsapp-llm-bot</strong>
-          <div class="text-slate-400 mt-1">Bot WhatsApp LLM-agnostic (qualquer API OpenAI-compatible: Grok, OpenAI, OpenRouter, Ollama). 61 testes, sem CLI, deploy Docker/PM2/systemd. Exemplo de agente de IA entregável.</div>
-          <div class="mt-2 text-xs"><a href="https://github.com/ivamartins/whatsapp-llm-bot" target="_blank" class="text-yellow-400 hover:underline">GitHub →</a> <span class="text-slate-500 ml-2">Node + Baileys • LLM-agnostic • 61 tests</span></div>
-          <div class="mt-1 text-xs text-slate-500">Variante histórica (CLI Grok): <a href="https://github.com/ivamartins/whatsapp-grok-bot" target="_blank" class="text-slate-400 hover:underline">whatsapp-grok-bot</a></div>
-        </div>
-      </div>
-    </div>
-
-    <p class="text-center text-xs text-slate-500 mt-6">Outros exemplos (study): <a href="https://github.com/ivamartins/scala-zio-task-api" target="_blank" class="hover:underline">scala-zio-task-api</a>. Próximo: csharp-azure-ai-base (Azure + C# + IA para Quartile). • Todos os repositórios: <a href="https://github.com/ivamartins" target="_blank" class="text-yellow-400 hover:underline">github.com/ivamartins</a></p>
-  </section>
-
-  <!-- OPEN CORE BUSINESS MODEL -->
-  <section id="modelo" class="border-t border-slate-800 py-20 bg-slate-900/40">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="text-center mb-10">
-        <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-pt">MODELO OPEN CORE</div>
-        <div class="uppercase text-xs tracking-[2px] text-yellow-400 lang-en">OPEN CORE MODEL</div>
-        <h3 class="section-title tracking-tighter mt-2 lang-pt">Frameworks <span class="text-emerald-400">gratuitos</span> · Serviços <span class="text-yellow-400">pagos</span> em cima deles</h3>
-        <h3 class="section-title tracking-tighter mt-2 lang-en">Frameworks <span class="text-emerald-400">free</span> · Services <span class="text-yellow-400">paid</span> on top</h3>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-12">
-        <!-- O que é FREE -->
-        <div class="bg-slate-950 border border-emerald-500/30 rounded-2xl p-7">
-          <div class="flex items-center gap-x-3 mb-4">
-            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
-              <i class="fa-brands fa-github fa-lg"></i>
-            </div>
-            <div>
-              <div class="text-emerald-400 text-xs uppercase tracking-widest lang-pt">100% GRATUITO NO GITHUB</div>
-              <div class="text-emerald-400 text-xs uppercase tracking-widest lang-en">100% FREE ON GITHUB</div>
-            </div>
-          </div>
-          <h4 class="font-semibold text-lg mb-3 text-white lang-pt">Os frameworks e toolkits</h4>
-          <h4 class="font-semibold text-lg mb-3 text-white lang-en">The frameworks and toolkits</h4>
-          <ul class="space-y-2 text-sm text-slate-300">
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Código-fonte completo no <a href="https://github.com/ivamartins" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">github.com/ivamartins</a></span><span class="lang-en">Full source code at <a href="https://github.com/ivamartins" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">github.com/ivamartins</a></span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Licença MIT — use, modifique, distribua livremente</span><span class="lang-en">MIT license — use, modify, distribute freely</span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">READMEs bilíngues (EN + PT) com setup, exemplos e roadmap</span><span class="lang-en">Bilingual READMEs (EN + PT) with setup, examples, and roadmap</span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Issues e PRs abertos no GitHub</span><span class="lang-en">Issues and PRs open on GitHub</span></li>
-            <li class="flex gap-2"><span class="text-emerald-400 mt-0.5">✓</span><span class="lang-pt">Adoção self-service: clone, leia o README, rode</span><span class="lang-en">Self-service adoption: clone, read the README, run</span></li>
-          </ul>
-        </div>
-
-        <!-- O que é PAGO -->
-        <div class="bg-slate-950 border border-yellow-500/30 rounded-2xl p-7">
-          <div class="flex items-center gap-x-3 mb-4">
-            <div class="w-10 h-10 rounded-xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center">
-              <i class="fa-solid fa-handshake fa-lg"></i>
-            </div>
-            <div>
-              <div class="text-yellow-400 text-xs uppercase tracking-widest lang-pt">SERVIÇOS PAGOS (opcionais)</div>
-              <div class="text-yellow-400 text-xs uppercase tracking-widest lang-en">PAID SERVICES (optional)</div>
-            </div>
-          </div>
-          <h4 class="font-semibold text-lg mb-3 text-white lang-pt">O que a Code Solutions vende</h4>
-          <h4 class="font-semibold text-lg mb-3 text-white lang-en">What Code Solutions sells</h4>
-          <ul class="space-y-2 text-sm text-slate-300">
-            <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">★</span><span class="lang-pt"><strong class="text-white">Adoção guiada</strong> — licença + handoff + 30 dias de suporte (não vendemos o repo, vendemos o acompanhamento)</span><span class="lang-en"><strong class="text-white">Guided adoption</strong> — license + handoff + 30 days of support (we don't sell the repo, we sell the onboarding)</span></li>
-            <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">★</span><span class="lang-pt"><strong class="text-white">Customização</strong> — escopo fechado: adaptamos o framework pro seu contexto</span><span class="lang-en"><strong class="text-white">Customization</strong> — fixed scope: we adapt the framework to your context</span></li>
-            <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">★</span><span class="lang-pt"><strong class="text-white">Treinamento</strong> — workshop / pairing pro time interno</span><span class="lang-en"><strong class="text-white">Training</strong> — workshop / pairing for your in-house team</span></li>
-            <li class="flex gap-2"><span class="text-yellow-400 mt-0.5">★</span><span class="lang-pt"><strong class="text-white">Engenharia sob medida</strong> — escopo fechado em problemas que os frameworks resolvem</span><span class="lang-en"><strong class="text-white">Custom engineering</strong> — fixed-scope on problems our frameworks solve</span></li>
-          </ul>
-          <p class="mt-4 text-xs text-slate-400 lang-pt">⚠️ <strong class="text-white">Não somos consultoria body-rental.</strong> Nossos engajamentos nascem em torno dos frameworks e têm escopo curto.</p>
-          <p class="mt-4 text-xs text-slate-400 lang-en">⚠️ <strong class="text-white">We're not a body-rental consultancy.</strong> Our engagements are scoped around our frameworks and stay short.</p>
-        </div>
-      </div>
-
-      <!-- Como funciona (processo) -->
-      <h3 class="text-center text-2xl font-semibold tracking-tight mb-3">
-        <span class="lang-pt">Como funciona o engajamento</span>
-        <span class="lang-en">How an engagement works</span>
-      </h3>
-      <p class="text-center text-sm text-slate-400 mb-10 lang-pt">4 passos · escopo claro · 30 dias de suporte de transição incluídos</p>
-      <p class="text-center text-sm text-slate-400 mb-10 lang-en">4 steps · clear scope · 30 days of transition support included</p>
-
-      <div class="grid md:grid-cols-4 gap-5 text-center">
-        <div class="p-5">
-          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">01</div>
-          <div class="font-medium mb-1 lang-pt">Discovery (grátis)</div>
-          <div class="font-medium mb-1 lang-en">Discovery (free)</div>
-          <div class="text-xs text-slate-400 lang-pt">30-45 min para entender o problema. Sem compromisso.</div>
-          <div class="text-xs text-slate-400 lang-en">30-45 min to understand the problem. No commitment.</div>
-        </div>
-        <div class="p-5">
-          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">02</div>
-          <div class="font-medium mb-1 lang-pt">Proposta clara</div>
-          <div class="font-medium mb-1 lang-en">Clear proposal</div>
-          <div class="text-xs text-slate-400 lang-pt">Escopo, entregáveis, prazos e investimento. Sem surpresa.</div>
-          <div class="text-xs text-slate-400 lang-en">Scope, deliverables, timeline, and investment. No surprises.</div>
-        </div>
-        <div class="p-5">
-          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">03</div>
-          <div class="font-medium mb-1 lang-pt">Entrega</div>
-          <div class="font-medium mb-1 lang-en">Delivery</div>
-          <div class="text-xs text-slate-400 lang-pt">Código versionado, updates frequentes, reuniões quando necessário.</div>
-          <div class="text-xs text-slate-400 lang-en">Versioned code, frequent updates, meetings as needed.</div>
-        </div>
-        <div class="p-5">
-          <div class="mx-auto w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center mb-4 text-yellow-400 font-mono text-sm">04</div>
-          <div class="font-medium mb-1 lang-pt">Suporte + NF</div>
-          <div class="font-medium mb-1 lang-en">Support + Invoice</div>
-          <div class="text-xs text-slate-400 lang-pt">30 dias de suporte de transição. Nota fiscal PJ simples.</div>
-          <div class="text-xs text-slate-400 lang-en">30 days of transition support. Simple PJ invoice.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ (limpo e útil para SEO) -->
-  <section id="faq" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-800">
-    <div class="text-center mb-8">
-      <div class="text-yellow-400 text-xs tracking-[2px] lang-pt">DÚVIDAS COMUNS</div>
-      <div class="text-yellow-400 text-xs tracking-[2px] lang-en">COMMON QUESTIONS</div>
-      <h3 class="section-title tracking-tighter mt-2 lang-pt">Perguntas frequentes</h3>
-      <h3 class="section-title tracking-tighter mt-2 lang-en">Frequently asked questions</h3>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-4 text-sm">
-      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">O que é a Code Solutions exatamente?</span>
-          <span class="lang-en">What exactly is Code Solutions?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          Code Solutions é uma <strong class="text-white">empresa de produtos e frameworks</strong> fundada por Ivã Martins. Operamos no modelo <strong class="text-white">open core</strong>: os frameworks e toolkits (akka-scala-base, flink-kafka-scala-base, springboot-langchain4j-rag-mcp, whatsapp-llm-bot, dbt-airflow-data-platform, csharp-azure-ai-base, etc.) são <strong class="text-white">100% open source no GitHub</strong> (licença MIT) — use livremente. A Code Solutions vende <strong class="text-white">serviços pagos em cima deles</strong>: adoção guiada (licença + handoff + 30 dias de suporte), customização sob medida, treinamento e engenharia de escopo fechado. <strong class="text-white">Não somos consultoria genérica</strong> — nosso core é IP acumulado, não horas de body-rental.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          Code Solutions is a <strong class="text-white">products and frameworks company</strong> founded by Ivã Martins. We operate under the <strong class="text-white">open core model</strong>: the frameworks and toolkits (akka-scala-base, flink-kafka-scala-base, springboot-langchain4j-rag-mcp, whatsapp-llm-bot, dbt-airflow-data-platform, csharp-azure-ai-base, etc.) are <strong class="text-white">100% open source on GitHub</strong> (MIT license) — use them freely. Code Solutions sells <strong class="text-white">paid services on top</strong>: guided adoption (license + handoff + 30 days of support), fixed-scope customization, training, and custom engineering. <strong class="text-white">We're not a generic consultancy</strong> — our core is accumulated IP, not body-rental hours.
-        </div>
-      </details>
-
-      <details class="bg-slate-900 border border-emerald-500/40 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Os frameworks são pagos?</span>
-          <span class="lang-en">Are the frameworks paid?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          <strong class="text-white">Não.</strong> Todos os frameworks e toolkits são open source no GitHub sob licença MIT — você pode clonar, usar, modificar e distribuir livremente, sem pagar nada. O que cobramos é pelos <strong class="text-white">serviços opcionais em cima deles</strong>: adoção guiada (handoff + 30 dias de suporte), customização sob medida (escopo fechado), treinamento e engenharia sob medida. Se você só quer usar os frameworks por conta própria, é gratuito. Se quiser ajuda na integração, customização ou suporte, aí sim é um engajamento pago.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          <strong class="text-white">No.</strong> All frameworks and toolkits are open source on GitHub under the MIT license — you can clone, use, modify, and distribute them freely, with no cost. What we charge for are the <strong class="text-white">optional services on top</strong>: guided adoption (handoff + 30 days of support), fixed-scope customization, training, and custom engineering. If you just want to use the frameworks on your own, it's free. If you want help integrating, customizing, or supporting them, then it's a paid engagement.
-        </div>
-      </details>
-
-      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Code Solutions é o mesmo que o portfólio pessoal do Ivã?</span>
-          <span class="lang-en">Is Code Solutions the same as Ivã's personal portfolio?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          <strong class="text-white">Não.</strong> Este é o site da empresa (produtos e frameworks). O <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">portfólio pessoal do Ivã</a> (carreira, cases individuais, Open Source, CV) é separado. Se você está avaliando o Ivã como candidato a uma vaga, vá direto para o portfólio pessoal.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          <strong class="text-white">No.</strong> This is the company site (products and frameworks). <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">Ivã's personal portfolio</a> (career, individual cases, open source, CV) is separate. If you're evaluating Ivã as a job candidate, go directly to his personal portfolio.
-        </div>
-      </details>
-
-      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Vocês fazem manutenção de sistemas legados?</span>
-          <span class="lang-en">Do you maintain legacy systems?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          <strong class="text-white">Não somos consultoria de manutenção.</strong> A Code Solutions não vende horas de body-rental. O que oferecemos é <strong class="text-white">adoção guiada</strong> dos nossos frameworks (handoff + 30 dias de suporte) e <strong class="text-white">customização de escopo fechado</strong> em cima deles. Se você precisa de manutenção contínua do seu sistema legado, recomendamos buscar um parceiro de staffing — não somos o fit certo.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          <strong class="text-white">We're not a maintenance consultancy.</strong> Code Solutions does not sell body-rental hours. What we offer is <strong class="text-white">guided adoption</strong> of our frameworks (handoff + 30 days of support) and <strong class="text-white">fixed-scope customization</strong> on top of them. If you need ongoing maintenance of your legacy system, we recommend finding a staffing partner — we're not the right fit.
-        </div>
-      </details>
-
-      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Como adotar o framework de Elasticsearch da Code Solutions?</span>
-          <span class="lang-en">How do I adopt the Code Solutions Elasticsearch framework?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          O framework <a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">elasticsearch-scala-base</a> é open source no GitHub (MIT). Adoção self-service: clone, leia o README, rode com `sbt run`. Para adoção guiada com handoff + 30 dias de suporte, ou customização para o seu caso de uso (índices custom, queries complexas, integração com Java/Play/Scala), é só abrir um engagement.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          The <a href="https://github.com/ivamartins/elasticsearch-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">elasticsearch-scala-base</a> framework is open source on GitHub (MIT). Self-service adoption: clone, read the README, run with `sbt run`. For guided adoption with handoff + 30 days of support, or customization for your use case (custom indices, complex queries, Java/Play/Scala integration), just open an engagement.
-        </div>
-      </details>
-
-      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Os frameworks de event-driven (Scala, Akka, Kafka, Flink) são prontos para produção?</span>
-          <span class="lang-en">Are the event-driven frameworks (Scala, Akka, Kafka, Flink) production-ready?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          Sim. O <a href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">akka-scala-base</a>, <a href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-kafka-scala-base</a> e <a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-data-mesh-pipeline</a> nasceram da arquitetura que escalou para padrão no Sicredi Digital (4 anos em produção). O <a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">scala-akka-aws-microservice</a> é o template de deploy AWS (Fargate + Terraform). Para adoção guiada ou arquitetura sob medida, é só abrir um engagement.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          Yes. The <a href="https://github.com/ivamartins/akka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">akka-scala-base</a>, <a href="https://github.com/ivamartins/flink-kafka-scala-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-kafka-scala-base</a>, and <a href="https://github.com/ivamartins/flink-data-mesh-pipeline" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">flink-data-mesh-pipeline</a> frameworks were born from the architecture that scaled to the standard at Sicredi Digital (4 years in production). The <a href="https://github.com/ivamartins/scala-akka-aws-microservice" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">scala-akka-aws-microservice</a> is the AWS deploy template (Fargate + Terraform). For guided adoption or custom architecture, just open an engagement.
-        </div>
-      </details>
-
-      <details class="bg-slate-900 border border-slate-700 rounded-2xl p-5 group open:bg-slate-950">
-        <summary class="font-medium cursor-pointer list-none flex justify-between items-center">
-          <span class="lang-pt">Modernização de legados está nos frameworks?</span>
-          <span class="lang-en">Is legacy modernization in the frameworks?</span>
-          <i class="fa-solid fa-chevron-down text-yellow-400 text-xs transition group-open:rotate-180"></i>
-        </summary>
-        <div class="mt-3 text-slate-400 lang-pt">
-          O <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">quarkus-java-base</a> e o <a href="https://github.com/ivamartins/java-product-api" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">java-product-api</a> são as bases de referência para modernizar Java EE/Play/JSF para Spring Boot 3 ou Quarkus. São os patterns usados na reescrita do e-commerce Panvel e em sistemas de FLEXCUBE. Adoção self-service: clone, leia o README. Para engagement de customização (ex: playbook sob medida para o seu sistema), é só abrir conversa.
-        </div>
-        <div class="mt-3 text-slate-400 lang-en">
-          The <a href="https://github.com/ivamartins/quarkus-java-base" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">quarkus-java-base</a> and <a href="https://github.com/ivamartins/java-product-api" target="_blank" rel="noopener" class="text-yellow-400 hover:underline">java-product-api</a> are the reference bases for modernizing Java EE/Play/JSF to Spring Boot 3 or Quarkus. These are the patterns used in the Panvel e-commerce rewrite and FLEXCUBE systems. Self-service adoption: clone, read the README. For customization engagements (e.g., custom playbook for your system), just open a conversation.
-        </div>
-      </details>
-    </div>
-
-    <div class="text-center mt-6 text-xs text-slate-500">
-      <span class="lang-pt">Mais dúvidas? </span>
-      <a href="#contato" class="underline hover:text-slate-300 lang-pt">Fale comigo</a>
-      <span class="lang-en">More questions? </span>
-      <a href="#contato" class="underline hover:text-slate-300 lang-en">Talk to me</a>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="max-w-3xl mx-auto px-6 py-20">
-    <div class="text-center mb-10">
-      <div class="text-yellow-400 text-xs tracking-[2px]">PRÓXIMO PASSO</div>
-      <h3 class="section-title tracking-tighter mt-2">Vamos conversar sobre o seu projeto?</h3>
-      <p class="text-slate-400 mt-3">Respondo propostas em até 48h. Prefiro escopos bem definidos com impacto claro.</p>
-    </div>
-
-    <div class="bg-slate-900 border border-slate-700 rounded-3xl p-8">
-      <!-- Formspree form for Code Solutions contact -->
-      <form action="https://formspree.io/f/xwvjebjd" method="POST" class="space-y-5">
-        <!-- Formspree extras -->
-        <input type="hidden" name="_subject" value="Nova proposta via site Code Solutions">
-        <!-- Honeypot anti-spam (deixe vazio) -->
-        <input type="text" name="_gotcha" style="display:none">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div>
-            <label class="block text-xs text-slate-400 mb-1.5">Nome / Empresa</label>
-            <input type="text" name="name" required class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-2xl px-4 py-3 text-sm outline-none">
-          </div>
-          <div>
-            <label class="block text-xs text-slate-400 mb-1.5">Email de contato</label>
-            <input type="email" name="_replyto" required class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-2xl px-4 py-3 text-sm outline-none">
-          </div>
-        </div>
-
+  <!-- SOLUTIONS PREVIEW -->
+  <section class="bg-slate-950/60 border-y border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
         <div>
-          <label class="block text-xs text-slate-400 mb-1.5">Tipo de projeto</label>
-          <select name="project_type" class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-2xl px-4 py-3 text-sm outline-none">
-            <option value="">Selecione...</option>
-            <option value="legado">Modernização / Migração de Legado</option>
-            <option value="agente">Agente IA / Automação / Bot</option>
-            <option value="api">API / Backend Escalável</option>
-            <option value="arquitetura">Consultoria de Arquitetura</option>
-            <option value="outro">Outro / Fábrica de Software</option>
-          </select>
+          <div class="text-xs uppercase tracking-[0.18em] text-yellow-400 mb-2">
+            <span class="lang-pt">O que entregamos</span><span class="lang-en">What we deliver</span>
+          </div>
+          <h2 class="font-display section-title text-white">
+            <span class="lang-pt">Três frentes claras</span>
+            <span class="lang-en">Three clear offers</span>
+          </h2>
         </div>
+        <a href="solucoes.html" class="text-sm text-yellow-400 hover:underline">
+          <span class="lang-pt">Todas as soluções →</span><span class="lang-en">All solutions →</span>
+        </a>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-5">
+        <!-- 1 -->
+        <article class="product-card rounded-2xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col">
+          <div class="mock-frame !rounded-none !border-0 !shadow-none border-b border-slate-800">
+            <div class="mock-chrome !py-2">
+              <span class="mock-dot bg-red-400/70"></span><span class="mock-dot bg-amber-400/70"></span><span class="mock-dot bg-emerald-400/70"></span>
+              <span class="ml-2 text-[10px] text-slate-500">sistema · sob medida</span>
+            </div>
+            <div class="p-3 grid grid-cols-2 gap-2 min-h-[120px]">
+              <div class="mock-card col-span-2"><div class="mock-row accent w-1-3 mb-2"></div><div class="mock-row w-2-3"></div></div>
+              <div class="mock-card"><div class="mock-row w-1-2"></div><div class="mock-row w-2-3"></div></div>
+              <div class="mock-card"><div class="mock-row w-1-3"></div><div class="mock-row w-1-2"></div></div>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-display font-semibold text-white text-lg mb-2">
+              <span class="lang-pt">Sistema sob medida</span><span class="lang-en">Custom business system</span>
+            </h3>
+            <p class="text-sm text-slate-400 mb-4 flex-1">
+              <span class="lang-pt">Do processo da sua empresa para um sistema web: pedidos, estoque, clientes, agenda, regras do seu jeito.</span>
+              <span class="lang-en">From your process to a web system: orders, inventory, clients, scheduling — your rules.</span>
+            </p>
+            <a href="solucoes.html#sistema" class="text-sm text-yellow-400 font-medium hover:underline">
+              <span class="lang-pt">Saiba mais</span><span class="lang-en">Learn more</span>
+            </a>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="product-card rounded-2xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col">
+          <div class="mock-frame !rounded-none !border-0 !shadow-none border-b border-slate-800">
+            <div class="mock-chrome !py-2">
+              <span class="mock-dot bg-red-400/70"></span><span class="mock-dot bg-amber-400/70"></span><span class="mock-dot bg-emerald-400/70"></span>
+              <span class="ml-2 text-[10px] text-slate-500">integração · apis</span>
+            </div>
+            <div class="p-4 min-h-[120px] flex items-center justify-center gap-2">
+              <div class="mock-node">ERP</div>
+              <div class="mock-arrow"><i class="fa-solid fa-arrows-left-right"></i></div>
+              <div class="mock-node text-yellow-300 border-yellow-400/30">API</div>
+              <div class="mock-arrow"><i class="fa-solid fa-arrows-left-right"></i></div>
+              <div class="mock-node">Web</div>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-display font-semibold text-white text-lg mb-2">
+              <span class="lang-pt">Integrações</span><span class="lang-en">Integrations</span>
+            </h3>
+            <p class="text-sm text-slate-400 mb-4 flex-1">
+              <span class="lang-pt">Seus sistemas conversando: APIs, sincronização, import/export — sem digitar duas vezes.</span>
+              <span class="lang-en">Systems that sync: APIs, jobs, import/export — no double data entry.</span>
+            </p>
+            <a href="solucoes.html#integracoes" class="text-sm text-yellow-400 font-medium hover:underline">
+              <span class="lang-pt">Saiba mais</span><span class="lang-en">Learn more</span>
+            </a>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="product-card rounded-2xl border border-slate-800 bg-slate-900/50 overflow-hidden flex flex-col">
+          <div class="mock-frame !rounded-none !border-0 !shadow-none border-b border-slate-800">
+            <div class="mock-chrome !py-2">
+              <span class="mock-dot bg-red-400/70"></span><span class="mock-dot bg-amber-400/70"></span><span class="mock-dot bg-emerald-400/70"></span>
+              <span class="ml-2 text-[10px] text-slate-500">whatsapp · automação</span>
+            </div>
+            <div class="p-3 min-h-[120px] mock-chat">
+              <div class="mock-bubble in"><span class="lang-pt">Oi, tem o produto X?</span><span class="lang-en">Hi, do you have product X?</span></div>
+              <div class="mock-bubble out"><span class="lang-pt">Olá! Sim. Posso montar um orçamento. Qual a quantidade?</span><span class="lang-en">Hi! Yes. I can prepare a quote. What quantity?</span></div>
+              <div class="mock-bubble in"><span class="lang-pt">50 unidades, para quinta.</span><span class="lang-en">50 units, for Thursday.</span></div>
+            </div>
+          </div>
+          <div class="p-5 flex-1 flex flex-col">
+            <h3 class="font-display font-semibold text-white text-lg mb-2">
+              <span class="lang-pt">Automação WhatsApp</span><span class="lang-en">WhatsApp automation</span>
+            </h3>
+            <p class="text-sm text-slate-400 mb-4 flex-1">
+              <span class="lang-pt">Fluxos de orçamento, status e triagem. Opcional: IA com regras e base da sua empresa.</span>
+              <span class="lang-en">Quote flows, status and triage. Optional: AI with your rules and company knowledge.</span>
+            </p>
+            <a href="solucoes.html#whatsapp" class="text-sm text-yellow-400 font-medium hover:underline">
+              <span class="lang-pt">Saiba mais</span><span class="lang-en">Learn more</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-        <div>
-          <label class="block text-xs text-slate-400 mb-1.5">Descreva brevemente o que você precisa</label>
-          <textarea name="message" rows="5" required class="w-full bg-slate-950 border border-slate-700 focus:border-yellow-500 rounded-3xl px-4 py-3 text-sm outline-none resize-y"></textarea>
+  <!-- HOW -->
+  <section class="max-w-6xl mx-auto px-5 py-16 md:py-20">
+    <div class="max-w-2xl mb-10">
+      <div class="text-xs uppercase tracking-[0.18em] text-yellow-400 mb-2">
+        <span class="lang-pt">Como trabalhamos</span><span class="lang-en">How we work</span>
+      </div>
+      <h2 class="font-display section-title text-white">
+        <span class="lang-pt">Do diagnóstico à entrega, sem surpresa</span>
+        <span class="lang-en">From discovery to delivery, no surprises</span>
+      </h2>
+    </div>
+    <ol class="grid md:grid-cols-4 gap-4">
+      <li class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <div class="text-yellow-400 font-display font-bold text-2xl mb-2">01</div>
+        <h3 class="font-semibold text-white mb-1"><span class="lang-pt">Conversa</span><span class="lang-en">Discovery</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">Entendemos a dor, o que já existe e a urgência.</span><span class="lang-en">We understand the pain, current tools and urgency.</span></p>
+      </li>
+      <li class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <div class="text-yellow-400 font-display font-bold text-2xl mb-2">02</div>
+        <h3 class="font-semibold text-white mb-1"><span class="lang-pt">Proposta</span><span class="lang-en">Proposal</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">Escopo fechado (ou fases), prazo e investimento claros.</span><span class="lang-en">Fixed scope (or phases), clear timeline and investment.</span></p>
+      </li>
+      <li class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <div class="text-yellow-400 font-display font-bold text-2xl mb-2">03</div>
+        <h3 class="font-semibold text-white mb-1"><span class="lang-pt">Entrega</span><span class="lang-en">Delivery</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">Incrementos com demos curtas. Você acompanha o progresso.</span><span class="lang-en">Incremental releases with short demos. You stay in the loop.</span></p>
+      </li>
+      <li class="rounded-2xl border border-slate-800 bg-slate-900/40 p-5">
+        <div class="text-yellow-400 font-display font-bold text-2xl mb-2">04</div>
+        <h3 class="font-semibold text-white mb-1"><span class="lang-pt">Handoff</span><span class="lang-en">Handoff</span></h3>
+        <p class="text-sm text-slate-400"><span class="lang-pt">Acessos, documentação e opção de evolução mensal.</span><span class="lang-en">Access, documentation and optional monthly evolution.</span></p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- REGION SEO -->
+  <section class="border-y border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-5 py-14 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="text-xs uppercase tracking-[0.18em] text-yellow-400 mb-2">
+          <span class="lang-pt">Grande Porto Alegre</span><span class="lang-en">Greater Porto Alegre</span>
         </div>
-
-        <button type="submit" 
-                class="w-full h-12 rounded-2xl bg-white text-slate-950 font-semibold active:bg-yellow-300 transition flex items-center justify-center gap-x-2">
-          <span class="lang-pt">Enviar proposta</span>
-          <span class="lang-en">Send proposal</span>
-          <i class="fa-solid fa-paper-plane"></i>
-        </button>
-        
-        <p class="text-center text-[10px] text-slate-500">
-          <span class="lang-pt">Seus dados são enviados de forma segura.</span>
-          <span class="lang-en">Your data is sent securely.</span>
+        <h2 class="font-display section-title text-white mb-4">
+          <span class="lang-pt">Software house com base em Porto Alegre</span>
+          <span class="lang-en">A software house based in Porto Alegre</span>
+        </h2>
+        <p class="text-slate-400 mb-4">
+          <span class="lang-pt">Atendemos empresas em Porto Alegre, Canoas, Novo Hamburgo, São Leopoldo, Gravataí, Cachoeirinha, Esteio, Sapucaia do Sul, Guaíba, Alvorada e região — com conversa direta por WhatsApp, proposta em português e NF com CNPJ brasileiro.</span>
+          <span class="lang-en">We serve companies across Greater Porto Alegre — direct WhatsApp, proposals in Portuguese, and Brazilian CNPJ invoicing.</span>
         </p>
-      </form>
-
-      <!-- Success message (shown after AJAX submit) -->
-      <div id="form-success" class="hidden text-center py-6">
-        <div class="mx-auto w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-4">
-          <i class="fa-solid fa-check text-emerald-400 text-2xl"></i>
-        </div>
-        <div class="font-semibold text-lg lang-pt">Proposta enviada com sucesso!</div>
-        <div class="font-semibold text-lg lang-en">Proposal sent successfully!</div>
-        <p class="text-slate-400 mt-1 text-sm lang-pt">Obrigado pelo contato. Responderei em até 48h.</p>
-        <p class="text-slate-400 mt-1 text-sm lang-en">Thank you for reaching out. I'll reply within 48h.</p>
-        <button onclick="resetContactForm()" 
-                class="mt-4 text-xs underline text-slate-400 hover:text-slate-200">
-          <span class="lang-pt">Enviar outra mensagem</span>
-          <span class="lang-en">Send another message</span>
-        </button>
+        <p class="text-slate-500 text-sm">
+          <span class="lang-pt">Projetos remotos também são bem-vindos quando o encaixe for bom.</span>
+          <span class="lang-en">Remote projects are welcome when it's a good fit.</span>
+        </p>
       </div>
-
-      <div class="my-8 flex items-center gap-4">
-        <div class="h-px flex-1 bg-slate-800"></div>
-        <div class="text-xs text-slate-500">ou</div>
-        <div class="h-px flex-1 bg-slate-800"></div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-3 justify-center">
-        <a id="wa-contact-btn" href="#"
-           target="_blank"
-           class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-emerald-600 hover:bg-emerald-950/30 text-emerald-400 font-medium">
-          <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>Falar no WhatsApp</span>
-        </a>
-        
-        <a id="email-contact-btn" href="#"
-           class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-slate-700 hover:bg-slate-800 text-sm">
-          <i class="fa-solid fa-envelope"></i>
-          <span>Enviar email</span>
-        </a>
-
-        <a href="https://www.linkedin.com/company/code-solutions-it/" target="_blank"
-           class="flex-1 flex items-center justify-center gap-x-2 px-6 h-12 rounded-2xl border border-blue-600 hover:bg-blue-950/30 text-blue-400 font-medium">
-          <i class="fa-brands fa-linkedin text-xl"></i>
-          <span class="lang-pt">Code Solutions no LinkedIn</span>
-          <span class="lang-en">Code Solutions on LinkedIn</span>
-        </a>
+      <div class="rounded-2xl border border-slate-800 bg-slate-950/60 p-6">
+        <div class="text-sm font-medium text-white mb-3"><span class="lang-pt">Buscas que fazemos sentido</span><span class="lang-en">Searches we match</span></div>
+        <ul class="space-y-2 text-sm text-slate-400">
+          <li class="flex gap-2"><i class="fa-solid fa-magnifying-glass text-yellow-400/80 mt-0.5 text-xs"></i> software house Porto Alegre</li>
+          <li class="flex gap-2"><i class="fa-solid fa-magnifying-glass text-yellow-400/80 mt-0.5 text-xs"></i> desenvolvimento de software sob medida</li>
+          <li class="flex gap-2"><i class="fa-solid fa-magnifying-glass text-yellow-400/80 mt-0.5 text-xs"></i> sistema customizado para empresa</li>
+          <li class="flex gap-2"><i class="fa-solid fa-magnifying-glass text-yellow-400/80 mt-0.5 text-xs"></i> integração de sistemas / automação WhatsApp</li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <div class="text-center mt-4 text-xs text-slate-500">
-      <span class="lang-pt">Conecte-se no LinkedIn para acompanhar atualizações e cases.</span>
-      <span class="lang-en">Connect on LinkedIn to follow updates and cases.</span>
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-5 py-16">
+    <div class="rounded-3xl border border-yellow-400/20 bg-gradient-to-br from-yellow-400/10 via-slate-900 to-slate-950 p-8 md:p-12 text-center">
+      <h2 class="font-display section-title text-white mb-3">
+        <span class="lang-pt">Tem uma dor de software na operação?</span>
+        <span class="lang-en">Got a software pain in your operations?</span>
+      </h2>
+      <p class="text-slate-400 max-w-xl mx-auto mb-8">
+        <span class="lang-pt">Conte o problema em poucas linhas. Respondemos com o próximo passo — sem enrolação.</span>
+        <span class="lang-en">Describe the problem in a few lines. We'll reply with a clear next step.</span>
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="contato.html" class="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm">
+          <span class="lang-pt">Pedir proposta</span><span class="lang-en">Request a quote</span>
+        </a>
+        <a href="#" data-wa class="btn-ghost inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm text-slate-200">
+          <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="border-t border-slate-800 py-8 text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-y-3">
-      <div>
-        <span class="lang-pt">© Code Solutions • Ivã Martins • Canoas, RS — Serviços prestados via PJ</span>
-        <span class="lang-en">© Code Solutions • Ivã Martins • Canoas, RS — Services delivered via my independent consulting company</span>
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="max-w-6xl mx-auto px-5 py-12 grid md:grid-cols-4 gap-8 text-sm">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-3">
+          <img src="assets/logo-cs.png" alt="" class="w-7 h-7 rounded-md object-cover">
+          <span class="font-display font-semibold text-white">Code Solutions</span>
+        </div>
+        <p class="text-slate-500 max-w-sm mb-3">
+          <span class="lang-pt">Software house em Porto Alegre. Sistemas sob medida, integrações e automação para a Grande POA.</span>
+          <span class="lang-en">Software house in Porto Alegre. Custom systems, integrations and automation for Greater POA.</span>
+        </p>
+        <p class="text-slate-600 text-xs">CNPJ 43.985.337/0001-08 · Porto Alegre / RS</p>
       </div>
-      <div class="flex items-center gap-x-4">
-        <a href="#sobre" class="hover:text-slate-300 lang-pt">Sobre</a>
-        <a href="#sobre" class="hover:text-slate-300 lang-en">About</a>
-        <a href="#produtos" class="hover:text-slate-300 lang-pt">Produtos</a>
-        <a href="#produtos" class="hover:text-slate-300 lang-en">Products</a>
-        <a href="#agentes" class="hover:text-slate-300 lang-pt">Agentes IA</a>
-        <a href="#agentes" class="hover:text-slate-300 lang-en">AI Agents</a>
-        <a href="#frameworks" class="hover:text-slate-300 lang-pt">Frameworks</a>
-        <a href="#frameworks" class="hover:text-slate-300 lang-en">Frameworks</a>
-        <span class="text-slate-700">•</span>
-        <a href="https://www.linkedin.com/company/code-solutions-it/" target="_blank" class="hover:text-slate-300 lang-pt">Empresa no LinkedIn</a>
-        <a href="https://www.linkedin.com/company/code-solutions-it/" target="_blank" class="hover:text-slate-300 lang-en">Company on LinkedIn</a>
-        <span class="text-slate-700">•</span>
-        <span class="lang-pt">Site estático • Hospedado gratuitamente</span>
-        <span class="lang-en">Static site • Free hosting</span>
+      <div>
+        <div class="text-xs uppercase tracking-wider text-slate-500 mb-3"><span class="lang-pt">Navegação</span><span class="lang-en">Navigate</span></div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a class="footer-link" href="solucoes.html"><span class="lang-pt">Soluções</span><span class="lang-en">Solutions</span></a></li>
+          <li><a class="footer-link" href="sobre.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+          <li><a class="footer-link" href="contato.html"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-xs uppercase tracking-wider text-slate-500 mb-3"><span class="lang-pt">Mais</span><span class="lang-en">More</span></div>
+        <ul class="space-y-2 text-slate-400">
+          <li><a class="footer-link" href="https://github.com/ivamartins" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="footer-link" href="https://www.linkedin.com/in/ivamartins/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="footer-link" href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"><span class="lang-pt">Portfólio do fundador</span><span class="lang-en">Founder's portfolio</span></a></li>
+        </ul>
       </div>
     </div>
+    <div class="border-t border-slate-900 text-center text-xs text-slate-600 py-4 px-5">
+      © <span id="y"></span> Code Solutions · <span class="lang-pt">Todos os direitos reservados</span><span class="lang-en">All rights reserved</span>
+    </div>
   </footer>
-
-  <script>
-    // Tailwind script config
-    function initializeTailwind() {
-      document.documentElement.style.setProperty('--accent', '234 179 8');
-    }
-
-    // Simple bilingual switcher
-    let currentLang = 'pt';
-    
-    function applyLang(lang) {
-      currentLang = lang;
-      document.documentElement.setAttribute('lang', lang);
-      
-      // Update buttons
-      const ptBtn = document.getElementById('lang-pt-btn');
-      const enBtn = document.getElementById('lang-en-btn');
-      
-      if (lang === 'pt') {
-        ptBtn.classList.add('bg-yellow-500', 'text-slate-950');
-        ptBtn.classList.remove('text-slate-400');
-        enBtn.classList.remove('bg-yellow-500', 'text-slate-950');
-        enBtn.classList.add('text-slate-400');
-      } else {
-        enBtn.classList.add('bg-yellow-500', 'text-slate-950');
-        enBtn.classList.remove('text-slate-400');
-        ptBtn.classList.remove('bg-yellow-500', 'text-slate-950');
-        ptBtn.classList.add('text-slate-400');
-      }
-    }
-
-    function switchLang(lang) {
-      applyLang(lang);
-      // Persist only on explicit user choice
-      try { localStorage.setItem('cs_lang', lang); } catch(e){}
-    }
-
-    // Recruiter banner: dismiss + persist
-    function dismissRecruiterBanner() {
-      const el = document.getElementById('recruiter-banner');
-      if (el) el.style.display = 'none';
-      try { localStorage.setItem('cs_banner_dismissed', '1'); } catch(e){}
-    }
-
-    // Hide banner on load if previously dismissed
-    document.addEventListener('DOMContentLoaded', function() {
-      try {
-        if (localStorage.getItem('cs_banner_dismissed') === '1') {
-          const el = document.getElementById('recruiter-banner');
-          if (el) el.style.display = 'none';
-        }
-      } catch(e){}
-    });
-
-    // Initialize language:
-    // 1. Respect saved user preference (from button clicks)
-    // 2. Otherwise auto-detect from browser language config
-    function initLang() {
-      const saved = localStorage.getItem('cs_lang');
-      if (saved === 'en' || saved === 'pt') {
-        applyLang(saved);
-        return;
-      }
-
-      // Auto-detect from browser language configuration (respects user's OS/browser settings)
-      const navLang = ((navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'pt').toLowerCase();
-      const autoLang = navLang.startsWith('pt') ? 'pt' : 'en';
-      applyLang(autoLang);
-      // Note: we do NOT save auto-detected value to localStorage, so it will re-detect
-      // on next load based on current browser config, until the user clicks PT/EN to choose explicitly.
-    }
-
-    // Keyboard support for lang
-    function setupKeyboard() {
-      document.addEventListener('keydown', function(e) {
-        if (e.metaKey && e.key.toLowerCase() === 'l') {
-          e.preventDefault();
-          switchLang(currentLang === 'pt' ? 'en' : 'pt');
-        }
-      });
-    }
-
-    // Smooth scroll for anchor links
-    function setupSmoothScroll() {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
-      });
-    }
-
-    // Form handling with AJAX (no page redirect) + success state
-    function setupForm() {
-      const form = document.querySelector('form[action*="formspree"]');
-      if (!form) return;
-
-      const successEl = document.getElementById('form-success');
-
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
-
-        if (submitBtn) {
-          submitBtn.disabled = true;
-          submitBtn.innerHTML = '<span class="lang-pt">Enviando...</span><span class="lang-en">Sending...</span> <i class="fa-solid fa-spinner fa-spin ml-1"></i>';
-        }
-
-        try {
-          const formData = new FormData(form);
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-              'Accept': 'application/json'
-            }
-          });
-
-          if (response.ok) {
-            // Success
-            form.classList.add('hidden');
-            if (successEl) successEl.classList.remove('hidden');
-            form.reset();
-          } else {
-            // Formspree error (rate limit, spam, etc.)
-            const data = await response.json().catch(() => ({}));
-            const errMsg = data.error || 'Erro ao enviar. Tente pelo WhatsApp ou email.';
-            alert(errMsg);
-            if (submitBtn) {
-              submitBtn.disabled = false;
-              submitBtn.innerHTML = originalBtnText;
-            }
-          }
-        } catch (err) {
-          console.error(err);
-          alert('Não foi possível enviar agora. Use o WhatsApp ou email por favor.');
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalBtnText;
-          }
-        }
-      });
-    }
-
-    function resetContactForm() {
-      const form = document.querySelector('form[action*="formspree"]');
-      const successEl = document.getElementById('form-success');
-      if (form) form.classList.remove('hidden');
-      if (successEl) successEl.classList.add('hidden');
-
-      // re-enable button if needed
-      const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        // restore original text (simple)
-        submitBtn.innerHTML = '<span class="lang-pt">Enviar proposta</span><span class="lang-en">Send proposal</span> <i class="fa-solid fa-paper-plane"></i>';
-      }
-    }
-
-    // Setup contact links without exposing phone/email in HTML source (anti-crawler)
-    function setupContactLinks() {
-      // Split to make static HTML scraping harder
-      const waPrefix = '55';
-      const waDdd = '51';
-      const waNumber = '981151474';
-      const fullWa = waPrefix + waDdd + waNumber;
-      const waMessage = encodeURIComponent('Olá Ivã, vi o site da Code Solutions e gostaria de conversar sobre um projeto.');
-
-      const emailUser = 'ivamartins';
-      const emailDomain = 'gmail.com';
-      const fullEmail = emailUser + '@' + emailDomain;
-
-      // WhatsApp buttons (hero desktop, mobile nav, contact section)
-      const waLinks = [
-        document.getElementById('wa-hero-btn'),
-        document.getElementById('wa-mobile-btn'),
-        document.getElementById('wa-contact-btn')
-      ].filter(Boolean);
-
-      waLinks.forEach(el => {
-        const href = `https://wa.me/${fullWa}?text=${waMessage}`;
-        if (el.tagName === 'A') {
-          el.href = href;
-          el.target = '_blank';
-          el.rel = 'noopener';
-        } else if (el.tagName === 'BUTTON') {
-          el.onclick = () => window.open(href, '_blank');
-        }
-      });
-
-      // Email button
-      const emailBtn = document.getElementById('email-contact-btn');
-      if (emailBtn) {
-        emailBtn.href = `mailto:${fullEmail}`;
-      }
-    }
-
-    // Boot
-    function boot() {
-      initializeTailwind();
-      initLang();
-      setupKeyboard();
-      setupSmoothScroll();
-      setupForm();
-      setupContactLinks();
-
-      // Optional: highlight current section in nav (simple)
-      console.log('%c[Code Solutions] Site profissional carregado. Bilingual + Tailwind CDN ready.', 'color:#64748b');
-    }
-
-    window.onload = boot;
-  </script>
-
-  <!-- FLOATING RECRUITER PILL (bottom-right, always visible unless dismissed) -->
-  <a href="https://ivamartins.github.io/portfolio/" target="_blank" rel="noopener"
-     id="recruiter-float"
-     class="recruiter-float"
-     aria-label="Recruiter? Go to my portfolio site.">
-    <i class="fa-solid fa-user-tie rf-icon"></i>
-    <span class="rf-label-full">
-      <span class="lang-pt">Recrutador(a)?</span>
-      <span class="lang-en">Recruiter?</span>
-    </span>
-    <span class="rf-label-full" style="opacity:0.7; font-weight:500;">
-      <span class="lang-pt">Portfólio pessoal do Ivã →</span>
-      <span class="lang-en">Ivã's personal portfolio →</span>
-    </span>
-    <i class="fa-solid fa-arrow-right rf-arrow"></i>
-    <span class="rf-close" onclick="event.preventDefault(); event.stopPropagation(); dismissRecruiterFloat();" role="button" aria-label="Dismiss">
-      <i class="fa-solid fa-xmark" style="font-size:0.7rem;"></i>
-    </span>
-  </a>
-
-  <script>
-    // Recruiter float: dismiss + persist
-    function dismissRecruiterFloat() {
-      const el = document.getElementById('recruiter-float');
-      if (el) el.style.display = 'none';
-      try { localStorage.setItem('cs_float_dismissed', '1'); } catch(e) {}
-    }
-    // Hide on load if previously dismissed
-    document.addEventListener('DOMContentLoaded', function() {
-      try {
-        if (localStorage.getItem('cs_float_dismissed') === '1') {
-          const el = document.getElementById('recruiter-float');
-          if (el) el.style.display = 'none';
-        }
-      } catch(e) {}
-    });
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
